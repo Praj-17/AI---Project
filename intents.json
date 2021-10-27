@@ -1,0 +1,82 @@
+
+{ 
+    "intents":[
+        {
+            "tag":"greeting",
+
+            "patterns": [ "hello", "hii", "hey", "wake up", "jarvis", "hola", "hemlo"],
+
+            "responses": [ "Hello Sir",
+                "How are you sir", "Welcome Sir", "Nice to meet you sir",
+                "Here's your assistant"]
+        },
+        {
+            "tag":"Bye",
+
+            "patterns": [ "quit", "nothing", "ok", "bye", "bbye", "thankyou", "stop", "terminate", "see you later", "sleep", "exit"],
+
+            "responses": ["Thankyou sir",
+                "Nice to meet you sir", "Have a good day", "Going to sleep",
+                "Thanks for using me", "Bye", "See you later!", "It will be nice to meet you again"]
+        },
+        {
+            "tag":"Casual Query",
+
+            "patterns": [ "how are you ?", "how is it going?", "whats up?", "is everything all right", "what is going on ", "are you fine", "are you all right?", "", "how's it going on? ", "what are you doing?", "wattcha doing?"],
+
+            "responses": [ "Fine sir",
+                "Absoloutely good", "Absoloutely fine", "Fatastic!",
+                "Just doing my stuff", "Just gathering some data", "Surfing over the internet ", "Watching a movie", "just, analyzing the data", "Just fueling up", "Huh, just having a nap", "Just woke up, had a nice sleep"]
+        },
+        {
+            "tag":"identity",
+
+            "patterns": [ "who are you", "What is your name",  "what are you"],
+
+            "responses": [ "i'm jarvis!",
+                "i'm jarvis!, you personal assistant", "My name is jarvis"
+            ]
+        },
+        {
+            "tag":"time",
+
+            "patterns": [ "what is time", "time",  " current time", "what's the time now", "hour", "minute"],
+
+            "responses": [ "time"
+            ]
+        },
+        {
+            "tag":"date",
+
+            "patterns": [ "what is date", "date",  " todays date", "what's the date today", "today"],
+
+            "responses": [ "date"
+            ]
+        },
+        {
+            "tag":"day",
+
+            "patterns": [ "what day is today", "day", "din","war" , "day"],
+
+            "responses": [ "day"
+            ]
+        },
+        {
+            "tag":"wikipedia",
+
+            "patterns": [ "who is", "about", "tell me about","search" , "find", "inform me about", "search for", "gather information on", "gather info on", "describe", "tell about", "wikipedia"],
+
+            "responses": [ "wikipedia"
+            ]
+        },
+        {
+            "tag":"google",
+
+            "patterns": [ "what is", "search about", "search for","google" , "find"],
+
+            "responses": [ "google"
+            ]
+        }
+    ]
+
+}

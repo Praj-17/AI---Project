@@ -1,0 +1,14 @@
+
+8. What is your name? and voicename function,these two sections could be merged
+
+9.IN read section will have to add the case if we have multiple books in the directory
+
+10 if sys.platform == "darwin" , os.statfile instead
+
+What i did today????
+1 Removed the unnecessary print functions and added the statement in the speak() function
+2. Put variable instead of path names
+3. Started working on the config file
+4.Developed the plan for storing and applying the ml models
+
+
