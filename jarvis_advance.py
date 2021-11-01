@@ -64,9 +64,12 @@ def main():
                     InputExecution(reply, result)
                 elif "google" in reply:
                     InputExecution(reply, result)
-                    
+                elif "news" in reply:
+                    NoninputExecution(reply)
                 else:
                     speak(reply)
+                
+                    
 while True:
      main()
         
