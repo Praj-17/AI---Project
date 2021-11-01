@@ -8,7 +8,7 @@
 
             "responses": [ "Hello Sir",
                 "How are you sir", "Welcome Sir", "Nice to meet you sir",
-                "Here's your assistant"]
+                "Here's your assistant","Hi there, how can I help?","Good to see you again!"]
         },
         {
             "tag":"Bye",
@@ -17,7 +17,7 @@
 
             "responses": ["Thankyou sir",
                 "Nice to meet you sir", "Have a good day", "Going to sleep",
-                "Thanks for using me", "Bye", "See you later!", "It will be nice to meet you again"]
+                "Thanks for using me", "Bye", "See you later!", "It will be nice to meet you again","Goodbye!","Sad to see you go :(","Talk to you later"]
         },
         {
             "tag":"Casual Query",
@@ -42,7 +42,7 @@
 
             "patterns": [ "what is time", "time",  " current time", "what's the time now", "hour", "minute"],
 
-            "responses": [ "time"
+            "responses": [ "time","Current time is "
             ]
         },
         {
@@ -50,7 +50,7 @@
 
             "patterns": [ "what is date", "date",  " todays date", "what's the date today", "today"],
 
-            "responses": [ "date"
+            "responses": [ "date","Today's Date is"
             ]
         },
         {
@@ -58,15 +58,16 @@
 
             "patterns": [ "what day is today", "day", "din","war" , "day"],
 
-            "responses": [ "day"
+            "responses": [ "day" ,"Today's Day is"
             ]
         },
+        
         {
             "tag":"wikipedia",
 
             "patterns": [ "who is", "about", "tell me about","search" , "find", "inform me about", "search for", "gather information on", "gather info on", "describe", "tell about", "wikipedia"],
 
-            "responses": [ "wikipedia"
+            "responses": [ "wikipedia","Searching on Wikipedia"
             ]
         },
         {
@@ -74,9 +75,26 @@
 
             "patterns": [ "what is", "search about", "search for","google" , "find"],
 
-            "responses": [ "google"
+            "responses": [ "google" 
             ]
+        },
+        {
+            "tag":"news",
+
+            "patterns": ["news","hilight","bulletin","reportage","headlines","headline"],
+
+            "responses": [ "news","Headlines are ","Top 5 bulletins are "
+           ]
+        },
+        {
+            "tag":"screenshot",
+
+            "patterns": ["screenshot","ss","screen capture","capture the screen","sinp screen"],
+
+            "responses": ["screenshot"
+           ]
         }
+       
     ]
 
 }
