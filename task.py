@@ -6,6 +6,7 @@
 # google search, wikipedia
 
 #First we will have to create functions and then add them to the json file
+import news
 import datetime
 from speak import speak
 import wikipedia
@@ -18,7 +19,26 @@ def Date():
     speak(date)
 def Day():
     day = datetime.datetime.now().strftime("%A")
-    speak(day)
+    speak(day) 
+def NEWS():
+    news_res = news.get_news()
+    speak('Source: The Times Of India')
+    speak('Todays Headlines are..')
+    for index, articles in enumerate(news_res):
+        print(articles['title'])
+        speak(articles['title'])
+        if index == len(news_res)-2:
+            break
+    speak('These were the top headlines, Have a nice day Sir!!..')
+    
+def InputExecution(tag, query):
+    if "wikipedia" in  tag:
+        result = wikipedia.summary(query, sentences = 5)
+        speak(result)    
+    elif "google" in tag:
+        query = str(query).replace("google", "").replace("search", "").replace("","").replace("what is","").replace("search about","").replace("search for","").replace("find","")
+        pywhatkit.search(query)
+    
     
 def NoninputExecution(query):
     query = str(query)
@@ -29,14 +49,10 @@ def NoninputExecution(query):
         Date()
     elif "day" in query:
         Day()
-def InputExecution(tag, query):
-    if "wikipedia" in  tag:
-        name = str(query).replace("who is","").replace("about","").replace("tell me about","").replace("search","").replace("find","").replace("inform me about","").replace("search for","").replace("gather information on","").replace("gather info on","").replace("describe","").replace("tell about","")
-        result = wikipedia.summary(name, sentences = 5)
-        speak(result)
-    elif "google" in tag:
-        query = str(query).replace("google", "").replace("search", "").replace("","").replace("what is","").replace("search about","").replace("search for","").replace("find","")
-        pywhatkit.search(query)
-        
+    elif "news" in query:
+        NEWS()
+    
+
+    
         
 # Day()
