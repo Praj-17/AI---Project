@@ -36,7 +36,7 @@ def main():
     sentence =listen()
     result = str(sentence)
     
-    
+         
    
     sentence = tokenize(sentence)
     x = bag_of_words(sentence, all_words)
@@ -81,4 +81,4 @@ def main():
 while True:
      main()
         
-    
+    #This is a new push
