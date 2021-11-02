@@ -1,9 +1,6 @@
-from pickle import TRUE
-from textwrap import indent
 import numpy as np
 import json
 import torch
-from torch.autograd.grad_mode import F
 import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader
 from brain import  NeuralNet
@@ -67,7 +64,7 @@ class ChatDataset(Dataset):
         return self.n_samples
     
 dataset = ChatDataset()
-train_loader = DataLoader(dataset= dataset, batch_size = batch_size , shuffle = TRUE, num_workers = 0)
+train_loader = DataLoader(dataset= dataset, batch_size = batch_size , shuffle = True, num_workers = 0)
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 

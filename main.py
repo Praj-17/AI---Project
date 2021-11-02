@@ -1,7 +1,6 @@
 import random
 import json
 from requests.models import Response
-
 from torch.nn.modules import module
 from Neural_Network.brain import NeuralNet
 from Neural_Network.text_preprocessing import bag_of_words, tokenize
