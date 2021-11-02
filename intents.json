@@ -24,9 +24,9 @@
 
             "patterns": [ "how are you ?", "how is it going?", "whats up?", "is everything all right", "what is going on ", "are you fine", "are you all right?", "", "how's it going on? ", "what are you doing?", "wattcha doing?"],
 
-            "responses": [ "Fine sir",
-                "Absoloutely good", "Absoloutely fine", "Fatastic!",
-                "Just doing my stuff", "Just gathering some data", "Surfing over the internet ", "Watching a movie", "just, analyzing the data", "Just fueling up", "Huh, just having a nap", "Just woke up, had a nice sleep"]
+            "responses": [ "Fine sir, what about you ? ",
+                "Absoloutely good what about you ? ", "Absoloutely fine what about you ? ", "Fatastic! what about you ? ",
+                "Just doing my stuff what about you ? ", "Just gathering some data what about you ? ", "Surfing over the internet what about you ?  ", "Watching a movie what about you ? ", "just, analyzing the data what about you ? ", "Just fueling up ", "Huh, just having a nap what about you ? ", "Just woke up, had a nice sleep what about you ? "]
         },
         {
             "tag":"identity",
@@ -92,6 +92,54 @@
             "patterns": ["screenshot","ss","screen capture","capture the screen","sinp screen"],
 
             "responses": ["screenshot"
+           ]
+        },
+        {
+            "tag":"playmusic",
+
+            "patterns": ["turn up the heat","play some music","party time","i think the atmosphere is a little tensed","let's do some work","it's showtime","play music"],
+
+            "responses": ["playing music","on it sir","ok sir" 
+           ]
+        },
+        {
+            "tag":"stopmusic",
+
+            "patterns": ["stop music","stop playing","stop it","enough for today"],
+
+            "responses": ["stoping ....","music is stop"
+           ]
+        },
+        {
+            "tag":"joke",
+
+            "patterns": ["tell me a joke","do you have a joke for me","amuse me","make me laugh","i am feeling sad","tell a joke"],
+
+            "responses": ["here we go","joke time","hear me carefully","hear out","here's a programmer joke for you"
+           ]
+        },
+        {
+           "tag":"weather",
+           
+           "patterns": ["check weather","what's the weather","how's the sky","do i need to carry an umbrella","how about a picnic"],
+           
+           "responses": ["which city would you like to check?"
+           ]
+        },
+        {
+           "tag":"shutdown",
+           
+           "patterns": ["shut down","nuke it","time to go to sleep","go to sleep","go get some rest"],
+           
+           "responses": ["are you sure ","system will shut down. do you want to continue ","all functions will suspend. continue?"
+           ]
+        },
+        {
+           "tag":"weather",
+           
+           "patterns": ["check weather","what's the weather","how's the sky","do i need to carry an umbrella","how about a picnic"],
+           
+           "responses": ["which city would you like to check?"
            ]
         }
        
