@@ -16,7 +16,7 @@
             "patterns": [ "quit", "nothing", "ok", "bye", "bbye", "thankyou", "stop", "terminate", "see you later", "sleep", "exit"],
 
             "responses": ["Thankyou sir",
-                "Nice to meet you sir", "Have a good day", "Going to sleep",
+                "Nice time, meeting you sir", "Have a good day", "Going to sleep",
                 "Thanks for using me", "Bye", "See you later!", "It will be nice to meet you again","Goodbye!","Sad to see you go :(","Talk to you later"]
         },
         {
@@ -113,10 +113,9 @@
         {
             "tag":"joke",
 
-            "patterns": ["tell me a joke","do you have a joke for me","amuse me","make me laugh","i am feeling sad","tell a joke"],
+            "patterns": ["tell me a joke","do you have a joke for me","amuse me","make me laugh","i am feeling sad","tell a joke", "Entertain me", "I'm bored"],
 
-            "responses": ["here we go","joke time","hear me carefully","hear out","here's a programmer joke for you"
-           ]
+            "responses": ["joke"]
         },
         {
            "tag":"weather",

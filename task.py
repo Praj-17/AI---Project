@@ -6,11 +6,13 @@
 # google search, wikipedia
 
 #First we will have to create functions and then add them to the json file
+from pyjokes.pyjokes import get_joke
 import news
 import datetime
 from speak import speak
 import wikipedia
 import pywhatkit
+import joke
 def Time():
     time = datetime.datetime.now().strftime("%H: %M")
     speak(time)
@@ -38,6 +40,7 @@ def InputExecution(tag, query):
     elif "google" in tag:
         query = str(query).replace("google", "").replace("search", "").replace("","").replace("what is","").replace("search about","").replace("search for","").replace("find","")
         pywhatkit.search(query)
+        
     
     
 def NoninputExecution(query):
@@ -51,8 +54,14 @@ def NoninputExecution(query):
         Day()
     elif "news" in query:
         NEWS()
+    elif "joke" in query:
+        joke.startJoke()
+    elif "bye" in query :
+        speak
+        exit(0)
     
 
     
         
+# get_joke()
 # Day()

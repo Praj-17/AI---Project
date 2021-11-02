@@ -1,5 +1,6 @@
 import random
 import json
+from requests.models import Response
 
 from torch.nn.modules import module
 from brain import NeuralNet
@@ -34,9 +35,9 @@ from task import InputExecution, NoninputExecution
 def main():
     sentence =listen()
     result = str(sentence)
-
-    if  sentence == "bye":
-      exit()
+    
+    
+   
     sentence = tokenize(sentence)
     x = bag_of_words(sentence, all_words)
     x = x.reshape(1,x.shape[0])
@@ -48,7 +49,11 @@ def main():
     tag = tags[predicted.item()]
     probs = torch.softmax(output, dim = 1)
     prob = probs[0][predicted.item()]
-    
+    if prob.item()> 0.75:
+        for intent in intents ['intents']:
+                if tag == "Bye" and intent["tag"] == "Bye":  
+                    speak(random.choice(intent["responses"]))
+                    exit(0)
     if prob.item()> 0.75:
         for intent in intents ['intents']:
             if tag == intent["tag"]:
@@ -66,8 +71,11 @@ def main():
                     InputExecution(reply, result)
                 elif "news" in reply:
                     NoninputExecution(reply)
+                elif "joke" in reply:
+                    NoninputExecution(reply)
                 else:
                     speak(reply)
+                
                 
                     
 while True:
