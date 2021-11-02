@@ -1,5 +1,4 @@
 from pickle import TRUE
-import re
 from textwrap import indent
 import numpy as np
 import json
@@ -7,9 +6,8 @@ import torch
 from torch.autograd.grad_mode import F
 import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader
+from brain import  NeuralNet
 from text_preprocessing import bag_of_words, tokenize, stem
-from brain import NeuralNet
-
 ## Unwrappping the Json file
 with open('intents.json', 'r') as f:
     intents = json.load(f) #Naming the loaded json file as intents which actually is a dictionary 

@@ -7,12 +7,12 @@
 
 #First we will have to create functions and then add them to the json file
 from pyjokes.pyjokes import get_joke
-import news
+from Features import news
 import datetime
-from speak import speak
+from Features.speak import speak
 import wikipedia
 import pywhatkit
-import joke
+from Features import joke
 def Time():
     time = datetime.datetime.now().strftime("%H: %M")
     speak(time)

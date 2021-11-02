@@ -1,6 +1,6 @@
 from pyjokes import get_joke
 from random import randint
-from speak import speak
+from Features.speak import speak
 '''
 returns  a joke in string format
 you can also add custom jokes in the list

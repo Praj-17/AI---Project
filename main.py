@@ -3,8 +3,8 @@ import json
 from requests.models import Response
 
 from torch.nn.modules import module
-from brain import NeuralNet
-from text_preprocessing import bag_of_words, tokenize
+from Neural_Network.brain import NeuralNet
+from Neural_Network.text_preprocessing import bag_of_words, tokenize
 import torch
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
@@ -29,8 +29,8 @@ model.eval
 #---------------
 
 Name = "Jarvis"
-from listen import listen
-from speak import speak
+from Features.listen import listen
+from Features.speak import speak
 from task import InputExecution, NoninputExecution
 def main():
     sentence =listen()
