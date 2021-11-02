@@ -13,6 +13,7 @@ from Features.speak import speak
 import wikipedia
 import pywhatkit
 from Features import joke
+from Features import weather 
 def Time():
     time = datetime.datetime.now().strftime("%H: %M")
     speak(time)
@@ -40,6 +41,11 @@ def InputExecution(tag, query):
     elif "google" in tag:
         query = str(query).replace("google", "").replace("search", "").replace("","").replace("what is","").replace("search about","").replace("search for","").replace("find","")
         pywhatkit.search(query)
+    elif "weather" in tag :
+        city = query.split(' ')[-1]
+        result =weather.fetch_weather(city=city)
+        print(result)
+        speak(result)
         
     
     

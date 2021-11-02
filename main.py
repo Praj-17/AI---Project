@@ -73,6 +73,8 @@ def main():
                     NoninputExecution(reply)
                 elif "joke" in reply:
                     NoninputExecution(reply)
+                elif "weather" in reply:
+                    InputExecution(reply, result)
                 else:
                     speak(reply)
                 

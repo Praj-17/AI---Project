@@ -124,7 +124,7 @@
            
            "patterns": ["check weather","what's the weather","how's the sky","do i need to carry an umbrella","how about a picnic"],
            
-           "responses": ["which city would you like to check?"
+           "responses": ["weather of your city is "
            ]
         },
         {
