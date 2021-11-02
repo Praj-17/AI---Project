@@ -1,2 +1,0 @@
-["here we go","joke time","hear me carefully","hear out","here's a programmer joke for you", "joke"
-           ]

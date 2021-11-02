@@ -115,6 +115,8 @@
 
             "patterns": ["tell me a joke","do you have a joke for me","amuse me","make me laugh","i am feeling sad","tell a joke", "Entertain me", "I'm bored"],
 
+            "reply" : ["here we go","joke time","hear me carefully","hear out","here's a programmer joke for you", "joke"
+            ],
             "responses": ["joke"]
         },
         {
