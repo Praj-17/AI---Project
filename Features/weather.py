@@ -11,11 +11,10 @@ def weather():
     data_json = data.json()
     if data_json['cod'] == 200:
         main = data_json['main']
-        wind = data_json['wind']
         weather_desc = data_json['weather'][0]
         speak('weather type ' + weather_desc['main'])
         speak('Temperature: ' + str(main['temp']) + 'degree celcius')       
-        
+
 # Ladtitude Longititude , current location
 def Location():
     api_url = "https://fcc-weather-api.glitch.me/api/current?lat=" + \
@@ -24,9 +23,6 @@ def Location():
     data = requests.get(api_url)
     data_json = data.json()
     if data_json['cod'] == 200:
-        main = data_json['main']
-        wind = data_json['wind']
-        weather_desc = data_json['weather'][0]
         speak(str(data_json['coord']['lat']) + 'latitude' + str(data_json['coord']['lon']) + 'longitude')
         speak('Current location is ' + data_json['name'] + data_json['sys']['country'] + 'dia')
 
@@ -40,7 +36,8 @@ def weather_updates():
     if data_json['cod'] == 200:
         main = data_json['main']
         wind = data_json['wind']
-        weather_desc = data_json['weather'][0]
         speak('Wind speed is ' + str(wind['speed']) + ' metre per second')
         speak('Humidity is ' + str(main['humidity']))
-weather_updates()
+#weather_updates()
+#weather()
+#Location()
