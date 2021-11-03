@@ -5,6 +5,7 @@ from torch.nn.modules import module
 from Neural_Network.brain import NeuralNet
 from Neural_Network.text_preprocessing import bag_of_words, tokenize
 import torch
+from Features.csv_writer import append_data
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 with open("intents.json", 'r') as json_data:
@@ -30,13 +31,10 @@ model.eval
 Name = "Jarvis"
 from Features.listen import listen
 from Features.speak import speak
-from task import InputExecution, NoninputExecution
+from task import InputExecution, NoninputExecution, read_prev_response
 def main():
     sentence =listen()
     result = str(sentence)
-    
-         
-   
     sentence = tokenize(sentence)
     x = bag_of_words(sentence, all_words)
     x = x.reshape(1,x.shape[0])
@@ -48,16 +46,23 @@ def main():
     tag = tags[predicted.item()]
     probs = torch.softmax(output, dim = 1)
     prob = probs[0][predicted.item()]
+    
     if prob.item()> 0.75:
         for intent in intents ['intents']:
-                if tag == "Bye" and intent["tag"] == "Bye":  
-                    speak(random.choice(intent["responses"]))
+                if tag == "Bye" and intent["tag"] == "Bye":
+                    reply = random.choice(intent["responses"])  
+                    speak(reply)
+                    append_data('data.csv',result, reply)
                     exit(0)
+                elif tag == "repeat" and intent["tag"] == "repeat":
+                    read_prev_response()
+                    break          
     if prob.item()> 0.75:
         for intent in intents ['intents']:
             if tag == intent["tag"]:
                 reply = random.choice(intent["responses"])
-                
+                append_data('data.csv',result, reply)
+               
                 if "time" in reply:
                     NoninputExecution(reply)
                 elif "date" in reply:
@@ -78,8 +83,8 @@ def main():
                     speak(reply)
                 
                 
-                    
-while True:
+                 
+while True :
      main()
         
     #This is a new push

@@ -6,6 +6,7 @@
 # google search, wikipedia
 
 #First we will have to create functions and then add them to the json file
+from os import read
 from pyjokes.pyjokes import get_joke
 from Features import news
 import datetime
@@ -14,6 +15,9 @@ import wikipedia
 import pywhatkit
 from Features import joke
 from Features import weather 
+import csv
+
+
 def Time():
     time = datetime.datetime.now().strftime("%H: %M")
     speak(time)
@@ -33,6 +37,15 @@ def NEWS():
         if index == len(news_res)-2:
             break
     speak('These were the top headlines, Have a nice day Sir!!..')
+    
+def read_prev_response():
+    lis = list(csv.reader(open('data.csv')))
+    l = lis[-1]
+    prev_response = str(l[-1])
+    speak(prev_response)
+    # return prev_response
+    
+    
     
 def InputExecution(tag, query):
     if "wikipedia" in  tag:
@@ -62,12 +75,15 @@ def NoninputExecution(query):
         NEWS()
     elif "joke" in query:
         joke.startJoke()
+    elif "repeat" in query:
+        read_prev_response()
     elif "bye" in query :
         speak
         exit(0)
+        
     
 
-    
-        
+# read_prev_response()
+
 # get_joke()
 # Day()

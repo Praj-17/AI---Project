@@ -142,6 +142,15 @@
            
            "responses": ["which city would you like to check?"
            ]
+        },
+        
+        {
+           "tag":"repeat",
+           
+           "patterns": ["repeat that","say that again","can u repeat it","couldn't listen","unable to understand","can't understand", "will you repeat that"],
+           
+           "responses": ["repeat"
+           ]
         }
        
     ]

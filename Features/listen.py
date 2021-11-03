@@ -17,5 +17,5 @@ def listen():
         print(f"U said: {query}")
     except:
         speak("Couldn't understand, say that again please!")
-        query = listen()
+        query = listen() 
     return query.lower()
