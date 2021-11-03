@@ -1,42 +1,46 @@
 import requests
-import config
+from speak import speak
+import geocoder
+g = geocoder.ip('me')
 
+def weather():
+    api_url = "https://fcc-weather-api.glitch.me/api/current?lat=" + \
+        str(g.latlng[0]) + "&lon=" + str(g.latlng[1])
 
+    data = requests.get(api_url)
+    data_json = data.json()
+    if data_json['cod'] == 200:
+        main = data_json['main']
+        wind = data_json['wind']
+        weather_desc = data_json['weather'][0]
+        speak('weather type ' + weather_desc['main'])
+        speak('Temperature: ' + str(main['temp']) + 'degree celcius')       
+        
+# Ladtitude Longititude , current location
+def Location():
+    api_url = "https://fcc-weather-api.glitch.me/api/current?lat=" + \
+        str(g.latlng[0]) + "&lon=" + str(g.latlng[1])
 
-def fetch_weather(city):
-    """
-    City to weather
-    :param city: City
-    :return: weather
-    """
-    api_key = config.weather_api_key
-    units_format = "&units=metric"
+    data = requests.get(api_url)
+    data_json = data.json()
+    if data_json['cod'] == 200:
+        main = data_json['main']
+        wind = data_json['wind']
+        weather_desc = data_json['weather'][0]
+        speak(str(data_json['coord']['lat']) + 'latitude' + str(data_json['coord']['lon']) + 'longitude')
+        speak('Current location is ' + data_json['name'] + data_json['sys']['country'] + 'dia')
 
-    base_url = "http://api.openweathermap.org/data/2.5/weather?q="
-    complete_url = base_url + city + "&appid=" + api_key + units_format
+## humidity and wind speed
+def weather_updates():  
+    api_url = "https://fcc-weather-api.glitch.me/api/current?lat=" + \
+        str(g.latlng[0]) + "&lon=" + str(g.latlng[1])
 
-    response = requests.get(complete_url)
-
-    city_weather_data = response.json()
-
-    if city_weather_data["cod"] != "404":
-        main_data = city_weather_data["main"]
-        weather_description_data = city_weather_data["weather"][0]
-        weather_description = weather_description_data["description"]
-        current_temperature = main_data["temp"]
-        current_pressure = main_data["pressure"]
-        current_humidity = main_data["humidity"]
-        wind_data = city_weather_data["wind"]
-        wind_speed = wind_data["speed"]
-
-        final_response = f"""
-        The weather in {city} is currently {weather_description} 
-        with a temperature of {current_temperature} degree celcius, 
-        atmospheric pressure of {current_pressure} hectoPascals, 
-        humidity of {current_humidity} percent 
-        and wind speed reaching {wind_speed} kilometers per hour"""
-
-        return final_response
-
-    else:
-        return "Sorry Sir, I couldn't find the city in my database. Please try again"
+    data = requests.get(api_url)
+    data_json = data.json()
+    if data_json['cod'] == 200:
+        main = data_json['main']
+        wind = data_json['wind']
+        weather_desc = data_json['weather'][0]
+        speak('Wind speed is ' + str(wind['speed']) + ' metre per second')
+        speak('Humidity is ' + str(main['humidity']))
+weather_updates()
