@@ -147,9 +147,36 @@
         {
            "tag":"repeat",
            
-           "patterns": ["repeat that","say that again","can u repeat it","couldn't listen","unable to understand","can't understand", "will you repeat that"],
+           "patterns": ["repeat that","say that again","can u repeat it","couldn't listen","unable to understand","can't understand", "will you repeat that","repeat", "what"],
            
            "responses": ["repeat"
+           ]
+        },
+        
+        {
+           "tag":"alarm",
+           
+           "patterns": ["set an alarm","alarm","wake me up at","please, set an alarm for"],
+           
+           "responses": ["alarm"
+           ]
+        },
+        
+        {
+           "tag":"good_compliment",
+           
+           "patterns": ["ok","okay","okeah", "fine", "good", "nice", "fantastic", "well", "mindblowing", "eager", "excited", "better", "cool", "noice", "best", "easy", "relaxed","eeji","hmm", "mood on"],
+           
+           "responses": ["Nice to hear that", "Yeah, That's a relief", "cool..!","My pleasure", "That feels better" 
+           ]
+        },
+        
+        {
+           "tag":"bad_compliment",
+           
+           "patterns": ["Bad","no","worse", "worst", "sad", "ill", "sick", "frustrated", "irritated", "angry", "unhappy", "tensed", "stressed", "panic", "not good", "bored", "bored", "mood off"],
+           
+           "responses": ["Oops!, can I help?", "oh!, sorry to hear that. How can I help","How can I amaze you?", "Let me refresh your mood then, what can I do?", "Something went wrong?", "Is there anything I can help you with?" 
            ]
         }
        

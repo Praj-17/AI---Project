@@ -1,6 +1,5 @@
 
 import speech_recognition as sr
-
 from Features.speak import speak
 
 def listen():
@@ -9,7 +8,7 @@ def listen():
         print("Listening...")
         r.pause_threshold = 1
         r.energy_threshold = 350
-        audio = r.listen(source)
+        audio = r.listen(source, phrase_time_limit= 4)
         
     try:
         print("Recognizing...")
