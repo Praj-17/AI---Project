@@ -6,7 +6,7 @@
 # google search, wikipedia
 
 #First we will have to create functions and then add them to the json file
-from os import read
+import random
 from pyjokes.pyjokes import get_joke
 from Features import news
 import datetime
@@ -17,6 +17,8 @@ import pywhatkit
 from Features import joke
 from Features.alarm import  set_alarm
 from Features.weather import  weather, weather_updates , Location
+from word2number import w2n
+import time
 
 import csv
 
@@ -31,8 +33,10 @@ def Day():
     speak(day) 
 def NEWS():
     news_res = news.get_news()
+    responses = ["news","Headlines are ","Top 5 bulletins are ", 'Todays Headlines are..']
+     
     speak('Source: The Times Of India')
-    speak('Todays Headlines are..')
+    speak(random.choice(responses))
     for index, articles in enumerate(news_res):
         print(articles['title'])
         speak(articles['title'])
@@ -58,6 +62,20 @@ def final_weather():
     ans = listen()
     if ans == "yes":
         weather_updates() 
+def wait(amt=10):
+    speak("ok, i'll wait for 10 secs")
+    time.sleep(amt)
+    speak("do you want me to wait more?")
+    reply = listen()
+    if reply == 'yes' or reply == "yeah" or "yep":
+        speak("please tell, how many seconds should i wait?")
+        amt = w2n.word_to_num((listen()))
+        speak(f"ok ,i'll wait for {amt} seconds")
+        time.sleep(amt)
+    elif reply == 'no' or  reply == 'not' or reply == 'nope' or reply == 'na':
+        time.sleep(0)
+    else: time.sleep(0)
+    
 
 def InputExecution(tag, query):
     if "wikipedia" in  tag:
@@ -67,7 +85,12 @@ def InputExecution(tag, query):
         query = str(query).replace("google", "").replace("search", "").replace("","").replace("what is","").replace("search about","").replace("search for","").replace("find","")
         pywhatkit.search(query)
     elif "weather" in tag :
-        final_weather()      
+        final_weather()  
+    elif 'play' in tag:
+            song = query.replace('play', '')
+            speak("ok,playing" + song)
+            pywhatkit.playonyt(song)    
+    
 def NoninputExecution(query):
     query = str(query)
     
@@ -87,6 +110,9 @@ def NoninputExecution(query):
         set_alarm()
     elif "loaction" in query:
         Location()
+    elif "wait" in query:
+        wait()
+    
     elif "bye" in query :
         speak
         exit(0)

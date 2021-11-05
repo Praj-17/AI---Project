@@ -2,12 +2,14 @@ import random
 import json
 from requests.models import Response
 from torch.nn.modules import module
+import wolframalpha
 from Neural_Network.brain import NeuralNet
 from Neural_Network.text_preprocessing import bag_of_words, tokenize
 import torch
 from Features.csv_writer import append_data
 from task import prev_response
 from Features.wishme import wishMe
+from Features.wolfram import wolfram_ssl
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 with open("intents.json", 'r') as json_data:
@@ -88,8 +90,15 @@ def main():
                     NoninputExecution(reply)
                 elif "Location" in reply:
                     NoninputExecution(reply)
-                else:
-                    speak(reply)
+                elif "playmusic" in reply:
+                    InputExecution(reply, result)
+                elif "wait" in reply:
+                    NoninputExecution(reply)
+                elif reply == "Couldn't understand, say that again please!":
+                    try:
+                        wolfram_ssl()
+                    except:  speak("I'm sorry , I don't know that.")
+                else: speak(reply)
     else:
         append_data('data.csv',result, "Couldn't understand, say that again please!")            
                 
@@ -98,4 +107,4 @@ if __name__ == "__main__":
     while True :    
         main()
         
-    #This is a new push
+    

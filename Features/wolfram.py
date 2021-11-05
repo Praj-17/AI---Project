@@ -2,9 +2,9 @@ import wolframalpha
 import urllib.request     #urllib. request for opening and reading URLs
 import ssl
 from Features.speak import speak 
-
+from config import wolfram_id
 try:
-    app=wolframalpha.Client("2UR3A3-RA6XVYLJ6E")
+    app=wolframalpha.Client(wolfram_id)
 except Exception as p:
     print("Exception: " + str(p))
 

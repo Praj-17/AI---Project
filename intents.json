@@ -25,8 +25,8 @@
             "patterns": [ "how are you ?", "how is it going?", "whats up?", "is everything all right", "what is going on ", "are you fine", "are you all right?", "", "how's it going on? ", "what are you doing?", "wattcha doing?"],
 
             "responses": [ "Fine sir, what about you ? ",
-                "Absoloutely good what about you ? ", "Absoloutely fine what about you ? ", "Fatastic! what about you ? ",
-                "Just doing my stuff what about you ? ", "Just gathering some data what about you ? ", "Surfing over the internet what about you ?  ", "Watching a movie what about you ? ", "just, analyzing the data what about you ? ", "Just fueling up ", "Huh, just having a nap what about you ? ", "Just woke up, had a nice sleep what about you ? "]
+                "Absoloutely good, what about you? ", "Absoloutely fine ,what about you ? ", "Fatastic! ,what about you ? ",
+                "Just doing my stuff, what about you ? ", "Just gathering some data, what about you ? ", "Surfing over the internet ,what about you ?  ", "Watching a movie, what about you ? ", "just, analyzing the data ,what about you ? ", "Just fueling up", "Huh, just having a nap what about you ? ", "Just woke up, had a nice sleep, what about you ? "]
         },
         {
             "tag":"identity",
@@ -83,7 +83,7 @@
 
             "patterns": ["news","hilight","bulletin","reportage","headlines","headline"],
 
-            "responses": [ "news","Headlines are ","Top 5 bulletins are "
+            "responses": [ "news"
            ]
         },
         {
@@ -99,7 +99,7 @@
 
             "patterns": ["turn up the heat","play some music","party time","i think the atmosphere is a little tensed","let's do some work","it's showtime","play music"],
 
-            "responses": ["playing music","on it sir","ok sir" 
+            "responses": ["playmusic" 
            ]
         },
         {
@@ -177,6 +177,15 @@
            "patterns": ["Bad","no","worse", "worst", "sad", "ill", "sick", "frustrated", "irritated", "angry", "unhappy", "tensed", "stressed", "panic", "not good", "bored", "bored", "mood off"],
            
            "responses": ["Oops!, can I help?", "oh!, sorry to hear that. How can I help","How can I amaze you?", "Let me refresh your mood then, what can I do?", "Something went wrong?", "Is there anything I can help you with?" 
+           ]
+        },
+        
+        {
+           "tag":"wait",
+           
+           "patterns": ["wait", "pause", "hold", "wait for some time"],
+           
+           "responses": ["wait" 
            ]
         }
        
