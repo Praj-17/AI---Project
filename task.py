@@ -16,7 +16,7 @@ import wikipedia
 import pywhatkit
 from Features import joke
 from Features.alarm import  set_alarm
-from Features.weather import  weather, weather_updates
+from Features.weather import  weather, weather_updates , Location
 
 import csv
 
@@ -69,14 +69,11 @@ def InputExecution(tag, query):
     elif "google" in tag:
         query = str(query).replace("google", "").replace("search", "").replace("","").replace("what is","").replace("search about","").replace("search for","").replace("find","")
         pywhatkit.search(query)
-    elif "weather in tag":
-        weather_updates()
-   
-        
-    
-        
-    
-    
+    elif "weather" in tag:
+        weather()
+        speak("DO you want more updates about the weather ?")
+        if "positive" in tag :
+            weather_updates()    
 def NoninputExecution(query):
     query = str(query)
     
@@ -94,6 +91,8 @@ def NoninputExecution(query):
         read_prev_response()
     elif "alarm" in query:
         set_alarm()
+    elif "loaction" in query:
+        Location()
     elif "bye" in query :
         speak
         exit(0)

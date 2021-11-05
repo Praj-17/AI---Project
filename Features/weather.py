@@ -11,6 +11,7 @@ def weather():
     if data_json['cod'] == 200:
         main = data_json['main']
         weather_desc = data_json['weather'][0]
+        speak("weather of your current location is : ")
         speak('weather type ' + weather_desc['main'])
         speak('Temperature: ' + str(main['temp']) + 'degree celcius')       
             
