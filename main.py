@@ -7,6 +7,7 @@ from Neural_Network.text_preprocessing import bag_of_words, tokenize
 import torch
 from Features.csv_writer import append_data
 from task import prev_response
+from Features.wishme import wishMe
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 with open("intents.json", 'r') as json_data:
@@ -90,7 +91,8 @@ def main():
     else:
         append_data('data.csv',result, "Couldn't understand, say that again please!")            
                 
-if __name__ == "__main__":              
+if __name__ == "__main__":    
+    wishMe()          
     while True :    
         main()
         
