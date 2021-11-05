@@ -144,7 +144,6 @@
            "responses": ["repeat"
            ]
         },
-<<<<<<< HEAD
         {
             "tag" : "camera",
 
@@ -169,8 +168,7 @@
             
             "responses": ["negative"
             ]
-         }
-=======
+         },
         
         {
            "tag":"alarm",
@@ -198,7 +196,6 @@
            "responses": ["Oops!, can I help?", "oh!, sorry to hear that. How can I help","How can I amaze you?", "Let me refresh your mood then, what can I do?", "Something went wrong?", "Is there anything I can help you with?" 
            ]
         }
->>>>>>> 0512d0ba4d0a2880942d6bcb048b9edb04fa23c1
        
     ]
 
