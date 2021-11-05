@@ -86,6 +86,8 @@ def main():
                     InputExecution(reply, result)
                 elif "alarm" in reply:
                     NoninputExecution(reply)
+                elif "Location" in reply:
+                    NoninputExecution(reply)
                 else:
                     speak(reply)
     else:
