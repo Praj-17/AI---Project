@@ -6,6 +6,7 @@ from Neural_Network.brain import NeuralNet
 from Neural_Network.text_preprocessing import bag_of_words, tokenize
 import torch
 from Features.csv_writer import append_data
+from task import prev_response
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 with open("intents.json", 'r') as json_data:
@@ -35,6 +36,7 @@ from task import InputExecution, NoninputExecution, read_prev_response
 def main():
     sentence =listen()
     result = str(sentence)
+    
     sentence = tokenize(sentence)
     x = bag_of_words(sentence, all_words)
     x = x.reshape(1,x.shape[0])
@@ -47,19 +49,21 @@ def main():
     probs = torch.softmax(output, dim = 1)
     prob = probs[0][predicted.item()]
     
-    if prob.item()> 0.75:
+    # if prob.item()> 0.75:
+    #     for intent in intents ['intents']:
+                    
+    if prob.item()> 0.8:
         for intent in intents ['intents']:
-                if tag == "Bye" and intent["tag"] == "Bye":
+            if tag == "Bye" and intent["tag"] == "Bye":
                     reply = random.choice(intent["responses"])  
                     speak(reply)
                     append_data('data.csv',result, reply)
                     exit(0)
-                elif tag == "repeat" and intent["tag"] == "repeat":
+            elif tag == "repeat" and intent["tag"] == "repeat":
                     read_prev_response()
-                    break          
-    if prob.item()> 0.75:
-        for intent in intents ['intents']:
-            if tag == intent["tag"]:
+                    append_data('data.csv',result,prev_response())
+                    break
+            elif tag == intent["tag"]:
                 reply = random.choice(intent["responses"])
                 append_data('data.csv',result, reply)
                
@@ -79,12 +83,15 @@ def main():
                     NoninputExecution(reply)
                 elif "weather" in reply:
                     InputExecution(reply, result)
+                elif "alarm" in reply:
+                    NoninputExecution(reply)
                 else:
                     speak(reply)
+    else:
+        append_data('data.csv',result, "Couldn't understand, say that again please!")            
                 
-                
-                 
-while True :
-     main()
+if __name__ == "__main__":              
+    while True :    
+        main()
         
     #This is a new push

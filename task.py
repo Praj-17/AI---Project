@@ -14,9 +14,9 @@ from Features.speak import speak
 import wikipedia
 import pywhatkit
 from Features import joke
-from Features import weather 
-import csv
+from Features.alarm import  set_alarm
 
+import csv
 
 def Time():
     time = datetime.datetime.now().strftime("%H: %M")
@@ -43,7 +43,15 @@ def read_prev_response():
     l = lis[-1]
     prev_response = str(l[-1])
     speak(prev_response)
-    # return prev_response
+    return prev_response
+def prev_response():
+    lis = list(csv.reader(open('data.csv')))
+    l = lis[-1]
+    prev_response = str(l[-1])
+    # speak(prev_response)
+    return prev_response
+
+
     
     
     
@@ -54,6 +62,7 @@ def InputExecution(tag, query):
     elif "google" in tag:
         query = str(query).replace("google", "").replace("search", "").replace("","").replace("what is","").replace("search about","").replace("search for","").replace("find","")
         pywhatkit.search(query)
+    
     
         
     
@@ -73,6 +82,8 @@ def NoninputExecution(query):
         joke.startJoke()
     elif "repeat" in query:
         read_prev_response()
+    elif "alarm" in query:
+        set_alarm()
     elif "bye" in query :
         speak
         exit(0)

@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 0,2021-11-03,14: 26,hello,Welcome Sir
 0,2021-11-03,14: 26,repeat,google
 0,2021-11-03,14: 26,say that again please,repeat
@@ -21,3 +22,19 @@
 0,2021-11-05,10: 09,weather weather weather,weather of your city is 
 0,2021-11-05,10: 09,weather weather weather,which city would you like to check?
 0,2021-11-05,10: 09,akot,Just fueling up 
+=======
+0,2021-11-04,15: 20,hello,How are you sir
+0,2021-11-04,15: 20,fine,My pleasure
+0,2021-11-04,15: 20,set alarm,alarm
+0,2021-11-04,15: 21,hello,Here's your assistant
+0,2021-11-04,15: 21,good,My pleasure
+0,2021-11-04,15: 21,set alarm,alarm
+0,2021-11-04,15: 59,hello,Nice to meet you sir
+0,2021-11-04,15: 59,set alarm,alarm
+0,2021-11-04,16: 02,hello,"Hi there, how can I help?"
+0,2021-11-04,16: 02,set alarm,alarm
+0,2021-11-04,16: 06,hello,Good to see you again!
+0,2021-11-04,16: 06,hello,How are you sir
+0,2021-11-04,16: 06,fine,Nice to hear that
+0,2021-11-04,16: 06,set alarm,alarm
+>>>>>>> 0512d0ba4d0a2880942d6bcb048b9edb04fa23c1
