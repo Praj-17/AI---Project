@@ -13,3 +13,13 @@ def speak(audio):
     engine.say(text = audio)
     engine.runAndWait()
     print(" ")
+# from gtts import gTTS
+# from playsound import playsound
+# def speak(audio):
+#     """
+#     This function adds google assistant voice to our function incase of any hindi input it can also give hindi output un-comment the given line to listen hindi speech
+#     """
+#     engine = gTTS(audio)
+#     engine.save('Assis.mp3')
+#     playsound('Assis.mp3')
+# speak("Hello sir, aap kaise hai?")

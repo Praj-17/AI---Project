@@ -70,8 +70,10 @@ def InputExecution(tag, query):
     elif "google" in tag:
         query = str(query).replace("google", "").replace("search", "").replace("","").replace("what is","").replace("search about","").replace("search for","").replace("find","")
         pywhatkit.search(query)
-    elif "weather in tag":
+    elif "weather" in tag:
         weather_updates()
+
+    
    
         
     
