@@ -10,11 +10,13 @@ from os import read
 from pyjokes.pyjokes import get_joke
 from Features import news
 import datetime
+from Features.listen import listen
 from Features.speak import speak
 import wikipedia
 import pywhatkit
 from Features import joke
 from Features.alarm import  set_alarm
+from Features.weather import  weather, weather_updates
 
 import csv
 
@@ -50,8 +52,13 @@ def prev_response():
     prev_response = str(l[-1])
     # speak(prev_response)
     return prev_response
-
-
+def final_weather():
+    weather()
+    speak("Do you want to listen more in detail?")
+    ans = listen()
+    if ans == "yes":
+        weather_updates()
+    
     
     
     
@@ -62,7 +69,10 @@ def InputExecution(tag, query):
     elif "google" in tag:
         query = str(query).replace("google", "").replace("search", "").replace("","").replace("what is","").replace("search about","").replace("search for","").replace("find","")
         pywhatkit.search(query)
-    
+    elif "weather in tag":
+        weather_updates()
+   
+        
     
         
     

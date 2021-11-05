@@ -6,7 +6,6 @@ g = geocoder.ip('me')
 def weather():
     api_url = "https://fcc-weather-api.glitch.me/api/current?lat=" + \
         str(g.latlng[0]) + "&lon=" + str(g.latlng[1])
-
     data = requests.get(api_url)
     data_json = data.json()
     if data_json['cod'] == 200:
@@ -14,12 +13,11 @@ def weather():
         weather_desc = data_json['weather'][0]
         speak('weather type ' + weather_desc['main'])
         speak('Temperature: ' + str(main['temp']) + 'degree celcius')       
-
+            
 # Ladtitude Longititude , current location
 def Location():
     api_url = "https://fcc-weather-api.glitch.me/api/current?lat=" + \
         str(g.latlng[0]) + "&lon=" + str(g.latlng[1])
-
     data = requests.get(api_url)
     data_json = data.json()
     if data_json['cod'] == 200:

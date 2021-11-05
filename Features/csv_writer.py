@@ -6,15 +6,25 @@ time = datetime.datetime.now().strftime("%H: %M")
 date = datetime.date.today()
 # def get_length(file):
 #     return 1
-def append_data(file, query, response):
+def append_data(file , query, response):
     # fieldnames = ['date', 'time', 'query', 'response']
     #the number of rows?
     # next_id = get_length(file)
     # output = pd.read_csv(file)
     # pd.read_csv(file, delimiter= ',')
-    df = pd.DataFrame()
-    df = df.append([[date, time,query, response]])
-    df.to_csv(file, header= False, mode= "a")
+    # df = pd.DataFrame('data.csv')
+    # df = df.append([[date, time,query, response]])
+    # df.to_csv(file, mode= "a")
+    output =pd.read_csv('data.csv')
+    # print(output)
+    output.append(pd.DataFrame({'Date': date, 'time':time, 'query':query, 'response': response}, ignore_index = True))
+    # print(output.head())
         # writer.writeheader()
         # writer.writerow()
 
+append_data('data.csv',"hello", "hello sir1")
+append_data('data.csv',"hello", "hello sir2")
+append_data('data.csv',"hello", "hello sir3")
+append_data('data.csv',"hello", "hello sir")
+append_data('data.csv',"hello", "hello sir")
+append_data('data.csv',"hello", "hello sir5")
