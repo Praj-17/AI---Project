@@ -13,4 +13,3 @@ def speak(audio):
     engine.say(text = audio)
     engine.runAndWait()
     print(" ")
-
