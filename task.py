@@ -57,11 +57,8 @@ def final_weather():
     speak("Do you want to listen more in detail?")
     ans = listen()
     if ans == "yes":
-        weather_updates()
-    
-    
-    
-    
+        weather_updates() 
+
 def InputExecution(tag, query):
     if "wikipedia" in  tag:
         result = wikipedia.summary(query, sentences = 5)
@@ -69,11 +66,8 @@ def InputExecution(tag, query):
     elif "google" in tag:
         query = str(query).replace("google", "").replace("search", "").replace("","").replace("what is","").replace("search about","").replace("search for","").replace("find","")
         pywhatkit.search(query)
-    elif "weather" in tag:
-        weather()
-        speak("DO you want more updates about the weather ?")
-        if "positive" in tag :
-            weather_updates()    
+    elif "weather" in tag :
+        final_weather()      
 def NoninputExecution(query):
     query = str(query)
     

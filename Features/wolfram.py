@@ -1,17 +1,17 @@
 import wolframalpha
 import urllib.request     #urllib. request for opening and reading URLs
 import ssl
-import config
-from speak import speak 
+from Features.speak import speak 
 
 try:
-    app=wolframalpha.Client(config.wolfram_id)
+    app=wolframalpha.Client("2UR3A3-RA6XVYLJ6E")
 except Exception as p:
     print("Exception: " + str(p))
 
 def wolfram_ssl():
     ssl._create_default_https_context = ssl._create_unverified_context
     response = urllib.request.urlopen('https://www.wolframalpha.com/')
+    speak(response)
 
     # write below code in task.py 
 '''try:
