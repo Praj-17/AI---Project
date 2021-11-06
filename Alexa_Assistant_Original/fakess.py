@@ -316,7 +316,7 @@ def TaskExecution():
 
         # if "weather" in said:
         #     #We have downloaded the chrome driver for Google Chrome version 87 for MAC
-        #     #The main purpose of the ChromeDriver is to launch Google Chrome & run test cases on Google Chrome browser.
+        #     #The main purpotse of the ChromeDriver is to launch Google Chrome & run test cases on Google Chrome browser.
         #     # Without that, it is not possible to execute Selenium test scripts in Google Chrome as well as automate any web application.
 
         #     said = said.split(" ")

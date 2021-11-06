@@ -19,6 +19,7 @@ from Features.alarm import  set_alarm
 from Features.weather import  weather, weather_updates , Location
 from word2number import w2n
 import time
+import os
 
 import csv
 
@@ -75,7 +76,12 @@ def wait(amt=10):
     elif reply == 'no' or  reply == 'not' or reply == 'nope' or reply == 'na':
         time.sleep(0)
     else: time.sleep(0)
-    
+def location(query):
+    said = query.split(" ")
+    location = said[1] #obtain place name
+    speak("Hold on, I will show you where {location} is")
+    os.system("google-chrome https://www.google.nl/maps/place/" + location)
+    speak("Here it is....")
 
 def InputExecution(tag, query):
     if "wikipedia" in  tag:
@@ -87,9 +93,11 @@ def InputExecution(tag, query):
     elif "weather" in tag :
         final_weather()  
     elif 'play' in tag:
-            song = query.replace('play', '')
-            speak("ok,playing" + song)
-            pywhatkit.playonyt(song)    
+        song = query.replace('play', '')
+        speak("ok,playing" + song)
+        pywhatkit.playonyt(song)  
+    elif 'location' in tag:
+        location(query)  
     
 def NoninputExecution(query):
     query = str(query)

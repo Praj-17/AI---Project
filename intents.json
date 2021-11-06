@@ -13,7 +13,7 @@
         {
             "tag":"Bye",
 
-            "patterns": [ "quit", "nothing", "ok", "bye", "bbye", "thankyou", "stop", "terminate", "see you later", "sleep", "exit"],
+            "patterns": [ "quit", "nothing", "ok", "bye", "bbye", "terminate", "see you later", "exit"],
 
             "responses": ["Thankyou sir",
                 "Nice time, meeting you sir", "Have a good day", "Going to sleep",
@@ -165,7 +165,7 @@
         {
            "tag":"good_compliment",
            
-           "patterns": ["ok","okay","okeah", "fine", "good", "nice", "fantastic", "well", "mindblowing", "eager", "excited", "better", "cool", "noice", "best", "easy", "relaxed","eeji","hmm", "mood on"],
+           "patterns": ["ok","okay","okeah", "fine", "good", "nice", "fantastic", "well", "mindblowing", "eager", "excited", "better", "cool", "noice", "best", "easy", "relaxed","eeji","Thank you", "mood on"],
            
            "responses": ["Nice to hear that", "Yeah, That's a relief", "cool..!","My pleasure", "That feels better" 
            ]
@@ -183,9 +183,27 @@
         {
            "tag":"wait",
            
-           "patterns": ["wait", "pause", "hold", "wait for some time"],
+           "patterns": ["wait", "pause", "hold", "stop", "sleep","wait for some time"],
            
            "responses": ["wait" 
+           ]
+        },
+        
+        {
+           "tag":"Competitors",
+           
+           "patterns": ["who are your competitors", "enemy", "friends", "relatives", "gang", "buddies", "do you know siri", "are you google assistant"],
+           
+           "responses": [" I dont know anyone named SIRI,BIKSY or GOOGLE ASSISTANT,Thats it!!, Got your answer!!,Now go don't chat with me henceforth"
+           ]
+        },
+        
+        {
+           "tag":"location",
+           
+            "patterns": ["location of", "find", "where is", "track", "trace", "search", "map", "map for", "find the map", "get the map of"],
+           
+           "responses": ["location"
            ]
         }
        

@@ -94,6 +94,9 @@ def main():
                     InputExecution(reply, result)
                 elif "wait" in reply:
                     NoninputExecution(reply)
+                elif "location" in reply:
+                    InputExecution(reply, result)
+                    
                 elif reply == "Couldn't understand, say that again please!":
                     try:
                         wolfram_ssl()
