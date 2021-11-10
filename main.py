@@ -88,8 +88,6 @@ def main():
                     InputExecution(reply, result)
                 elif "alarm" in reply:
                     NoninputExecution(reply)
-                elif "Location" in reply:
-                    NoninputExecution(reply)
                 elif "playmusic" in reply:
                     InputExecution(reply, result)
                 elif "wait" in reply:

@@ -96,8 +96,7 @@ def InputExecution(tag, query):
         song = query.replace('play', '')
         speak("ok,playing" + song)
         pywhatkit.playonyt(song)  
-    elif 'location' in tag:
-        location(query)  
+      
     
 def NoninputExecution(query):
     query = str(query)
