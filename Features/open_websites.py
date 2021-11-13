@@ -4,7 +4,6 @@
 #             # print("Opening Amazon...")
 #             webbrowser.open('https://www.amazon.in/')
 import webbrowser
-
 #from Alexa_Assistant_Original.fakess import speak
 import speak
 def open_website(query, website):
@@ -12,7 +11,7 @@ def open_website(query, website):
     speak(f"Opening {website}")
     webbrowser.open(website)
 
-def website_open(query, website):
+def website_open(query):
     """
     Please put the respective link the the open_website function
     """
