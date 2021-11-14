@@ -22,7 +22,7 @@ data  = torch.load(FILE)
 input_size = data["input_size"]
 hidden_size = data["hidden_size"]
 output_size = data["output_size"]
-all_words = data["all_words"]
+selected_word = data["selected_word"]
 tags = data["tags"]
 model_state = data["model_state"]
 
@@ -32,7 +32,6 @@ model.eval
 
 #---------------
 
-Name = "Jarvis"
 from Features.listen import listen
 from Features.speak import speak
 from task import InputExecution, NoninputExecution, read_prev_response
@@ -41,7 +40,7 @@ def main():
     result = str(sentence)
     
     sentence = tokenize(sentence)
-    x = bag_of_words(sentence, all_words)
+    x = bag_of_words(sentence, selected_word)
     x = x.reshape(1,x.shape[0])
     x = torch.from_numpy(x).to(device)
     

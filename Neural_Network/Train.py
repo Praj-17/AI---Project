@@ -25,7 +25,7 @@ for intent in intents['intents']:
         xy.append((w,tag))
 ignore_words = [",", ".", "?", "/", "!"]
 all_words = [stem(w) for w in all_words if w not in ignore_words]
-all_words = sorted(set(all_words))
+selected_word = sorted(set(all_words))
 tags = sorted(set(tags))
 
 x_train = []  #it will store the actual tags
@@ -92,7 +92,7 @@ data = {
     "input_size": input_size,
     "hidden_size": hidden_size,
     "output_size": output_size,
-    "all_words" : all_words,
+    "selected_word" : selected_word,
     "tags" : tags
 }
 
