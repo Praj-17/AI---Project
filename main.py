@@ -22,8 +22,8 @@ data  = torch.load(FILE)
 input_size = data["input_size"]
 hidden_size = data["hidden_size"]
 output_size = data["output_size"]
-selected_word = data["selected_word"]
-tags = data["tags"]
+all_words = data["all_words"]
+
 model_state = data["model_state"]
 
 model = NeuralNet(input_size, hidden_size, output_size).to(device)
@@ -40,13 +40,14 @@ def main():
     result = str(sentence)
     
     sentence = tokenize(sentence)
-    x = bag_of_words(sentence, selected_word)
+    x = bag_of_words(sentence, all_words)
     x = x.reshape(1,x.shape[0])
     x = torch.from_numpy(x).to(device)
     
     output = model(x)
     _, predicted = torch.max(output, dim = 1 )
     # print(predicted)
+    tags = data["tags"]
     tag = tags[predicted.item()]
     probs = torch.softmax(output, dim = 1)
     prob = probs[0][predicted.item()]

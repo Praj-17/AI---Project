@@ -25,7 +25,7 @@ def append_data(file , query, response):
     # print(output.head())
         # writer.writeheader()
         # writer.writerow()
-# append_data("data.csv", 'hello', 'aaaeg0')
+append_data("data.csv", 'hello', 'aaaeg0')
 # append_data("data.csv", 'hello', 'aaaeg1')
 # append_data("data.csv", 'hello', 'aaaeg2')
 # append_data("data.csv", 'hello', 'aaaeg3')
