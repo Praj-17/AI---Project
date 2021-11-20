@@ -4,7 +4,8 @@ import torch
 import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader
 from brain import  NeuralNet
-from text_preprocessing import bag_of_words, tokenize, stem
+from text_preprocessing import Tf_Idf, tokenize, lemmatize, bag_of_words
+from nltk.corpus import stopwords
 ## Unwrappping the Json file
 with open('intents.json', 'r') as f:
     intents = json.load(f) #Naming the loaded json file as intents which actually is a dictionary 
@@ -23,8 +24,13 @@ for intent in intents['intents']:
         w = tokenize(pattern)
         all_words.extend(w)
         xy.append((w,tag))
+#______________________ignore words ready___________
 ignore_words = [",", ".", "?", "/", "!"]
-all_words = [stem(w) for w in all_words if w not in ignore_words]
+stopwords = list(stopwords.words('english'))
+ignore_words += stopwords
+
+#_______________________words lematized instaed of stemmed_____________
+all_words = [lemmatize(w) for w in all_words if w not in ignore_words]
 all_words = sorted(set(all_words))
 tags = sorted(set(tags))
 
