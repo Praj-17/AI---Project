@@ -21,16 +21,20 @@ def tokenize(sentence):
     ["Hello", "Jarvis"]
     """
     return nltk.word_tokenize(sentence)
+
 def stem(word):
     """
     It will add some AIness to the code 
     That is, 
     it will consider the words like [hello, hi, hey] in the same way
     eg - it will convert
-    ["Hello", "Jarvis"] to [[h,e,l,l,o], [j,a,r,v,i,s]]
+    ["Final ", "Finalized", "Finally", "finale"]
+    to [Final] because it is common in all the words, rest all is considered as the suffix and is exploited
     
     """
     return stemmer.stem(word.lower())
+
+
 def bag_of_words(tokenized_sentence, words):
     """
     Packing all those descrete packed words into some model understandable and sending forward
