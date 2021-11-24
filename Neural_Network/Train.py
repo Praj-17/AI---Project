@@ -1,5 +1,6 @@
 import numpy as np
 import json
+from numpy.core.records import array
 import torch
 import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader
@@ -10,40 +11,53 @@ from nltk.corpus import stopwords
 with open('intents.json', 'r') as f:
     intents = json.load(f) #Naming the loaded json file as intents which actually is a dictionary 
 
-all_words = []
-tags = [] # these the  predifened tags that we have created in the json file
-xy = [] #All words and tags combine to make xy
+all_words = [] #it has all the words from the patterns section in the json file
+tags = [] #list of all tags present into json file
+tag_per_word = [] #All words and tags combine to make tag_per_word
 
 #This for loop will append all tags,patterns from the json file to the tags list
-for intent in intents['intents']:
+for intent in intents['intents']: #refering to the intents key which has an list of dictinonaries in it called as an intent
+    
     tag = intent['tag']
     tags.append((tag))
     
     for pattern in intent['patterns']:
         # print(pattern)
-        w = tokenize(pattern)
-        all_words.extend(w)
-        xy.append((w,tag))
-#______________________ignore words ready___________
-ignore_words = [",", ".", "?", "/", "!"]
-stopwords = list(stopwords.words('english'))
-ignore_words += stopwords
+        w = tokenize(pattern) #breaking all the patterns(in the json) into words and creating a list of words
+        all_words.extend(w) # adding that list of words to the all_words list
+        
+        #Collecting all words and their respective tags at one place
+        tag_per_word.append((w,tag))
 
-#_______________________words lematized instaed of stemmed_____________
+#______________________ignore words ready___________
+ignore_words = [",", ".", "?", "/", "!"]    #removing punctuations
+ignore_words.extend(list(stopwords.words('english'))) #only adding stopwords of english lang
+
+
+
+#_______________________words lematized instaed stem_____________
+
 all_words = [lemmatize(w) for w in all_words if w not in ignore_words]
 all_words = sorted(set(all_words))
 tags = sorted(set(tags))
 
+#______________________converting lists to numpy arrays for speed
+
+ignore_words = np.array(ignore_words)
+all_words = np.array(all_words)
+tags = np.array(tags)
+tag_per_word  = np.array(tag_per_word, dtype=object)
+
 x_train = []  #it will store the actual tags
 y_train = []  # it will store their respective indices
 
-for(pattern_sentence, tag) in xy:
-    
+for(pattern_sentence, tag) in tag_per_word:
     bag = bag_of_words(pattern_sentence, all_words)
     x_train.append(bag)
     
-    label = tags.index(tag)
+    label = list(tags).index(tag)
     y_train.append(label)
+    
     
 x_train = np.array(x_train)
 y_train = np.array(y_train)

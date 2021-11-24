@@ -38,7 +38,7 @@ def tokenize(sentence):
 def lemmatize(word):
     """
     It will take the word and covert it to its meanigfull format
-    
+    finally  final finale finalized ---> 
     """
     return lemmatizer.lemmatize(word)
 
@@ -73,9 +73,20 @@ def bag_of_words(tokenized_sentence, words):
             bag[index] = 1
     return bag
 
+"""
+Here i am attempting to figure out a better way rather than 
+going for bag of words
+Some ways that i have written
+
+1. CountVectorizer - 
+2. TFIDF
+
+"""
+
 def bag_of_words_2(tokenized_sentence):
     """
     Packing all those descrete packed words into some model understandable and sending forward
+    
     
     There is one diadvantage of bag of words though,
     it assigns the same wietage to all the words
@@ -91,15 +102,23 @@ TFIDF-  (term frequency–inverse document frequency)
 term Frequency =( no of words in sentence )/no of words in sentence
 inverse document frequency==
                           log((no of sentences)/(no of sentences containing words))
-________________________
+__________________________
                          |
 #Finally = TF*IDF        |
 _________________________|
 """
-def Tf_Idf(tokenized_sentence):
+def Tf_Idf(tokenized_sentence, words):
     sentence_word = [lemmatize(word) for word in tokenized_sentence if not word in set(stopwords.words('english')) ]
-    bag = tf_idf.fit_transform(sentence_word)
+    bag = tf_idf.fit_transform([sentence_word,words])
     return bag
+"""
+                  f1     f2       f3
+             boy    good    girl
+boy is good       1       1       0
+girl is good      0       1       1
+boy girl good     1       1       1
+
+"""
 
 # "trying out some examples"
 # list1 = ['kites', 'babies', 'dogs', 'flying', 'smiling',
