@@ -17,7 +17,6 @@ import pywhatkit
 from Features import joke
 from Features.alarm import  set_alarm
 from Features.weather import  weather, weather_updates , Location
-from word2number import w2n
 import time
 import os
 
@@ -51,12 +50,14 @@ def read_prev_response():
     prev_response = str(l[-1])
     speak(prev_response)
     return prev_response
+
 def prev_response():
     lis = list(csv.reader(open('data.csv')))
     l = lis[-1]
     prev_response = str(l[-1])
     # speak(prev_response)
     return prev_response
+
 def final_weather():
     weather()
     speak("Do you want to listen more in detail?")
@@ -66,16 +67,11 @@ def final_weather():
 def wait(amt=10):
     speak("ok, i'll wait for 10 secs")
     time.sleep(amt)
-    speak("do you want me to wait more?")
-    reply = listen()
-    if reply == 'yes' or reply == "yeah" or "yep":
-        speak("please tell, how many seconds should i wait?")
-        amt = w2n.word_to_num((listen()))
-        speak(f"ok ,i'll wait for {amt} seconds")
-        time.sleep(amt)
-    elif reply == 'no' or  reply == 'not' or reply == 'nope' or reply == 'na':
-        time.sleep(0)
-    else: time.sleep(0)
+    speak("ok, listening now...")
+
+    
+    
+    
 def location(query):
     said = query.split(" ")
     location = said[1] #obtain place name

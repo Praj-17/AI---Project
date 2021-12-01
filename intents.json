@@ -4,7 +4,7 @@
         {
             "tag":"greeting",
 
-            "patterns": [ "hello", "hii", "hey", "wake up", "jarvis", "hola", "hemlo"],
+            "patterns": [ "hello", "hii", "hey", "wake up", "jarvis", "hola", "hemlo", "hay","excuse me"],
 
             "responses": [ "Hello Sir",
                 "How are you sir", "Welcome Sir", "Nice to meet you sir",
@@ -13,7 +13,7 @@
         {
             "tag":"Bye",
 
-            "patterns": [ "quit", "nothing", "ok", "bye", "bbye", "terminate", "see you later", "exit"],
+            "patterns": [ "quit", "nothing","bye", "bbye", "terminate", "see you later", "exit"],
 
             "responses": ["Thankyou sir",
                 "Nice time, meeting you sir", "Have a good day", "Going to sleep",
@@ -22,16 +22,16 @@
         {
             "tag":"Casual Query",
 
-            "patterns": [ "how are you ?", "how is it going?", "whats up?", "is everything all right", "what is going on ", "are you fine", "are you all right?", "", "how's it going on? ", "what are you doing?", "wattcha doing?"],
+            "patterns": [ "how are you ?", "how is it going ?", "what is up ?", "is everything all right", "what is going on ", "are you fine ?", "are you all right ?","how is it going on ? ", "what are you doing ?", "wattcha doing ?", "how"],
 
             "responses": [ "Fine sir, what about you ? ",
-                "Absoloutely good, what about you? ", "Absoloutely fine ,what about you ? ", "Fatastic! ,what about you ? ",
-                "Just doing my stuff, what about you ? ", "Just gathering some data, what about you ? ", "Surfing over the internet ,what about you ?  ", "Watching a movie, what about you ? ", "just, analyzing the data ,what about you ? ", "Just fueling up", "Huh, just having a nap what about you ? ", "Just woke up, had a nice sleep, what about you ? "]
+                 "absolutely good, what about you? ", "absolutely fine ,what about you ? ", "Fantastic, what about you ? ",
+                "Just doing my stuff, what about you ? ", "Just gathering some data, what about you ? ", "Surfing over the internet ,what about you ?  ", "Watching a movie, what about you ? ", "just, analyzing the data ,what about you ? ", "Just fueling up", "Huh, just having a nap what about you ? ", "Just woke up, had a nice sleep, what about you?"]
         },
         {
             "tag":"identity",
 
-            "patterns": [ "who are you", "What is your name",  "what are you"],
+            "patterns": [ "who are you ?", "what is your name ?",  "what are you ?", "what is your use ?",  "can you tell me about yourself", "you", "yourself","who"],
 
             "responses": [ "i'm jarvis!",
                 "i'm jarvis!, you personal assistant", "My name is jarvis"
@@ -40,7 +40,7 @@
         {
             "tag":"time",
 
-            "patterns": [ "what is time", "time",  " current time", "what's the time now", "hour", "minute"],
+            "patterns": [ "what is time", "time",  "current time", "what is the time now", "hour", "minute", "what hour is it",""],
 
             "responses": [ "time","Current time is "
             ]
@@ -48,26 +48,24 @@
         {
             "tag":"date",
 
-            "patterns": [ "what is date", "date",  " todays date", "what's the date today", "today"],
+            "patterns": [ "what is date", "date",  "today date", "what is the date now" ],
 
-            "responses": [ "date","Today's Date is"
-            ]
+            "responses": [ "date"]
         },
         {
             "tag":"day",
 
-            "patterns": [ "what day is today", "day", "din","war" , "day"],
+            "patterns": [ "which day is today ", "day", "din","war","day", "de", "dee"],
 
-            "responses": [ "day" ,"Today's Day is"
-            ]
+            "responses": [ "day" ]
         },
         
         {
             "tag":"wikipedia",
 
-            "patterns": [ "who is", "about", "tell me about","search" , "find", "inform me about", "search for", "gather information on", "gather info on", "describe", "tell about", "wikipedia"],
+            "patterns": [ "who is", "about","search" , "find", "inform me about", "search for", "gather information on", "gather info on", "describe", "wikipedia"],
 
-            "responses": [ "wikipedia","Searching on Wikipedia"
+            "responses": [ "wikipedia"
             ]
         },
         {
@@ -89,7 +87,7 @@
         {
             "tag":"screenshot",
 
-            "patterns": ["screenshot","ss","screen capture","capture the screen","sinp screen"],
+            "patterns": ["screenshot","ss","screen capture","capture the screen","snip screen"],
 
             "responses": ["screenshot"
            ]
@@ -97,7 +95,8 @@
         {
             "tag":"playmusic",
 
-            "patterns": ["turn up the heat","play some music","party time","i think the atmosphere is a little tensed","let's do some work","it's showtime","play music"],
+            "patterns": ["play some music","play music","play","song","play a song",
+            "tune", "play a tune"],
 
             "responses": ["playmusic" 
            ]
@@ -105,32 +104,24 @@
         {
             "tag":"stopmusic",
 
-            "patterns": ["stop music","stop playing","stop it","enough for today"],
+            "patterns": ["stop music","stop","stop it","enough"],
 
-            "responses": ["stoping ....","music is stop"
+            "responses": ["stoping ....","music is stopped"
            ]
         },
         {
             "tag":"joke",
 
-            "patterns": ["tell me a joke","do you have a joke for me","amuse me","make me laugh","i am feeling sad","tell a joke", "Entertain me", "I'm bored"],
+            "patterns": ["tell me a joke","do you have a joke for me","amuse me","make me laugh","i am feeling sad","tell a joke", "entertain me", "i'm bored"],
 
             "reply" : ["here we go","joke time","hear me carefully","hear out","here's a programmer joke for you", "joke"
             ],
             "responses": ["joke"]
         },
         {
-           "tag":"weather",
-           
-           "patterns": ["check weather","what's the weather","how's the sky","do i need to carry an umbrella","how about a picnic"],
-           
-           "responses": ["weather of your city is "
-           ]
-        },
-        {
            "tag":"shutdown",
            
-           "patterns": ["shut down","nuke it","time to go to sleep","go to sleep","go get some rest"],
+           "patterns": ["shut down","time to go to sleep","go to sleep","go get some rest"],
            
            "responses": ["are you sure ","system will shut down. do you want to continue ","all functions will suspend. continue?"
            ]
@@ -138,7 +129,7 @@
         {
            "tag":"weather",
            
-           "patterns": ["check weather","what's the weather","how's the sky","do i need to carry an umbrella","how about a picnic"],
+           "patterns": ["check weather","what is the weather","how is the sky","do i need to carry an umbrella", "tell me the temperature", "find me the temperature","what is the temperature"],
            
            "responses": ["weather"
            ]
@@ -147,7 +138,7 @@
         {
            "tag":"repeat",
            
-           "patterns": ["repeat that","say that again","can u repeat it","couldn't listen","unable to understand","can't understand", "will you repeat that","repeat", "what"],
+           "patterns": ["repeat that","say that again","can you repeat it","could not listen","unable to understand","can not understand", "will you repeat that","repeat"],
            
            "responses": ["repeat"
            ]
@@ -156,7 +147,7 @@
         {
            "tag":"alarm",
            
-           "patterns": ["set an alarm","alarm","wake me up at","please, set an alarm for"],
+           "patterns": ["set an alarm","alarm","wake me up at","please, set an alarm for","reminder", "remind", "remind me"],
            
            "responses": ["alarm"
            ]
@@ -165,16 +156,16 @@
         {
            "tag":"good_compliment",
            
-           "patterns": ["ok","okay","okeah", "fine", "good", "nice", "fantastic", "well", "mindblowing", "eager", "excited", "better", "cool", "noice", "best", "easy", "relaxed","eeji","Thank you", "mood on"],
+           "patterns": ["ok","okay","okeah", "fine", "good", "nice", "fantastic", "well", "mindblowing", "eager", "excited", "better", "cool", "noice", "best", "easy", "relaxed","thank you", "mood on","thanks"],
            
-           "responses": ["Nice to hear that", "Yeah, That's a relief", "cool..!","My pleasure", "That feels better" 
+           "responses": ["Nice to hear that sir", "Yeah, That's a relief", "cool..!","My pleasure sir", "That feels better" 
            ]
         },
         
         {
            "tag":"bad_compliment",
            
-           "patterns": ["Bad","no","worse", "worst", "sad", "ill", "sick", "frustrated", "irritated", "angry", "unhappy", "tensed", "stressed", "panic", "not good", "bored", "bored", "mood off"],
+           "patterns": ["bad","no","worse", "worst", "sad", "ill", "sick", "frustrated", "irritated", "angry", "unhappy", "tensed", "stressed", "panic", "not good", "bored", "mood off"],
            
            "responses": ["Oops!, can I help?", "oh!, sorry to hear that. How can I help","How can I amaze you?", "Let me refresh your mood then, what can I do?", "Something went wrong?", "Is there anything I can help you with?" 
            ]
@@ -192,18 +183,36 @@
         {
            "tag":"Competitors",
            
-           "patterns": ["who are your competitors", "enemy", "friends", "relatives", "gang", "buddies", "do you know siri", "are you google assistant"],
+           "patterns": ["who are your competitors", "enemy", "friends", "relatives", "gang", "buddies", "do you know siri", "are you google assistant","comrades"],
            
-           "responses": [" I dont know anyone named SIRI,BIKSY or GOOGLE ASSISTANT,Thats it!!, Got your answer!!,Now go don't chat with me henceforth"
+           "responses": [" I dont know anyone named SIRI,BIKSY or GOOGLE ASSISTANT,Thats  it!!, Got your answer!!,Now go don't chat with me henceforth"
            ]
         },
         
         {
            "tag":"location",
            
-            "patterns": ["location of", "find", "where is", "track", "trace", "search", "map", "map for", "find the map", "get the map of"],
+            "patterns": ["location of", "find", "where is", "track", "trace", "search", "map", "map for", "find the map", "get the map of","where"],
            
            "responses": ["location"
+           ]
+        },
+        
+        {
+           "tag":"Positive",
+           
+            "patterns": ["yes", "yeah", "ya","yep","yesh", "yess"],
+           
+           "responses": ["Positive"
+           ]
+        },
+        
+        {
+           "tag":"Negative",
+           
+            "patterns": ["no", "nah", "nope", "naah", "noo", "not"],
+           
+           "responses": ["Negative"
            ]
         }
        
