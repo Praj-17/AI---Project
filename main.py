@@ -1,7 +1,5 @@
 import random
 import json
-
-from nltk.util import pr
 from Neural_Network.brain import NeuralNet
 from Neural_Network.text_preprocessing import bag_of_words, tokenize
 import torch
@@ -41,10 +39,8 @@ def main():
     
     sentence = tokenize(sentence)
     x = bag_of_words(sentence, all_words)
-    print(x)
     x = x.reshape(1,x.shape[0])
     x = torch.from_numpy(x).to(device)
-    print(x)
     
     
     output = model(x)
