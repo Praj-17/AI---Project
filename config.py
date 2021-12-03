@@ -1,4 +1,4 @@
-from serpapi import serp_api_client
+
 
 
 email = "<your_email>"
