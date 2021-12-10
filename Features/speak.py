@@ -22,4 +22,3 @@ def speak(audio):
 #     engine = gTTS(audio)
 #     engine.save('Assis.mp3')
 #     playsound('Assis.mp3')
-# speak("Hello sir, aap kaise hai?")

@@ -9,7 +9,6 @@ except Exception as p:
     print("Exception: " + str(p))
 
 def wolfram_ssl():
-    print("enter")
     ssl._create_default_https_context = ssl._create_unverified_context
     print(ssl)
     response = urllib.request.urlopen('https://www.wolframalpha.com/')

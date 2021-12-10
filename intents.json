@@ -1,42 +1,7 @@
 
 { 
     "intents":[
-        {
-            "tag":"greeting",
-
-            "patterns": [ "hello", "hii", "hey", "wake up", "jarvis", "hola", "hemlo", "hay","excuse me"],
-
-            "responses": [ "Hello Sir",
-                "How are you sir", "Welcome Sir", "Nice to meet you sir",
-                "Here's your assistant","Hi there, how can I help?","Good to see you again!"]
-        },
-        {
-            "tag":"Bye",
-
-            "patterns": [ "quit", "nothing","bye", "bbye", "terminate", "see you later", "exit"],
-
-            "responses": ["Thankyou sir",
-                "Nice time, meeting you sir", "Have a good day", "Going to sleep",
-                "Thanks for using me", "Bye", "See you later!", "It will be nice to meet you again","Goodbye!","Sad to see you go :(","Talk to you later"]
-        },
-        {
-            "tag":"Casual Query",
-
-            "patterns": [ "how are you ?", "how is it going ?", "what is up ?", "is everything all right", "what is going on ", "are you fine ?", "are you all right ?","how is it going on ? ", "what are you doing ?", "wattcha doing ?", "how"],
-
-            "responses": [ "Fine sir, what about you ? ",
-                 "absolutely good, what about you? ", "absolutely fine ,what about you ? ", "Fantastic, what about you ? ",
-                "Just doing my stuff, what about you ? ", "Just gathering some data, what about you ? ", "Surfing over the internet ,what about you ?  ", "Watching a movie, what about you ? ", "just, analyzing the data ,what about you ? ", "Just fueling up", "Huh, just having a nap what about you ? ", "Just woke up, had a nice sleep, what about you?"]
-        },
-        {
-            "tag":"identity",
-
-            "patterns": [ "who are you ?", "what is your name ?",  "what are you ?", "what is your use ?",  "can you tell me about yourself", "you", "yourself","who"],
-
-            "responses": [ "i'm jarvis!",
-                "i'm jarvis!, you personal assistant", "My name is jarvis"
-            ]
-        },
+        
         {
             "tag":"time",
 
@@ -44,6 +9,7 @@
 
             "responses": [ "time","Current time is "
             ]
+
         },
         {
             "tag":"date",
@@ -71,7 +37,7 @@
         {
             "tag":"google",
 
-            "patterns": [ "what is", "search about", "search for","google" , "find"],
+            "patterns": [ "what is", "search about", "search for","google" , "find", "who is","google","google","google","google","google","google","google"],
 
             "responses": [ "google" 
             ]
@@ -96,7 +62,7 @@
             "tag":"playmusic",
 
             "patterns": ["play some music","play music","play","song","play a song",
-            "tune", "play a tune"],
+            "tune", "play a tune", "find latest song", "start latest song"],
 
             "responses": ["playmusic" 
            ]
@@ -165,7 +131,7 @@
         {
            "tag":"bad_compliment",
            
-           "patterns": ["bad","no","worse", "worst", "sad", "ill", "sick", "frustrated", "irritated", "angry", "unhappy", "tensed", "stressed", "panic", "not good", "bored", "mood off"],
+           "patterns": ["bad","no","worse", "worst", "sad", "ill", "sick", "frustrated", "irritated", "angry", "unhappy", "tensed", "stressed", "panic", "bored", "mood off"],
            
            "responses": ["Oops!, can I help?", "oh!, sorry to hear that. How can I help","How can I amaze you?", "Let me refresh your mood then, what can I do?", "Something went wrong?", "Is there anything I can help you with?" 
            ]
@@ -177,15 +143,6 @@
            "patterns": ["wait", "pause", "hold", "stop", "sleep","wait for some time"],
            
            "responses": ["wait" 
-           ]
-        },
-        
-        {
-           "tag":"Competitors",
-           
-           "patterns": ["who are your competitors", "enemy", "friends", "relatives", "gang", "buddies", "do you know siri", "are you google assistant","comrades"],
-           
-           "responses": [" I dont know anyone named SIRI,BIKSY or GOOGLE ASSISTANT,Thats  it!!, Got your answer!!,Now go don't chat with me henceforth"
            ]
         },
         
@@ -214,7 +171,34 @@
            
            "responses": ["Negative"
            ]
-        }
+        },
+        {
+         "tag":"greeting",
+
+         "patterns": [ "hello", "hii", "hey", "wake up", "jarvis", "hola", "hemlo", "hay","excuse me"],
+
+         "responses": [ "Hello Sir",
+             "How are you sir", "Welcome Sir", "Nice to meet you sir",
+             "Here's your assistant","Hi there, how can I help?","Good to see you again!"]
+     },  
+     {
+         "tag":"Bye",
+
+         "patterns": [ "quit", "nothing","bye", "bbye", "terminate", "see you later", "exit"],
+
+         "responses": ["Thankyou sir",
+             "Nice time, meeting you sir", "Have a good day", "Going to sleep",
+             "Thanks for using me", "Bye", "See you later!", "It will be nice to meet you again","Goodbye!","Sad to see you go :(","Talk to you later"]
+     },
+     {
+         "tag":"Casual Query",
+
+         "patterns": [ "how are you ?", "how is it going ?", "what is up ?", "is everything all right", "what is going on ", "are you fine ?", "are you all right ?","how is it going on ? ", "what are you doing ?", "wattcha doing ?", "how"],
+
+         "responses": [ "Fine sir, what about you ? ",
+              "absolutely good, what about you? ", "absolutely fine ,what about you ? ", "Fantastic, what about you ? ",
+             "Just doing my stuff, what about you ? ", "Just gathering some data, what about you ? ", "Surfing over the internet, what about you ?  ", "Watching a movie, what about you ? ", "just, analyzing the data ,what about you ? ", "Just fueling up", "Huh, just having a nap what about you ? ", "Just woke up, had a nice sleep, what about you?"]
+     }
        
     ]
 

@@ -7,8 +7,11 @@ from Neural_Network.text_preprocessing import ignore_words, tokenize, stem, bag_
 from Neural_Network.brain import NeuralNet
 
 ## Unwrappping the Json file
-with open('intents.json', 'r') as f:
-    intents = json.load(f) #Naming the loaded json file as intents which actually is a dictionary 
+try:
+    with open('intents.json', 'r') as f:
+        intents = json.load(f) #Naming the loaded json file as intents which actually is a dictionary 
+except Exception as e:
+    print(e)
 
 all_words = [] #it has all the words from the patterns section in the json file
 tags = [] #list of all tags present into json file
@@ -23,7 +26,7 @@ for intent in intents['intents']: #refering to the intents key which has an list
          # print(pattern)
          w = tokenize(pattern) #breaking all the patterns(in the json) into words and creating a list of words
          #_______________________words lematized instaed stem_____________
-         w = [stem(w1) for w1 in w ]
+         w = [stem(w1) for w1 in w if w1 not in ignore_words ]
          all_words.extend(w) # adding that list of words to the all_words list
          # all_words = [lemmatize(w) for w in all_words if w not in ignore_words]
          tag_per_word.append((w,tag)) #Collecting all words and their respective tags at one place
@@ -36,12 +39,13 @@ tags = sorted(set(tags))
 x_train = []  #it will store the actual tags
 y_train = []  # it will store their respective indices
 for(pattern_sentence, tag) in tag_per_word:
-    print(pattern_sentence)
-    bag = bag_of_words(pattern_sentence, all_words)
-    x_train.append(bag)
-     
-    label = list(tags).index(tag) #training it on the index of the tag
-    y_train.append(label)
+    if pattern_sentence != [] :
+        print(pattern_sentence)
+        bag = bag_of_words(pattern_sentence, all_words)
+        x_train.append(bag)
+        
+        label = list(tags).index(tag) #training it on the index of the tag
+        y_train.append(label)
 
 
 if __name__ == '__main__':

@@ -4,6 +4,7 @@ from Features.speak import speak
 # from speak import speak
 from serpapi import GoogleSearch
 from config import serp_api_id
+# serp_api_id = "50efe51a6dc4385537bad7b576ae20f16c6e20bb97eafc734be4e0ac63dd4b73"
 
 
 def auto_correct(query):
@@ -43,3 +44,4 @@ def listen():
         query = listen() 
     
     return (auto_correct(query)).lower()
+

@@ -8,14 +8,22 @@ from Features.csv_writer import append_data
 from task import prev_response
 from Features.wishme import wishMe
 from Features.wolfram import wolfram_ssl
+from subprocess import call
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 with open("intents.json", 'r') as json_data:
     intents = json.load(json_data)
 
 
-FILE = "TrainData.pth"
-model  = torch.load(FILE)
+FILE = 'TrainData.pth'
+try:
+    model  = torch.load(FILE)
+except Exception as e: 
+    print(e)
+    call(["Python3", FILE])
+    model  = torch.load(FILE)
+except:
+    print("ok")
 model_state = model["model_state"]
 all_words = model["all_words"]
 tags = model["tags"]
@@ -35,6 +43,7 @@ def main():
     
     sentence = tokenize(sentence)
     sentence = [stem(w) for w in sentence if w not in ignore_words]
+    print(sentence)
     x = bag_of_words(sentence, all_words)
     x = x.reshape(1,x.shape[0])
     x = torch.from_numpy(x).to(device)
@@ -54,7 +63,7 @@ def main():
     print(probs)           
     print("________________prob_________")
     print(prob)           
-    if prob.item()> 0.8:
+    if prob.item()>= 0.8:
         for intent in intents ['intents']:
             if tag == "Bye" and intent["tag"] == "Bye":
                     reply = random.choice(intent["responses"])  
@@ -108,33 +117,41 @@ def main():
                 elif "playmusic" in reply:
                     InputExecution(reply, result)
                     append_data('data.csv',result, reply)
-        
-    #             else: speak(reply)
-    # elif prob >0.2 and prob<0.8:
-    #     for intent in intents ['intents']: 
-    #         if tag == intent["tag"]:
-    #             reply = random.choice(intent["responses"])
-    #             append_data('data.csv',result, reply)
-    #             print(reply)
-    #             if "wikipedia" in reply:
-    #                 InputExecution(reply, result)
-    #                 append_data('data.csv',result, reply)
-    #             elif "google" in reply:
-    #                 InputExecution(reply, result)
-    #                 append_data('data.csv',result, reply)
-    #             elif "weather" in reply:
-    #                 InputExecution(reply, result)
-    #                 append_data('data.csv',result, reply)
-    #             elif "location" in reply:
-    #                 append_data('data.csv',result, reply)
-    #                 InputExecution(reply, result)
-    #             elif "playmusic" in reply:
-    #                 InputExecution(reply, result)
-    #                 append_data('data.csv',result, reply)
+                else: speak(reply)
+    elif prob >=0.2 and prob<0.8:
+        for intent in intents ['intents']: 
+            if tag == intent["tag"]:
+                reply = random.choice(intent["responses"])
+                append_data('data.csv',result, reply)
+                print("__________________Final_reply_______________")
+                print(reply)
+                if "wikipedia" in reply:
+                    InputExecution(reply, result)
+                    append_data('data.csv',result, reply)
+                elif "google" in reply:
+                    InputExecution(reply, result)
+                    append_data('data.csv',result, reply)
+                elif "weather" in reply:
+                    InputExecution(reply, result)
+                    append_data('data.csv',result, reply)
+                elif "location" in reply:
+                    append_data('data.csv',result, reply)
+                    InputExecution(reply, result)
+                elif "playmusic" in reply:
+                    InputExecution(reply, result)
+                    append_data('data.csv',result, reply)
+                else:
+                    try:
+                        print("entering wolfram 1")
+                        wolfram_ssl()
+                    except: 
+                        print("entered except")
+                        speak("I'm sorry , I don't know that.")
+                    append_data('data.csv',result, "Couldn't understand, say that again please!")   
     else:
-        print("else")
         try:
-                wolfram_ssl()
+            print("entering wolfram")
+            wolfram_ssl()
         except: 
             print("entered except")
             speak("I'm sorry , I don't know that.")
