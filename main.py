@@ -9,7 +9,7 @@ from task import prev_response
 from Features.wishme import wishMe
 from Features.wolfram import wolfram_ssl
 from subprocess import call
-from Features.reply import quick_reply
+from Features.reply import quick_reply, wish_reply 
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 with open("intents.json", 'r') as json_data:
@@ -178,7 +178,9 @@ def main():
         append_data('data.csv',result, "Couldn't understand, say that again please!")            
                 
 if __name__ == "__main__":    
-    wishMe()          
+    wishMe()
+    listen()
+    wish_reply()          
     while True :   
         main()
         
