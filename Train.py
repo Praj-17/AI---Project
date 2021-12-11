@@ -20,8 +20,7 @@ tag_per_word = [] #All words and tags combine to make tag_per_word
 #This for loop will append all tags,patterns from the json file to the tags list
 for intent in intents['intents']: #refering to the intents key which has an list of dictinonaries in it called as an intent
      tag = intent['tag']
-     tags.append((tag))
-     
+     tags.append((tag))     
      for pattern in intent['patterns']:
          # print(pattern)
          w = tokenize(pattern) #breaking all the patterns(in the json) into words and creating a list of words

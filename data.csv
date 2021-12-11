@@ -346,6 +346,7 @@
 0,2021-12-11,16: 38,wait wait,wait
 0,2021-12-11,16: 38,wait wait,wait
 0,2021-12-11,16: 38,ok sir,My pleasure sir
+<<<<<<< HEAD
 0,2021-12-11,16: 45,hello,Welcome Sir
 0,2021-12-11,16: 45,good afternoon,"Yeah, That's a relief"
 0,2021-12-11,16: 48,good afternoon sir,cool..!
@@ -354,3 +355,9 @@
 0,2021-12-11,18: 25,fine bola to sign,"Yeah, That's a relief"
 0,2021-12-11,18: 25,wait wait,wait
 0,2021-12-11,18: 42,good evening,"Yeah, That's a relief"
+=======
+0,2021-12-11,18: 41,nothing having a fun,Goodbye!
+0,2021-12-11,18: 41,babai,Something went wrong?
+0,2021-12-11,18: 41,stop,music is stopped
+0,2021-12-11,18: 41,bye,Talk to you later
+>>>>>>> 469fdc5a6a7ffbaaf9711f41331c73e80050960e

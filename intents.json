@@ -1,4 +1,3 @@
-
 { 
     "intents":[
         
@@ -207,7 +206,8 @@
      },
      {
          "tag" :"wishme",
-         "patterns" : [ "morning","gm","good morning","evening","night","afternoon","noon","gn"]
+         "patterns" : [ "morning","gm","good morning","evening","night","afternoon","noon","gn"],
+         
          "responses": [ "How are you sir?", "what's the plan now?", "what are you doing sir ", "Sir any work for me ?"]
          
      }       

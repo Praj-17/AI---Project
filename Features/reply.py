@@ -12,7 +12,15 @@ def quick_reply():
             if intent['tag'] == "reply":
                reply =  random.choice(intent["responses"])
                speak(reply)
-
+               
+def wish_reply():
+    with open("intents.json", 'r') as json_data:
+        intents = json.load(json_data)
+        
+        for intent in intents['intents']:
+            if intent['tag'] == "wishme":
+               reply =  random.choice(intent["responses"])
+               speak(reply)
     
         
 
