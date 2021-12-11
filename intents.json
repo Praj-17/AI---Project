@@ -113,7 +113,7 @@
         {
            "tag":"alarm",
            
-           "patterns": ["set an alarm","alarm","wake me up at","please, set an alarm for","reminder", "remind", "remind me"],
+           "patterns": ["set an alarm","alarm","wake me up at","please, set an alarm for","reminder", "remind", "remind me", "place an alarm"],
            
            "responses": ["alarm"
            ]
@@ -193,13 +193,11 @@
      {
          "tag":"Casual Query",
 
-         "patterns": [ "how are you ?", "how is it going ?", "what is up ?", "is everything all right", "what is going on ", "are you fine ?", "are you all right ?","how is it going on ? ", "what are you doing ?", "wattcha doing ?", "how"],
+         "patterns": [ "how are you ?", "how is it going ?", "what is up ?", "is everything all right", "what is going on ", "you fine ?", "you all right ?","how is it going on ? ", "what are you doing ?", "wattcha doing?", "how"],
 
          "responses": [ "Fine sir, what about you ? ",
               "absolutely good, what about you? ", "absolutely fine ,what about you ? ", "Fantastic, what about you ? ",
              "Just doing my stuff, what about you ? ", "Just gathering some data, what about you ? ", "Surfing over the internet, what about you ?  ", "Watching a movie, what about you ? ", "just, analyzing the data ,what about you ? ", "Just fueling up", "Huh, just having a nap what about you ? ", "Just woke up, had a nice sleep, what about you?"]
-     }
-       
-    ]
-
+     } 
+    ]  
 }
