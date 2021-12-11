@@ -140,14 +140,14 @@ def main():
                 elif "playmusic" in reply:
                     InputExecution(reply, result)
                     append_data('data.csv',result, reply)
-                else:
+                '''else:
                     try:
                         print("entering wolfram 1")
                         wolfram_ssl()
                     except: 
                         print("entered except")
                         speak("I'm sorry , I don't know that.")
-                    append_data('data.csv',result, "Couldn't understand, say that again please!")   
+                    append_data('data.csv',result, "Couldn't understand, say that again please!")'''   
     else:
         try:
             print("entering wolfram")

@@ -3,9 +3,9 @@ import speech_recognition as sr
 from Features.speak import speak
 # from speak import speak
 from serpapi import GoogleSearch
-from config import serp_api_id
+#from config import serp_api_id
 # serp_api_id = "50efe51a6dc4385537bad7b576ae20f16c6e20bb97eafc734be4e0ac63dd4b73"
-
+serp_api_id =  "92634d753e34b284b752cf279deff86eadc57fb0438b0082937be71dd5c95f17"
 
 def auto_correct(query):
     params = {
@@ -17,7 +17,9 @@ def auto_correct(query):
 
     search = GoogleSearch(params)
     results = search.get_dict()
+    print(results)
     search_information = results['search_information']
+    print(search_information)
     try:
       return search_information['spelling_fix']
     except:
@@ -45,3 +47,4 @@ def listen():
     
     return (auto_correct(query)).lower()
 
+auto_correct("he es a gret persn")
