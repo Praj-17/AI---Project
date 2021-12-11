@@ -204,6 +204,12 @@
          "tag" :"reply",
          "patterns": [],         
          "responses" : [ "what can I do for you?", "what can I do sir ?", "I am ready for the next one" , "what else you want me to do?","What else sir ?","Anything which I can do for you sir ?","Any help needed sir ?"]
+     },
+     {
+         "tag" :"wishme",
+         "patterns" : [ "morning","gm","good morning","evening","night","afternoon","noon","gn"]
+         "responses": [ "How are you sir?", "what's the plan now?", "what are you doing sir ", "Sir any work for me ?"]
+         
      }       
     ]  
 
