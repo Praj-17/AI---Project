@@ -11,9 +11,8 @@ except Exception as p:
 
 def wolfram_ssl():
     ssl._create_default_https_context = ssl._create_unverified_context
-    print(ssl)
+
     response = urllib.request.urlopen('https://www.wolframalpha.com/')
-    print(response.results)
     speak(str(response))
 
     # write below code in task.py 

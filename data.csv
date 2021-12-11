@@ -279,6 +279,7 @@
 0,2021-12-11,11: 31,wait,wait
 0,2021-12-11,11: 31,wait,wait
 0,2021-12-11,11: 31,set an alarm at 5 p.m.,alarm
+<<<<<<< HEAD
 0,2021-12-11,13: 45,how are you,"Surfing over the internet, what about you ?  "
 0,2021-12-11,13: 45,just chilling out,Something went wrong?
 0,2021-12-11,13: 45,tell me about elon musk,Something went wrong?
@@ -312,3 +313,21 @@
 0,2021-12-11,14: 39,play some music,playmusic
 0,2021-12-11,14: 39,open weather,weather
 0,2021-12-11,14: 39,open weather,weather
+=======
+0,2021-12-11,12: 58,wait,wait
+0,2021-12-11,12: 58,wait,wait
+0,2021-12-11,12: 58,hello,Welcome Sir
+0,2021-12-11,12: 58,who is elon musk,wikipedia
+0,2021-12-11,12: 58,who is elon musk,wikipedia
+0,2021-12-11,12: 58,can you set an alarm,alarm
+0,2021-12-11,13: 01,hello,Hello Sir
+0,2021-12-11,13: 02,can you find me the latest song,playmusic
+0,2021-12-11,13: 02,can you find me the latest song,playmusic
+0,2021-12-11,13: 03,2 + 2,"Oops!, can I help?"
+0,2021-12-11,15: 15,hello,Welcome Sir
+0,2021-12-11,15: 15,what is a bottle,Just fueling up
+0,2021-12-11,15: 15,what is photosynthesis,"absolutely good, what about you? "
+0,2021-12-11,15: 18,what is going on,"Fine sir, what about you ? "
+0,2021-12-11,15: 18,google bottle,google
+0,2021-12-11,15: 18,google bottle,google
+>>>>>>> a6624cf262802dde45f43293d3ae45d1939e2331

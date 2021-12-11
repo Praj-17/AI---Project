@@ -4,8 +4,9 @@ from Features.speak import speak
 # from speak import speak
 from serpapi import GoogleSearch
 #from config import serp_api_id
-# serp_api_id = "50efe51a6dc4385537bad7b576ae20f16c6e20bb97eafc734be4e0ac63dd4b73"
-serp_api_id =  "92634d753e34b284b752cf279deff86eadc57fb0438b0082937be71dd5c95f17"
+serp_api_id = "50efe51a6dc4385537bad7b576ae20f16c6e20bb97eafc734be4e0ac63dd4b73"
+# serp_api_id =  "92634d753e34b284b752cf279deff86eadc57fb0438b0082937be71dd5c95f17"
+
 
 #def auto_correct(query):
 #    params = {
@@ -24,6 +25,24 @@ serp_api_id =  "92634d753e34b284b752cf279deff86eadc57fb0438b0082937be71dd5c95f17
 #      return search_information['spelling_fix']
 #    except:
 #        return query
+
+def auto_correct(query):
+    params = {
+    "q": query,
+    "hl": "en",
+    "gl": "us",
+    "api_key": serp_api_id
+    }
+
+    search = GoogleSearch(params)
+    results = search.get_dict()
+    print(results)
+    search_information = results['search_information']
+    try:
+      return search_information['spelling_fix']
+    except:
+        return query
+
 
 
 
