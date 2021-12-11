@@ -65,8 +65,11 @@ def final_weather():
     if ans == "yes":
         weather_updates() 
 def wait(amt=10):
-    speak("ok, i'll wait for 10 secs")
-    time.sleep(amt)
+    speak("how many minutes you want me to wait?")
+    # speak("30 seconds", "1 minute", "2 minutes" or "5 minutes")
+    amt = float(listen().replace("minutes", "").replace("minute", ""))
+    speak(f"ok i'll wait for {amt} minutes")
+    time.sleep(amt*60)
     speak("ok, listening now...")
 
     

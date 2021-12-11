@@ -202,8 +202,8 @@
      },
      {
          "tag" :"reply",
-         
-         "responses" : [ "what can I do for you?", "what can I do sir ?", "I am ready for the next one" , "what else you want me to do?"]
+         "patterns": [],         
+         "responses" : [ "what can I do for you?", "what can I do sir ?", "I am ready for the next one" , "what else you want me to do?","What else sir ?","Anything which I can do for you sir ?","Any help needed sir ?"]
      }       
     ]  
 

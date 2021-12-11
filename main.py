@@ -9,6 +9,7 @@ from task import prev_response
 from Features.wishme import wishMe
 from Features.wolfram import wolfram_ssl
 from subprocess import call
+from Features.reply import quick_reply
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 with open("intents.json", 'r') as json_data:
@@ -77,46 +78,60 @@ def main():
             elif tag == intent["tag"]:
                 reply = random.choice(intent["responses"])
                 append_data('data.csv',result, reply)
+                print("__________________Final_reply_______________")
                 print(reply)
                
                 if "time" in reply:
                     NoninputExecution(reply)
                     append_data('data.csv',result, reply)
+                    quick_reply()
+                    
                 elif "date" in reply:
                     NoninputExecution(reply)
                     append_data('data.csv',result, reply)
+                    quick_reply()
+                    
                 elif "day" in reply:
                     NoninputExecution(reply)
                     append_data('data.csv',result, reply)
+                    quick_reply()
                 
                 elif "news" in reply:
                     NoninputExecution(reply)
                     append_data('data.csv',result, reply)
+                    quick_reply()
                 elif "joke" in reply:
                     NoninputExecution(reply)
                     append_data('data.csv',result, reply)
+                    quick_reply()
                 
                 elif "alarm" in reply:
                     NoninputExecution(reply)
                     append_data('data.csv',result, reply)
+                    quick_reply()
                 elif "wait" in reply:
                     NoninputExecution(reply)
                     append_data('data.csv',result, reply)
                 elif "wikipedia" in reply:
                     InputExecution(reply, result)
                     append_data('data.csv',result, reply)
+                    quick_reply()
                 elif "google" in reply:
                     InputExecution(reply, result)
                     append_data('data.csv',result, reply)
+                    quick_reply()
                 elif "weather" in reply:
                     InputExecution(reply, result)
                     append_data('data.csv',result, reply)
+                    quick_reply()
                 elif "location" in reply:
                     append_data('data.csv',result, reply)
                     InputExecution(reply, result)
+                    quick_reply()
                 elif "playmusic" in reply:
                     InputExecution(reply, result)
                     append_data('data.csv',result, reply)
+                    quick_reply()
                 else: speak(reply)
     elif prob >=0.2 and prob<0.8:
         for intent in intents ['intents']: 
@@ -128,18 +143,23 @@ def main():
                 if "wikipedia" in reply:
                     InputExecution(reply, result)
                     append_data('data.csv',result, reply)
+                    quick_reply()
                 elif "google" in reply:
                     InputExecution(reply, result)
                     append_data('data.csv',result, reply)
+                    quick_reply()
                 elif "weather" in reply:
                     InputExecution(reply, result)
                     append_data('data.csv',result, reply)
+                    quick_reply()
                 elif "location" in reply:
                     append_data('data.csv',result, reply)
                     InputExecution(reply, result)
+                    quick_reply()
                 elif "playmusic" in reply:
                     InputExecution(reply, result)
                     append_data('data.csv',result, reply)
+                    quick_reply()
                 '''else:
                     try:
                         print("entering wolfram 1")

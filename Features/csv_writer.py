@@ -4,6 +4,7 @@ import datetime
 import pandas as pd
 time = datetime.datetime.now().strftime("%H: %M")
 date = datetime.date.today()
+from Features.reply import quick_reply
 # def get_length(file):
 #     return 1
 def append_data(file , query, response):
@@ -18,6 +19,8 @@ def append_data(file , query, response):
     df = df.append([[date, time,query, response]])
     df.reset_index(drop=True)
     df.to_csv(file,header= False, mode= "a")
+
+    
     
     # df.add()
     # sr_no += 1 
