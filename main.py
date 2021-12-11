@@ -7,9 +7,13 @@ import torch
 from Features.csv_writer import append_data
 from task import prev_response
 from Features.wishme import wishMe
-from Features.wolfram import wolfram_ssl
-from subprocess import call
-from Features.reply import quick_reply, wish_reply 
+from subprocess import run
+from Features.reply import quick_reply
+import os
+import time
+import numpy as np
+from Train import trained_words
+
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 with open("intents.json", 'r') as json_data:
@@ -17,20 +21,17 @@ with open("intents.json", 'r') as json_data:
 
 
 FILE = 'TrainData.pth'
-try:
+if os.path.exists(FILE):
     model  = torch.load(FILE)
-except Exception as e: 
-    print(e)
-    call(["Python3", FILE])
-    model  = torch.load(FILE)
-except:
-    print("ok")
-model_state = model["model_state"]
-all_words = model["all_words"]
-tags = model["tags"]
-model = NeuralNet(model["input_size"],model["hidden_size"], model["output_size"]).to(device)
-model.load_state_dict( model_state)
-model.eval
+    model_state = model["model_state"]
+    all_words = model["all_words"]
+    tags = model["tags"]
+    model = NeuralNet(model["input_size"],model["hidden_size"], model["output_size"]).to(device)
+    model.load_state_dict( model_state)
+    model.eval
+
+else: 
+    run("Train.exe", shell=True)
 
 #---------------------
 
@@ -41,10 +42,24 @@ def main():
     sentence =listen()
     result = str(sentence)
     #lets say sentence = "What is photosynthesis"
+    if result == "" or result == " ":
+        time.sleep(10)
     
     sentence = tokenize(sentence)
     sentence = [stem(w) for w in sentence if w not in ignore_words]
     print(sentence)
+    bag_2 = np.zeros(len(trained_words), dtype = np.float32)
+    for index, w in enumerate (trained_words):
+        if w in sentence:
+            bag_2[index] = 1
+    
+    print(bag_2)
+    true_count= np.sum(bag_2)
+    print("___________True_count__________")
+    print(true_count)
+    probability = true_count/len(result)
+    print("____________probablitly_______")
+    print(probability)
     x = bag_of_words(sentence, all_words)
     x = x.reshape(1,x.shape[0])
     x = torch.from_numpy(x).to(device)
@@ -60,11 +75,26 @@ def main():
     
     # if prob.item()> 0.75:
     #     for intent in intents ['intents']:
+    print 
+    print("____________Predicted tag_________")
+    print(tag)
+    print("____________Predicted item_________")
+    print(predicted.item())
     print("________________probs_________")
     print(probs)           
     print("________________prob_________")
-    print(prob)           
+    print(prob)   
+    print("________________prob.item_________")
+    print(prob.item())  
+    if probability == 0:
+            print("____________Entered 0.8 zone____________")
+            InputExecution('google', result)
+            append_data('data.csv',result, 'google')
+            quick_reply()
+                      
+          
     if prob.item()>= 0.8:
+        print("____________Entered 0.8 zone____________")
         for intent in intents ['intents']:
             if tag == "Bye" and intent["tag"] == "Bye":
                     reply = random.choice(intent["responses"])  
@@ -132,8 +162,11 @@ def main():
                     InputExecution(reply, result)
                     append_data('data.csv',result, reply)
                     quick_reply()
-                else: speak(reply)
+                else: 
+                    speak(reply)
+                    quick_reply()
     elif prob >=0.2 and prob<0.8:
+        print("____________Entered 0.2 zone____________")
         for intent in intents ['intents']: 
             if tag == intent["tag"]:
                 reply = random.choice(intent["responses"])
@@ -160,27 +193,20 @@ def main():
                     InputExecution(reply, result)
                     append_data('data.csv',result, reply)
                     quick_reply()
-                '''else:
-                    try:
-                        print("entering wolfram 1")
-                        wolfram_ssl()
-                    except: 
-                        print("entered except")
-                        speak("I'm sorry , I don't know that.")
-                    append_data('data.csv',result, "Couldn't understand, say that again please!")'''   
+                else:
+                    InputExecution(reply, result)
+                    append_data('data.csv',result, reply)
+                    quick_reply()
     else:
-        try:
-            print("entering wolfram")
-            wolfram_ssl()
-        except: 
-            print("entered except")
-            speak("I'm sorry , I don't know that.")
-        append_data('data.csv',result, "Couldn't understand, say that again please!")            
+            print("____________Entered 0.8 zone____________")
+            InputExecution('google', result)
+            append_data('data.csv',result, 'google')
+            quick_reply()
+                      
+         
                 
 if __name__ == "__main__":    
-    wishMe()
-    listen()
-    wish_reply()          
+    wishMe()        
     while True :   
         main()
         

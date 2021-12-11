@@ -16,6 +16,7 @@ except Exception as e:
 all_words = [] #it has all the words from the patterns section in the json file
 tags = [] #list of all tags present into json file
 tag_per_word = [] #All words and tags combine to make tag_per_word
+trained_words = []
 
 #This for loop will append all tags,patterns from the json file to the tags list
 for intent in intents['intents']: #refering to the intents key which has an list of dictinonaries in it called as an intent
@@ -40,6 +41,8 @@ y_train = []  # it will store their respective indices
 for(pattern_sentence, tag) in tag_per_word:
     if pattern_sentence != [] :
         print(pattern_sentence)
+        trained_words.extend(pattern_sentence)
+        
         bag = bag_of_words(pattern_sentence, all_words)
         x_train.append(bag)
         
@@ -108,3 +111,4 @@ if __name__ == '__main__':
     torch.save(data, FILE)
 
     print((f"Training Complete, File saved to {FILE}"))
+

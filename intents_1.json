@@ -4,7 +4,7 @@
         {
             "tag":"time",
 
-            "patterns": [  "time",  "current",  "hour", "minute", "what hour is it"],
+            "patterns": [ "what is time", "time",  "current time", "what is the time now", "hour", "minute", "what hour is it",""],
 
             "responses": [ "time","Current time is "
             ]
@@ -13,14 +13,14 @@
         {
             "tag":"date",
 
-            "patterns": [  "date",  "today" ],
+            "patterns": [ "what is date", "date",  "today date", "what is the date now" ],
 
             "responses": [ "date"]
         },
         {
             "tag":"day",
 
-            "patterns": [ "din","war","day", "de", "dee"],
+            "patterns": [ "which day is today ", "day", "din","war","day", "de", "dee"],
 
             "responses": [ "day" ]
         },
@@ -28,7 +28,7 @@
         {
             "tag":"wikipedia",
 
-            "patterns": [ "who is", "about","search" , "find", "gather information on", "describe", "wikipedia"],
+            "patterns": [ "who is", "about","search" , "find", "inform me about", "search for", "gather information on", "gather info on", "describe", "wikipedia"],
 
             "responses": [ "wikipedia"
             ]
@@ -36,7 +36,7 @@
         {
             "tag":"google",
 
-            "patterns": [ "what is", "search","google" , "find", "who is"],
+            "patterns": [ "what is", "search about", "search for","google" , "find", "who is","google","google","google","google","google","google","google"],
 
             "responses": [ "google" 
             ]
@@ -44,16 +44,24 @@
         {
             "tag":"news",
 
-            "patterns": ["news","hilight","bulletin","reportage","headlines"],
+            "patterns": ["news","hilight","bulletin","reportage","headlines","headline"],
 
             "responses": [ "news"
            ]
         },
         {
+            "tag":"screenshot",
+
+            "patterns": ["screenshot","ss","screen capture","capture the screen","snip screen"],
+
+            "responses": ["screenshot"
+           ]
+        },
+        {
             "tag":"playmusic",
 
-            "patterns": ["play", "music","song","tune", "melody",
-            "tune",  "find latest"],
+            "patterns": ["play some music","play music","play","song","play a song",
+            "tune", "play a tune", "find latest song", "start latest song"],
 
             "responses": ["playmusic" 
            ]
@@ -61,7 +69,7 @@
         {
             "tag":"stopmusic",
 
-            "patterns": ["stop music","enough"],
+            "patterns": ["stop music","stop","stop it","enough"],
 
             "responses": ["stoping ....","music is stopped"
            ]
@@ -69,16 +77,24 @@
         {
             "tag":"joke",
 
-            "patterns": ["joke","amuse me","make me laugh","i am feeling sad", "entertain me", "i am bored"],
+            "patterns": ["tell me a joke","do you have a joke for me","amuse me","make me laugh","i am feeling sad","tell a joke", "entertain me", "i'm bored"],
 
             "reply" : ["here we go","joke time","hear me carefully","hear out","here's a programmer joke for you", "joke"
             ],
             "responses": ["joke"]
         },
         {
+           "tag":"shutdown",
+           
+           "patterns": ["shut down","time to go to sleep","go to sleep","go get some rest"],
+           
+           "responses": ["are you sure ","system will shut down. do you want to continue ","all functions will suspend. continue?"
+           ]
+        },
+        {
            "tag":"weather",
            
-           "patterns": ["check weather","how is the sky","do i need to carry an umbrella", "temperature"],
+           "patterns": ["check weather","what is the weather","how is the sky","do i need to carry an umbrella", "tell me the temperature", "find me the temperature","what is the temperature"],
            
            "responses": ["weather"
            ]
@@ -87,7 +103,7 @@
         {
            "tag":"repeat",
            
-           "patterns": ["say that again","can you repeat it","could not listen","unable to understand","can not understand", "repeat"],
+           "patterns": ["repeat that","say that again","can you repeat it","could not listen","unable to understand","can not understand", "will you repeat that","repeat"],
            
            "responses": ["repeat"
            ]
@@ -96,7 +112,7 @@
         {
            "tag":"alarm",
            
-           "patterns": ["alarm","wake me up at","reminder"],
+           "patterns": ["set an alarm","alarm","wake me up at","please, set an alarm for","reminder", "remind", "remind me", "place an alarm"],
            
            "responses": ["alarm"
            ]
@@ -105,7 +121,7 @@
         {
            "tag":"good_compliment",
            
-           "patterns": ["ok","okay","okeah", "fine", "good", "nice", "fantastic", "well", "mindblowing", "eager", "excited", "better", "cool", "noice", "best", "easy", "relaxed","thank you"],
+           "patterns": ["ok","okay","okeah", "fine", "good", "nice", "fantastic", "well", "mindblowing", "eager", "excited", "better", "cool", "noice", "best", "easy", "relaxed","thank you", "mood on","thanks"],
            
            "responses": ["Nice to hear that sir", "Yeah, That's a relief", "cool..!","My pleasure sir", "That feels better" 
            ]
@@ -123,7 +139,7 @@
         {
            "tag":"wait",
            
-           "patterns": ["wait", "pause", "hold", "stop", "sleep"],
+           "patterns": ["wait", "pause", "hold", "stop", "sleep","wait for some time"],
            
            "responses": ["wait" 
            ]
@@ -132,7 +148,7 @@
         {
            "tag":"location",
            
-            "patterns": ["location of", "find", "where is", "track", "trace", "search", "map", "find the map", "get the map of","where"],
+            "patterns": ["location of", "find", "where is", "track", "trace", "search", "map", "map for", "find the map", "get the map of","where"],
            
            "responses": ["location"
            ]
@@ -158,7 +174,7 @@
         {
          "tag":"greeting",
 
-         "patterns": [ "hello", "hii", "hey", "wake up",  "hola", "hemlo", "hay","excuse me"],
+         "patterns": [ "hello", "hii", "hey", "wake up", "jarvis", "hola", "hemlo", "hay","excuse me"],
 
          "responses": [ "Hello Sir",
              "How are you sir", "Welcome Sir", "Nice to meet you sir",
@@ -167,7 +183,7 @@
      {
          "tag":"Bye",
 
-         "patterns": [ "quit","bye", "bbye", "terminate", "see you later", "exit"],
+         "patterns": [ "quit", "nothing","bye", "bbye", "terminate", "see you later", "exit"],
 
          "responses": ["Thankyou sir",
              "Nice time, meeting you sir", "Have a good day", "Going to sleep",
@@ -176,7 +192,7 @@
      {
          "tag":"Casual Query",
 
-         "patterns": [ "how are you ?", "how is it going ?", "what is up ?", "is all right", "you fine ?", "you all right ?", "what are you doing ?", "wattcha doing?", "how"],
+         "patterns": [ "how are you ?", "how is it going ?", "what is up ?", "is everything all right", "what is going on ", "you fine ?", "you all right ?","how is it going on ? ", "what are you doing ?", "wattcha doing?", "how"],
 
          "responses": [ "Fine sir, what about you ? ",
               "absolutely good, what about you? ", "absolutely fine ,what about you ? ", "Fantastic, what about you ? ",
