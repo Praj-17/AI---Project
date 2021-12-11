@@ -7,13 +7,15 @@
 
 #First we will have to create functions and then add them to the json file
 import random
-from pyjokes.pyjokes import get_joke
 from Features import news
 import datetime
 from Features.listen import listen
 from Features.speak import speak
 import wikipedia
-import pywhatkit
+try:
+    import pywhatkit
+except Exception as e:       #it requires internet connection
+    print(e)
 from Features import joke
 from Features.alarm import  set_alarm
 from Features.weather import  weather, weather_updates , Location
