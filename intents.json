@@ -198,6 +198,11 @@
          "responses": [ "Fine sir, what about you ? ",
               "absolutely good, what about you? ", "absolutely fine ,what about you ? ", "Fantastic, what about you ? ",
              "Just doing my stuff, what about you ? ", "Just gathering some data, what about you ? ", "Surfing over the internet, what about you ?  ", "Watching a movie, what about you ? ", "just, analyzing the data ,what about you ? ", "Just fueling up", "Huh, just having a nap what about you ? ", "Just woke up, had a nice sleep, what about you?"]
+     },
+     {
+         "tag" :"reply",
+         
+         "responses" : [ "what can I do for you?", "what can I do sir ?", "I am ready for the next one" , "what else you want me to do?"]
      }
        
     ]

@@ -22,11 +22,11 @@ def jaccard(entries, gram_number):
         closest = min(distances)
         outcomes.append(closest[1])
     return outcomes
-def JDreco(entries=['cormulent', 'incendenece', 'validrate']):
+def JDreco(entries=["alone musk"]):
     """finds the closest word based on jaccard distance"""
     return jaccard(entries, 3)
 print(JDreco())
-def editreco(entries=['cormulent', 'incendenece', 'validrate']):
+def editreco(entries=["elone muskk"]):
 
     outcomes = []
     for entry in entries:
@@ -38,4 +38,4 @@ def editreco(entries=['cormulent', 'incendenece', 'validrate']):
     return outcomes
 
 
-editreco()
+print(editreco())
