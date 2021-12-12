@@ -13,6 +13,9 @@ import os
 import time
 import numpy as np
 from Train import trained_words
+from Features.listen import listen , listen_std
+from Features.speak import speak
+from task import InputExecution, NoninputExecution, read_prev_response
 
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
@@ -35,9 +38,6 @@ else:
 
 #---------------------
 
-from Features.listen import listen 
-from Features.speak import speak
-from task import InputExecution, NoninputExecution, read_prev_response
 
     
                       
@@ -48,7 +48,7 @@ if __name__ == "__main__":
     while True:
         print("__________The status is inactive___________")
         print("call my name (ALEXA) to resume")
-        query = listen()
+        query = listen_std()
         if "alexa" in query:
             f = True
             wishMe()        
@@ -139,49 +139,71 @@ if __name__ == "__main__":
                                     NoninputExecution(reply)
                                     append_data('data.csv',result, reply)
                                     quick_reply()
+                                    f = False
+                                    print("____________changed f to false_______")
                                   
                                     
                                 elif "day" in reply:
                                     NoninputExecution(reply)
                                     append_data('data.csv',result, reply)
                                     quick_reply()
+                                    f = False
+                                    print("____________changed f to false_______")
                                 
                                 elif "news" in reply:
                                     NoninputExecution(reply)
                                     append_data('data.csv',result, reply)
                                     quick_reply()
+                                    f = False
+                                    print("____________changed f to false_______")
                                 elif "joke" in reply:
                                     NoninputExecution(reply)
                                     append_data('data.csv',result, reply)
                                     quick_reply()
+                                    f = False
+                                    print("____________changed f to false_______")
                                 
                                 elif "alarm" in reply:
                                     NoninputExecution(reply)
                                     append_data('data.csv',result, reply)
                                     quick_reply()
+                                    f = False
+                                    print("____________changed f to false_______")
                                 elif "wait" in reply:
                                     NoninputExecution(reply)
                                     append_data('data.csv',result, reply)
+                                    f = False
+                                    print("____________changed f to false_______")
                                 elif "wikipedia" in reply:
                                     InputExecution(reply, result)
                                     append_data('data.csv',result, reply)
                                     quick_reply()
+                                    f = False
+                                    print("____________changed f to false_______")
                                 elif "google" in reply:
                                     InputExecution(reply, result)
                                     append_data('data.csv',result, reply)
                                     quick_reply()
+                                    f = False
+                                    print("____________changed f to false_______")
                                 elif "weather" in reply:
                                     InputExecution(reply, result)
                                     append_data('data.csv',result, reply)
                                     quick_reply()
+                                    f = False
+                                    print("____________changed f to false_______")
                                 elif "location" in reply:
                                     append_data('data.csv',result, reply)
                                     InputExecution(reply, result)
                                     quick_reply()
+                                    f = False
+                                    print("____________changed f to false_______")
                                 elif "playmusic" in reply:
                                     InputExecution(reply, result)
                                     append_data('data.csv',result, reply)
                                     quick_reply()
+                                    f = False
+                                    print("____________changed f to false_______")
                                 else: 
                                     speak(reply)
                                     quick_reply()
@@ -197,30 +219,45 @@ if __name__ == "__main__":
                                     InputExecution(reply, result)
                                     append_data('data.csv',result, reply)
                                     quick_reply()
+                                    f = False
+                                    print("____________changed f to false_______")
                                 elif "google" in reply:
                                     InputExecution(reply, result)
                                     append_data('data.csv',result, reply)
                                     quick_reply()
+                                    f = False
+                                    print("____________changed f to false_______")
                                 elif "weather" in reply:
                                     InputExecution(reply, result)
                                     append_data('data.csv',result, reply)
                                     quick_reply()
+                                    f = False
+                                    print("____________changed f to false_______")
                                 elif "location" in reply:
                                     append_data('data.csv',result, reply)
                                     InputExecution(reply, result)
                                     quick_reply()
+                                    f = False
+                                    print("____________changed f to false_______")
                                 elif "playmusic" in reply:
                                     InputExecution(reply, result)
                                     append_data('data.csv',result, reply)
                                     quick_reply()
+                                    f = False
+                                    print("____________changed f to false_______")
                                 else:
                                     InputExecution(reply, result)
                                     append_data('data.csv',result, reply)
                                     quick_reply()
+                                    f = False
+                                    print("____________changed f to false_______")
                     else:
-                            print("____________Entered 0.8 zone____________")
+                            print("____________Entered 0.0 zone____________")
                             InputExecution('google', result)
                             append_data('data.csv',result, 'google')
-                            quick_reply()                
+                            quick_reply()
+                            f = False
+                            print("____________changed f to false_______")
+                                         
         
 

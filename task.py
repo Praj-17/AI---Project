@@ -149,6 +149,6 @@ def NoninputExecution(query):
     
 
 # read_prev_response()
-NEWS()
+
 # get_joke()
 # Day()

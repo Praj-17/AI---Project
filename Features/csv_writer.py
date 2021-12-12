@@ -13,16 +13,10 @@ def append_data(file , query, response):
     # next_id = get_length(file)
     # output = pd.read_csv(file)
     # sr_no = 0 
-    
     pd.read_csv(file, delimiter= ',')
     df = pd.DataFrame()
     df = df.append([[date, time,query, response]]).set_index(0.00,drop=True)
-    df.to_csv(file,header= False, mode= "a")
-    
-    
-
-    
-    
+    df.to_csv(file ,header= False, mode= "a")
     # df.add()
     # sr_no += 1 
     # output =pd.read_csv('data.csv')
@@ -31,7 +25,3 @@ def append_data(file , query, response):
     # print(output.head())
         # writer.writeheader()
         # writer.writerow()
-
-append_data("data.csv", 'hello', 'aaaeg1')
-append_data("data.csv", 'hello', 'aaaeg2')
-append_data("data.csv", 'hello', 'aaaeg3')
