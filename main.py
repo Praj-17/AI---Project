@@ -254,6 +254,13 @@ if __name__ == "__main__":
                                     #quick_reply()
                                     f = False
                                     print("____________changed f to false_______")
+                                else:
+                                    print("____________Entered 0.0 zone____________")
+                                    InputExecution('wolfram', result)
+                                    append_data('data.csv',result, 'google')
+                                    #quick_reply()
+                                    f = False
+                            print("____________changed f to false_______")
                     else:
                             print("____________Entered 0.0 zone____________")
                             InputExecution('google', result)
@@ -261,6 +268,6 @@ if __name__ == "__main__":
                             #quick_reply()
                             f = False
                             print("____________changed f to false_______")
-                                         
+                                       
         
 

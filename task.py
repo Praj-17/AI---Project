@@ -13,6 +13,7 @@ from Features.listen import listen
 from Features.speak import speak
 import wikipedia
 import json
+from Features.wolfram import wolfram_ssl
 try:
     with open('intents.json', 'r') as f:
         intents = json.load(f) #Naming the loaded json file as intents which actually is a dictionary 
@@ -140,15 +141,16 @@ def NoninputExecution(query):
     elif "loaction" in query:
         Location()
     elif "wait" in query:
-        wait()
-    
+        wait() 
     elif "bye" in query :
         speak
         exit(0)
+    else:
+        wolfram_ssl()
         
     
 
+
 # read_prev_response()
 
-# get_joke()
 # Day()
