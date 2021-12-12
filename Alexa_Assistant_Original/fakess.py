@@ -1,7 +1,6 @@
 import pyjokes
 import speech_recognition as sr
 import datetime
-import datefinder
 import pyttsx3
 import wikipedia
 import pywhatkit

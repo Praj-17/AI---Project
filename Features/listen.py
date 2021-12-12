@@ -65,6 +65,24 @@ def listen():
         query = listen() 
     return query.lower()
     #return (auto_correct(query)).lower()
+def listen_std():
+    r = sr.Recognizer()
+    with sr.Microphone() as source:
+        print("Listening...")
+        r.pause_threshold = 1.2
+        r.non_speaking_duration =0.3
+        r.energy_threshold = 340
+        audio = r.listen(source, phrase_time_limit= 6)
+        
+        
+    try:
+        print("Recognizing...")
+        query = r.recognize_google(audio, language= "en-in")
+        print(f"U said: {query}")
+    except:
+        query = ""
+    return query.lower()
+    #return (auto_correct(query)).lower()
 
 
 #auto_correct("he es a gret persn")
