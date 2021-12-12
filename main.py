@@ -207,7 +207,7 @@ def main():
                 
 if __name__ == "__main__":    
     wishMe()        
-    while True :   
+    while True : 
         main()
         
     
