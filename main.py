@@ -34,7 +34,13 @@ if os.path.exists(FILE):
     model.eval
 
 else: 
-    run("Train.exe", shell=True)
+    try:
+        exec(open('Train.py').read())
+        model  = torch.load(FILE)
+    except Exception as e:
+        print(e)
+        print("issue with model loading")
+    
 
 #---------------------------------------------------------------------------------------------------
 
@@ -45,6 +51,7 @@ else:
                 
 if __name__ == "__main__":
     f =False
+    wishMe()        
 
     while True:
         print("__________The status is inactive___________")
@@ -54,13 +61,15 @@ if __name__ == "__main__":
 
         if "alexa" in query:
             f = True
-            wishMe()        
             while f == True:   
+                    print("__________The status is active___________")
+                    print("Ask me anything now")
                     sentence =listen()
                     result = str(sentence)
+                    
+                    # write the differnce time code here
+                    
                     #lets say sentence = "What is photosynthesis"
-                    if result == "" or result == " ":
-                        time.sleep(10)
                     
                     sentence = tokenize(sentence)
                     sentence = [stem(w) for w in sentence if w not in ignore_words]

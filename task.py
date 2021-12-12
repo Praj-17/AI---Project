@@ -107,7 +107,7 @@ def location(query):
 
 def InputExecution(tag, query):
     if "wikipedia" in  tag:
-        result = wikipedia.summary(query, sentences = 5)
+        result = wikipedia.summary(query, sentences = 3)
         speak(result)    
     elif "google" in tag:
         query = str(query).replace("google", "").replace("search", "").replace("","").replace("what is","").replace("search about","").replace("search for","").replace("find","")

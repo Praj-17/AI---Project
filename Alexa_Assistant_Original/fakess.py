@@ -12,7 +12,6 @@ import sys
 import smtplib
 import time
 import random
-from selenium import webdriver
 import wolframalpha
 import urllib.request     #urllib. request for opening and reading URLs
 import ssl

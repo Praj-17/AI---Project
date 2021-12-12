@@ -40,7 +40,6 @@ x_train = []  #it will store the actual tags
 y_train = []  # it will store their respective indices
 for(pattern_sentence, tag) in tag_per_word:
     if pattern_sentence != [] :
-        print(pattern_sentence)
         trained_words.extend(pattern_sentence)
         
         bag = bag_of_words(pattern_sentence, all_words)

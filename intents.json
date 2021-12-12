@@ -4,7 +4,7 @@
         {
             "tag":"time",
 
-            "patterns": [  "time",  "current",  "hour", "minute", "what hour is it"],
+            "patterns": [  "time",  "current",  "hour", "minute"],
 
             "responses": [ "time","Current time is "
             ]
@@ -78,7 +78,7 @@
         {
            "tag":"weather",
            
-           "patterns": ["check weather","how is the sky","do i need to carry an umbrella", "temperature"],
+           "patterns": ["check weather"," sky","do i need to carry an umbrella", "temperature", "atmosphere","wind","air","rain","clouds","sun", "sunlight","snow","cold","hot","warm", "fog", "mist","smog",""],
            
            "responses": ["weather"
            ]
@@ -87,7 +87,7 @@
         {
            "tag":"repeat",
            
-           "patterns": ["say that again","can you repeat it","could not listen","unable to understand","can not understand", "repeat"],
+           "patterns": ["say that again", "could not listen","unable to understand","can not understand", "repeat"],
            
            "responses": ["repeat"
            ]
@@ -105,7 +105,7 @@
         {
            "tag":"good_compliment",
            
-           "patterns": ["ok","okay","okeah", "fine", "good", "nice", "fantastic", "well", "mindblowing", "eager", "excited", "better", "cool", "noice", "best", "easy", "relaxed","thank you"],
+           "patterns": ["ok","okay","okeah", "fine", "good", "nice", "fantastic", "well", "mindblowing", "eager", "excited", "better", "cool", "noice", "best", "easy", "relaxed","thankyou"],
            
            "responses": ["Nice to hear that sir", "Yeah, That's a relief", "cool..!","My pleasure sir", "That feels better" 
            ]
@@ -179,14 +179,14 @@
          "patterns": [ "how are you ?", "how is it going ?", "what is up ?", "is all right", "you fine ?", "you all right ?", "what are you doing ?", "wattcha doing?", "how"],
 
          "responses": [ "Fine sir, what about you ? ",
-              "absolutely good, what about you? ", "absolutely fine ,what about you ? ", "Fantastic, what about you ? ",
-             "Just doing my stuff, what about you ? ", "Just gathering some data, what about you ? ", "Surfing over the internet, what about you ?  ", "Watching a movie, what about you ? ", "just, analyzing the data ,what about you ? ", "Just fueling up", "Huh, just having a nap what about you ? ", "Just woke up, had a nice sleep, what about you?"]
+              "absolutely good, what about you? ", "absolutely fine, what about you ? ", "Fantastic, what about you ? ",
+             "Just doing my stuff, what about you ?", "Just gathering some data, what about you ? ", "Surfing over the internet, what about you? ",  "just, analyzing the data, what about you?"]
 
      },
      {
          "tag" :"reply",
          "patterns": [],         
-         "responses" : [ "what can I do for you?", "what can I do sir ?", "I am ready for the next one" , "what else you want me to do?","What else sir ?","Anything which I can do for you sir ?","Any help needed sir ?", "Sir any work for me ?","what's the plan now?"]
+         "responses" : [ "what else can I do for you?", "what else can I do sir ?", "I am ready for the next one" , "what else you want me to do?","What else sir ?","Anything else which I can do for you sir ?","anything more?", "what else?"]
      },
      {
          "tag" :"wishme",

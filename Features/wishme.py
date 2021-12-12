@@ -4,12 +4,10 @@ import datetime
 def wishMe():
     hour=datetime.datetime.now().hour
     if hour>=0 and hour<12:
-        speak("Good Morning sir, What can I do for you ?")
-        print("Good Morning sir, What can I do for you ?")
+        speak("Good Morning sir, I'm ready. You can call me anytime")
     elif hour>=12 and hour<18:
-        speak("Good Afternoon, What can I do for you ?")
-        print("Good Afternoon, What can I do for you ?")
+        speak("Good Afternoon,   I'm ready. You can call me anytime")
     else:
-        speak("Good Evening, What can I do for you ?")
-        print("Good Evening, What can I do for you ?")
+        speak("Good Evening sir,  I'm ready. You can call me anytime")
+    
 

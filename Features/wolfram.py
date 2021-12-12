@@ -1,7 +1,8 @@
 import wolframalpha
 import urllib.request     #urllib. request for opening and reading URLs
 import ssl
-from Features.speak import speak 
+# from Features.speak import speak 
+from speak import speak
 #from config import wolfram_id
 wolfram_id="2UR3A3-RA6XVYLJ6E"
 try:
@@ -24,3 +25,5 @@ def wolfram_ssl():
 except:
     # print("Say that again,Please...")
     speak("Say that again,Please...")'''
+
+                
