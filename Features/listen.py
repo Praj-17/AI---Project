@@ -36,7 +36,6 @@ def auto_correct(query):
 
     search = GoogleSearch(params)
     results = search.get_dict()
-    print(results)
     search_information = results['search_information']
     try:
       return search_information['spelling_fix']
@@ -63,8 +62,8 @@ def listen():
     except:
         speak("Couldn't understand, say that again please!")
         query = listen() 
-    return query.lower()
-    #return (auto_correct(query)).lower()
+    # return query.lower()
+    return (auto_correct(query)).lower()
 def listen_std():
     r = sr.Recognizer()
     with sr.Microphone() as source:
@@ -82,7 +81,7 @@ def listen_std():
     except:
         query = ""
     return query.lower()
-    #return (auto_correct(query)).lower()
+    # return (auto_correct(query)).lower()
 
 
 #auto_correct("he es a gret persn")

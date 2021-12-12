@@ -88,13 +88,14 @@ def final_weather():
     ans = listen()
     if ans == "yes":
         weather_updates() 
-def wait(amt=10):
-    speak("how many minutes you want me to wait?")
-    # speak("30 seconds", "1 minute", "2 minutes" or "5 minutes")
-    amt = float(listen().replace("minutes", "").replace("minute", ""))
-    speak(f"ok i'll wait for {amt} minutes")
-    time.sleep(amt*60)
-    speak("ok, listening now...")
+# def wait(amt=10):
+    # speak("how many minutes you want me to wait?")
+    # # speak("30 seconds", "1 minute", "2 minutes" or "5 minutes")
+    # amt = float(listen().replace("minutes", "").replace("minute", ""))
+    # speak(f"ok i'll wait for {amt} minutes")
+    # time.sleep(amt*60)
+    # speak("ok, listening now...")
+    
 
     
     
@@ -108,8 +109,13 @@ def location(query):
 
 def InputExecution(tag, query):
     if "wikipedia" in  tag:
-        result = wikipedia.summary(query, sentences = 3)
-        speak(result)    
+        try:
+            result = wikipedia.summary(query, sentences = 3)
+            speak(result) 
+        except Exception as e:
+            print("Exception: ", e)
+            query = str(query).replace("google", "").replace("search", "").replace("","").replace("what is","").replace("search about","").replace("search for","").replace("find","")
+            pywhatkit.search(query)
     elif "google" in tag:
         query = str(query).replace("google", "").replace("search", "").replace("","").replace("what is","").replace("search about","").replace("search for","").replace("find","")
         pywhatkit.search(query)
@@ -140,8 +146,6 @@ def NoninputExecution(query):
         set_alarm()
     elif "loaction" in query:
         Location()
-    elif "wait" in query:
-        wait() 
     elif "bye" in query :
         speak
         exit(0)
