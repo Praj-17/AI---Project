@@ -38,176 +38,189 @@ else:
 from Features.listen import listen 
 from Features.speak import speak
 from task import InputExecution, NoninputExecution, read_prev_response
-def main():
-    sentence =listen()
-    result = str(sentence)
-    #lets say sentence = "What is photosynthesis"
-    if result == "" or result == " ":
-        time.sleep(10)
-    
-    sentence = tokenize(sentence)
-    sentence = [stem(w) for w in sentence if w not in ignore_words]
-    print(sentence)
-    bag_2 = np.zeros(len(trained_words), dtype = np.float32)
-    for index, w in enumerate (trained_words):
-        if w in sentence:
-            bag_2[index] = 1
-    
-    print(bag_2)
-    true_count= np.sum(bag_2)
-    print("___________True_count__________")
-    print(true_count)
-    probability = true_count/len(result)
-    print("____________probablitly_______")
-    print(probability)
-    x = bag_of_words(sentence, all_words)
-    x = x.reshape(1,x.shape[0])
-    x = torch.from_numpy(x).to(device)
-    output = model(x)
-    _, predicted = torch.max(output, dim = 1 )
-    # print(predicted)
-   
-    
-    tag = tags[predicted.item()]
 
-    probs = torch.softmax(output, dim = 1)
-    prob = probs[0][predicted.item()]
     
-    # if prob.item()> 0.75:
-    #     for intent in intents ['intents']:
-    print 
-    print("____________Predicted tag_________")
-    print(tag)
-    print("____________Predicted item_________")
-    print(predicted.item())
-    print("________________probs_________")
-    print(probs)           
-    print("________________prob_________")
-    print(prob)   
-    print("________________prob.item_________")
-    print(prob.item())  
-    if probability == 0:
-            print("____________Entered 0.8 zone____________")
-            InputExecution('google', result)
-            append_data('data.csv',result, 'google')
-            quick_reply()
-                      
-          
-    if prob.item()>= 0.8:
-        print("____________Entered 0.8 zone____________")
-        for intent in intents ['intents']:
-            if tag == "Bye" and intent["tag"] == "Bye":
-                    reply = random.choice(intent["responses"])  
-                    speak(reply)
-                    append_data('data.csv',result, reply)
-                    exit(0)
-            elif tag == "repeat" and intent["tag"] == "repeat":
-                    read_prev_response()
-                    append_data('data.csv',result,prev_response())
-                    break
-            elif tag == intent["tag"]:
-                reply = random.choice(intent["responses"])
-                append_data('data.csv',result, reply)
-                print("__________________Final_reply_______________")
-                print(reply)
-               
-                if "time" in reply:
-                    NoninputExecution(reply)
-                    append_data('data.csv',result, reply)
-                    quick_reply()
-                    
-                elif "date" in reply:
-                    NoninputExecution(reply)
-                    append_data('data.csv',result, reply)
-                    quick_reply()
-                    
-                elif "day" in reply:
-                    NoninputExecution(reply)
-                    append_data('data.csv',result, reply)
-                    quick_reply()
-                
-                elif "news" in reply:
-                    NoninputExecution(reply)
-                    append_data('data.csv',result, reply)
-                    quick_reply()
-                elif "joke" in reply:
-                    NoninputExecution(reply)
-                    append_data('data.csv',result, reply)
-                    quick_reply()
-                
-                elif "alarm" in reply:
-                    NoninputExecution(reply)
-                    append_data('data.csv',result, reply)
-                    quick_reply()
-                elif "wait" in reply:
-                    NoninputExecution(reply)
-                    append_data('data.csv',result, reply)
-                elif "wikipedia" in reply:
-                    InputExecution(reply, result)
-                    append_data('data.csv',result, reply)
-                    quick_reply()
-                elif "google" in reply:
-                    InputExecution(reply, result)
-                    append_data('data.csv',result, reply)
-                    quick_reply()
-                elif "weather" in reply:
-                    InputExecution(reply, result)
-                    append_data('data.csv',result, reply)
-                    quick_reply()
-                elif "location" in reply:
-                    append_data('data.csv',result, reply)
-                    InputExecution(reply, result)
-                    quick_reply()
-                elif "playmusic" in reply:
-                    InputExecution(reply, result)
-                    append_data('data.csv',result, reply)
-                    quick_reply()
-                else: 
-                    speak(reply)
-                    quick_reply()
-    elif prob >=0.2 and prob<0.8:
-        print("____________Entered 0.2 zone____________")
-        for intent in intents ['intents']: 
-            if tag == intent["tag"]:
-                reply = random.choice(intent["responses"])
-                append_data('data.csv',result, reply)
-                print("__________________Final_reply_______________")
-                print(reply)
-                if "wikipedia" in reply:
-                    InputExecution(reply, result)
-                    append_data('data.csv',result, reply)
-                    quick_reply()
-                elif "google" in reply:
-                    InputExecution(reply, result)
-                    append_data('data.csv',result, reply)
-                    quick_reply()
-                elif "weather" in reply:
-                    InputExecution(reply, result)
-                    append_data('data.csv',result, reply)
-                    quick_reply()
-                elif "location" in reply:
-                    append_data('data.csv',result, reply)
-                    InputExecution(reply, result)
-                    quick_reply()
-                elif "playmusic" in reply:
-                    InputExecution(reply, result)
-                    append_data('data.csv',result, reply)
-                    quick_reply()
-                else:
-                    InputExecution(reply, result)
-                    append_data('data.csv',result, reply)
-                    quick_reply()
-    else:
-            print("____________Entered 0.8 zone____________")
-            InputExecution('google', result)
-            append_data('data.csv',result, 'google')
-            quick_reply()
                       
          
                 
-if __name__ == "__main__":    
-    wishMe()        
-    while True :   
-        main()
+if __name__ == "__main__":
+    f =False
+    while True:
+        print("__________The status is inactive___________")
+        print("call my name (ALEXA) to resume")
+        query = listen()
+        if "alexa" in query:
+            f = True
+            wishMe()        
+            while f == True:   
+                    sentence =listen()
+                    result = str(sentence)
+                    #lets say sentence = "What is photosynthesis"
+                    if result == "" or result == " ":
+                        time.sleep(10)
+                    
+                    sentence = tokenize(sentence)
+                    sentence = [stem(w) for w in sentence if w not in ignore_words]
+                    print(sentence)
+                    bag_2 = np.zeros(len(trained_words), dtype = np.float32)
+                    for index, w in enumerate (trained_words):
+                        if w in sentence:
+                            bag_2[index] = 1
+                    
+                    print(bag_2)
+                    true_count= np.sum(bag_2)
+                    print("___________True_count__________")
+                    print(true_count)
+                    probability = true_count/len(result)
+                    print("____________probablitly_______")
+                    print(probability)
+                    x = bag_of_words(sentence, all_words)
+                    x = x.reshape(1,x.shape[0])
+                    x = torch.from_numpy(x).to(device)
+                    output = model(x)
+                    _, predicted = torch.max(output, dim = 1 )
+                    # print(predicted)
+                
+                    
+                    tag = tags[predicted.item()]
+
+                    probs = torch.softmax(output, dim = 1)
+                    prob = probs[0][predicted.item()]
+                    
+                    # if prob.item()> 0.75:
+                    #     for intent in intents ['intents']:
+                    print 
+                    print("____________Predicted tag_________")
+                    print(tag)
+                    print("____________Predicted item_________")
+                    print(predicted.item())
+                    print("________________probs_________")
+                    print(probs)           
+                    print("________________prob_________")
+                    print(prob)   
+                    print("________________prob.item_________")
+                    print(prob.item())  
+                    if probability == 0:
+                            print("____________Entered 0.8 zone____________")
+                            InputExecution('google', result)
+                            append_data('data.csv',result, 'google')
+                            quick_reply()
+                            f = False
+                            print("____________changed f to false_______")
+                                    
+                        
+                    if prob.item()>= 0.8:
+                        print("____________Entered 0.8 zone____________")
+                        for intent in intents ['intents']:
+                            if tag == "Bye" and intent["tag"] == "Bye":
+                                    reply = random.choice(intent["responses"])  
+                                    speak(reply)
+                                    append_data('data.csv',result, reply)
+                                    exit(0)
+                            elif tag == "repeat" and intent["tag"] == "repeat":
+                                    read_prev_response()
+                                    append_data('data.csv',result,prev_response())
+                                    break
+                            elif tag == intent["tag"]:
+                                reply = random.choice(intent["responses"])
+                                append_data('data.csv',result, reply)
+                                print("__________________Final_reply_______________")
+                                print(reply)
+                            
+                                if "time" in reply:
+                                    NoninputExecution(reply)
+                                    append_data('data.csv',result, reply)
+                                    quick_reply()
+                                    f = False
+                                    print("____________changed f to false_______")
+                                  
+                                    
+                                elif "date" in reply:
+                                    NoninputExecution(reply)
+                                    append_data('data.csv',result, reply)
+                                    quick_reply()
+                                  
+                                    
+                                elif "day" in reply:
+                                    NoninputExecution(reply)
+                                    append_data('data.csv',result, reply)
+                                    quick_reply()
+                                
+                                elif "news" in reply:
+                                    NoninputExecution(reply)
+                                    append_data('data.csv',result, reply)
+                                    quick_reply()
+                                elif "joke" in reply:
+                                    NoninputExecution(reply)
+                                    append_data('data.csv',result, reply)
+                                    quick_reply()
+                                
+                                elif "alarm" in reply:
+                                    NoninputExecution(reply)
+                                    append_data('data.csv',result, reply)
+                                    quick_reply()
+                                elif "wait" in reply:
+                                    NoninputExecution(reply)
+                                    append_data('data.csv',result, reply)
+                                elif "wikipedia" in reply:
+                                    InputExecution(reply, result)
+                                    append_data('data.csv',result, reply)
+                                    quick_reply()
+                                elif "google" in reply:
+                                    InputExecution(reply, result)
+                                    append_data('data.csv',result, reply)
+                                    quick_reply()
+                                elif "weather" in reply:
+                                    InputExecution(reply, result)
+                                    append_data('data.csv',result, reply)
+                                    quick_reply()
+                                elif "location" in reply:
+                                    append_data('data.csv',result, reply)
+                                    InputExecution(reply, result)
+                                    quick_reply()
+                                elif "playmusic" in reply:
+                                    InputExecution(reply, result)
+                                    append_data('data.csv',result, reply)
+                                    quick_reply()
+                                else: 
+                                    speak(reply)
+                                    quick_reply()
+                    elif prob >=0.2 and prob<0.8:
+                        print("____________Entered 0.2 zone____________")
+                        for intent in intents ['intents']: 
+                            if tag == intent["tag"]:
+                                reply = random.choice(intent["responses"])
+                                append_data('data.csv',result, reply)
+                                print("__________________Final_reply_______________")
+                                print(reply)
+                                if "wikipedia" in reply:
+                                    InputExecution(reply, result)
+                                    append_data('data.csv',result, reply)
+                                    quick_reply()
+                                elif "google" in reply:
+                                    InputExecution(reply, result)
+                                    append_data('data.csv',result, reply)
+                                    quick_reply()
+                                elif "weather" in reply:
+                                    InputExecution(reply, result)
+                                    append_data('data.csv',result, reply)
+                                    quick_reply()
+                                elif "location" in reply:
+                                    append_data('data.csv',result, reply)
+                                    InputExecution(reply, result)
+                                    quick_reply()
+                                elif "playmusic" in reply:
+                                    InputExecution(reply, result)
+                                    append_data('data.csv',result, reply)
+                                    quick_reply()
+                                else:
+                                    InputExecution(reply, result)
+                                    append_data('data.csv',result, reply)
+                                    quick_reply()
+                    else:
+                            print("____________Entered 0.8 zone____________")
+                            InputExecution('google', result)
+                            append_data('data.csv',result, 'google')
+                            quick_reply()                
         
-    
+
