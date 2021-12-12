@@ -7,7 +7,6 @@ import torch
 from Features.csv_writer import append_data
 from task import prev_response
 from Features.wishme import wishMe
-from subprocess import run
 from Features.reply import quick_reply
 import os
 import time
@@ -16,6 +15,7 @@ from Train import trained_words
 from Features.listen import listen , listen_std
 from Features.speak import speak
 from task import InputExecution, NoninputExecution, read_prev_response
+from Features.wolfram import wolfram_ssl
 
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
@@ -113,10 +113,14 @@ if __name__ == "__main__":
                     print("________________prob.item_________")
                     print(prob.item())  
                     if probability == 0:
-                            print("____________Entered 0.8 zone____________")
-                            InputExecution('google', result)
-                            append_data('data.csv',result, 'google')
-                            quick_reply()
+                            print("____________Entered 0 zone____________")
+                            try:
+                                wolfram_ssl(result)
+                            except Exception as e:
+                                print("Exception: ", e)
+                                InputExecution('google', result)
+                                append_data('data.csv',result, 'google')
+                                quick_reply()
                             f = False
                             print("____________changed f to false_______")
                                     
@@ -258,18 +262,22 @@ if __name__ == "__main__":
                                     f = False
                                     print("____________changed f to false_______")
                                 else:
-                                    InputExecution(reply, result)
-                                    append_data('data.csv',result, reply)
-                                    #quick_reply()
+                                    try:
+                                        wolfram_ssl(result)
+                                    except Exception as e:
+                                        print("Exception: ", e)
+                                        InputExecution(reply, result)
+                                        append_data('data.csv',result, reply)
+                                        #quick_reply()
                                     f = False
                                     print("____________changed f to false_______")
                     else:
-                            print("____________Entered 0.0 zone____________")
-                            InputExecution('google', result)
-                            append_data('data.csv',result, 'google')
-                            #quick_reply()
-                            f = False
-                            print("____________changed f to false_______")
+                            try:
+                                    wolfram_ssl(result)
+                            except Exception as e:
+                                        print("Exception: ", e)
+                                        InputExecution(reply, result)
+                                        append_data('data.csv',result, reply)
                                          
         
 
