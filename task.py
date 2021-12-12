@@ -7,11 +7,17 @@
 
 #First we will have to create functions and then add them to the json file
 import random
-from Features import news
+from Features.news import get_news,more_news,getNewsUrl
 import datetime
 from Features.listen import listen
 from Features.speak import speak
 import wikipedia
+import json
+try:
+    with open('intents.json', 'r') as f:
+        intents = json.load(f) #Naming the loaded json file as intents which actually is a dictionary 
+except Exception as e:
+    print(e)
 try:
     import pywhatkit
 except Exception as e:       #it requires internet connection
@@ -34,17 +40,32 @@ def Day():
     day = datetime.datetime.now().strftime("%A")
     speak(day) 
 def NEWS():
-    news_res = news.get_news()
-    responses = ["news","Headlines are ","Top 5 bulletins are ", 'Todays Headlines are..']
-     
-    speak('Source: The Times Of India')
-    speak(random.choice(responses))
-    for index, articles in enumerate(news_res):
-        print(articles['title'])
-        speak(articles['title'])
-        if index == len(news_res)-2:
-            break
-    speak('These were the top headlines, Have a nice day Sir!!..')
+#    news_res = news.get_news()
+     responses = ["news","Headlines are ","Top 5 bulletins are ", 'Todays Headlines are..']
+#     
+#    speak('Source: The Times Of India')
+     speak(random.choice(responses))
+#    for index, articles in enumerate(news_res):
+#        print(articles['title'])
+#        speak(articles['title'])
+#        if index == len(news_res)-2:
+#            break
+#    speak('These were the top headlines, Have a nice day Sir!!..')
+     #speak(f"I'm reading out the latest news headlines, sir")
+     speak(get_news())
+     speak("Do you want to listen more news ?")
+     ans = listen()
+     #for intent in intents ['intents']:
+     if ans == "yes" : #and intent["tag"] == "Positive:
+         news_res = more_news()
+         for index, articles in enumerate(news_res):
+             print(articles['title'])
+             speak(articles['title'])
+             if index == len(news_res)-2:
+                     break
+     speak('These were the top headlines, Have a nice day Sir!!..')
+     #speak("For your convenience, I am printing it on the screen sir.")
+     #print(*get_news(),end="\n")
     
 def read_prev_response():
     lis = list(csv.reader(open('data.csv')))
@@ -128,6 +149,6 @@ def NoninputExecution(query):
     
 
 # read_prev_response()
-
+NEWS()
 # get_joke()
 # Day()
