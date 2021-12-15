@@ -1,51 +1,151 @@
-0.00,Date,time,query,index,
-2021-12-12,14: 52,please tell me the current time,time
-2021-12-12,14: 52,please tell me the current time,time
-2021-12-12,14: 52,tell me the current kuchh nahin kya,time
-2021-12-12,14: 52,tell me the current kuchh nahin kya,time
-2021-12-12,14: 52,tell me the news,news
-2021-12-12,14: 58,nothing when karega saying nothing,google
-2021-12-12,14: 58,nothing when karega saying nothing,"oh!, sorry to hear that. How can I help"
-2021-12-12,14: 58,nothing when karega saying nothing,"oh!, sorry to hear that. How can I help"
-2021-12-12,15: 28,tell me some fact,google
-2021-12-12,15: 28,tell me some fact,"oh!, sorry to hear that. How can I help"
-2021-12-12,15: 28,tell me some fact,"oh!, sorry to hear that. How can I help"
-2021-12-12,15: 28,set alarm,alarm
-2021-12-12,15: 30,de,day
-2021-12-12,15: 30,de,day
-2021-12-12,15: 30,lekin maaf my city,google
-2021-12-12,15: 30,lekin maaf my city,Something went wrong?
-2021-12-12,15: 30,lekin maaf my city,Something went wrong?
-2021-12-12,15: 34,tell me some news,news
-2021-12-12,15: 34,tell me some news,news
-2021-12-12,15: 41,alexa amazon,google
-2021-12-12,15: 41,alexa amazon,How can I amaze you?
-2021-12-12,15: 41,alexa amazon,How can I amaze you?
-2021-12-12,15: 41,telugu news,news
-2021-12-12,15: 41,telugu news,news
-2021-12-12,16: 20,play music,playmusic
-2021-12-12,16: 20,play music,playmusic
-2021-12-12,17: 06,how are you,google
-2021-12-12,17: 06,how are you,"Let me refresh your mood then, what can I do?"
-2021-12-12,17: 06,how are you,"Let me refresh your mood then, what can I do?"
-2021-12-12,17: 11,how are you,"Oops!, can I help?"
-2021-12-12,17: 11,how are you,"Oops!, can I help?"
-2021-12-12,17: 23,how are you,"absolutely good, what about you? "
-2021-12-12,17: 23,nice,My pleasure sir
-2021-12-12,17: 23,what can you do for me,"Fine sir, what about you ? "
-2021-12-12,17: 55,stock market trends,google
-2021-12-12,17: 55,stock market trends,"Oops!, can I help?"
-2021-12-12,17: 55,stock market trends,"Oops!, can I help?"
-2021-12-12,18: 18,2 + 2,google
-2021-12-12,18: 18,2 + 2,"Let me refresh your mood then, what can I do?"
-2021-12-12,18: 21,2 + 2,"Oops!, can I help?"
-2021-12-12,18: 21,2 + 2,Something went wrong?
-2021-12-12,18: 21,weather of next 5 days,My pleasure sir
-2021-12-12,19: 26,who is the lawn musk,wikipedia
-2021-12-12,19: 31,who is elon musk,wikipedia
-2021-12-12,19: 31,who is elon musk,wikipedia
-2021-12-12,19: 31,google photosynthesis,google
-2021-12-12,19: 31,google photosynthesis,google
-2021-12-12,19: 31,what is photosynthesis,"Oops!, can I help?"
-2021-12-12,19: 39,how are you,"Fantastic, what about you ? "
-2021-12-12,19: 39,fine,cool..!
+Date,time,query,response
+12/12/2021,14:52,please tell me the current time,time
+12/12/2021,14:52,please tell me the current time,time
+12/12/2021,14:52,tell me the current kuchh nahin kya,time
+12/12/2021,14:52,tell me the current kuchh nahin kya,time
+12/12/2021,14:52,tell me the news,news
+12/12/2021,14:58,nothing when karega saying nothing,google
+12/12/2021,14:58,nothing when karega saying nothing,"oh!, sorry to hear that. How can I help"
+12/12/2021,14:58,nothing when karega saying nothing,"oh!, sorry to hear that. How can I help"
+12/12/2021,15:28,tell me some fact,google
+12/12/2021,15:28,tell me some fact,"oh!, sorry to hear that. How can I help"
+12/12/2021,15:28,tell me some fact,"oh!, sorry to hear that. How can I help"
+12/12/2021,15:28,set alarm,alarm
+12/12/2021,15:30,de,day
+12/12/2021,15:30,de,day
+12/12/2021,15:30,lekin maaf my city,google
+12/12/2021,15:30,lekin maaf my city,Something went wrong?
+12/12/2021,15:30,lekin maaf my city,Something went wrong?
+12/12/2021,15:34,tell me some news,news
+12/12/2021,15:34,tell me some news,news
+12/12/2021,15:41,alexa amazon,google
+12/12/2021,15:41,alexa amazon,How can I amaze you?
+12/12/2021,15:41,alexa amazon,How can I amaze you?
+12/12/2021,15:41,telugu news,news
+12/12/2021,15:41,telugu news,news
+12/12/2021,16:20,play music,playmusic
+12/12/2021,16:20,play music,playmusic
+12/12/2021,17:06,how are you,google
+12/12/2021,17:06,how are you,"Let me refresh your mood then, what can I do?"
+12/12/2021,17:06,how are you,"Let me refresh your mood then, what can I do?"
+12/12/2021,17:11,how are you,"Oops!, can I help?"
+12/12/2021,17:11,how are you,"Oops!, can I help?"
+12/12/2021,17:23,how are you,"absolutely good, what about you? "
+12/12/2021,17:23,nice,My pleasure sir
+12/12/2021,17:23,what can you do for me,"Fine sir, what about you ? "
+12/12/2021,17:55,stock market trends,google
+12/12/2021,17:55,stock market trends,"Oops!, can I help?"
+12/12/2021,17:55,stock market trends,"Oops!, can I help?"
+12/12/2021,18:18,2 + 2,google
+12/12/2021,18:18,2 + 2,"Let me refresh your mood then, what can I do?"
+12/12/2021,18:21,2 + 2,"Oops!, can I help?"
+12/12/2021,18:21,2 + 2,Something went wrong?
+12/12/2021,18:21,weather of next 5 days,My pleasure sir
+12/12/2021,19:26,who is the lawn musk,wikipedia
+12/12/2021,19:31,who is elon musk,wikipedia
+12/12/2021,19:31,who is elon musk,wikipedia
+12/12/2021,19:31,google photosynthesis,google
+12/12/2021,19:31,google photosynthesis,google
+12/12/2021,19:31,what is photosynthesis,"Oops!, can I help?"
+12/12/2021,19:39,how are you,"Fantastic, what about you ? "
+12/12/2021,19:39,fine,cool..!
+12/12/2021,20:34,so it was the first and it has got an active and now whatever,google
+2021-12-13,18:49,how are you,"absolutely fine, what about you ? "
+2021-12-13,20:49:55,hello,"Hi there, how can I help?"
+2021-12-13,20:49:55,hello,"Hi there, how can I help?"
+2021-12-13,20:49:55,hello,Good to see you again!
+2021-12-13,20:49:55,hello,Here's your assistant
+2021-12-13,20:56:45,hello,Nice to meet you sir
+2021-12-13,20:57:51,hello,Nice to meet you sir
+2021-12-13,20:57:51,how you doin,"just, analyzing the data, what about you?"
+2021-12-13,20:57:51,good work,Nice to hear that sir
+2021-12-13,20:57:51,ok,My pleasure sir
+2021-12-13,21:07:05,hello,How are you sir
+2021-12-13,21:07:16,fine,"Yeah, That's a relief"
+2021-12-13,21:07:24,how you doin,"just, analyzing the data, what about you?"
+2021-12-13,21:07:42,can you tell me about photosynthesis,"Fantastic, what about you ? "
+2021-12-13,21:10:27,hello,Hello Sir
+2021-12-13,21:15:13,hello,Welcome Sir
+2021-12-13,21:15:28,how are you,"Surfing over the internet, what about you? "
+2021-12-13,21:15:37,nothing,wait
+2021-12-13,21:15:50,hello,How are you sir
+2021-12-13,21:16:08,what is photosynthesis,wolfram
+2021-12-13,21:16:15,ok,"Yeah, That's a relief"
+2021-12-13,21:18:09,ok,"Yeah, That's a relief"
+2021-12-13,21:20:48,hello,Hello Sir
+2021-12-13,21:24:45,tell me news,news
+2021-12-13,21:25:43,tell me news,news
+2021-12-13,21:25:52,hello,How are you sir
+2021-12-13,21:26:01,hello,Nice to meet you sir
+2021-12-13,21:47:12,how is it going on,"Surfing over the internet, what about you? "
+2021-12-13,21:51:48,hello,Here's your assistant
+2021-12-13,21:51:55,hello,Nice to meet you sir
+2021-12-13,21:52:07,good grief,That feels better
+2021-12-13,21:52:17,nope,Negative
+2021-12-13,21:53:06,positive,wolfram
+2021-12-13,21:53:17,good,"Yeah, That's a relief"
+2021-12-13,21:53:28,wait,wait
+2021-12-13,21:53:28,wait,wait
+2021-12-13,22:01:36,hello,Here's your assistant
+2021-12-13,22:02:05,hello,Nice to meet you sir
+2021-12-13,22:02:12,how do you do,"Just doing my stuff, what about you ?"
+2021-12-13,22:02:21,ok,My pleasure sir
+2021-12-13,22:09:51,alexa,google
+2021-12-13,22:10:22,hello,How are you sir
+2021-12-13,22:10:30,good,My pleasure sir
+2021-12-13,22:10:39,ok,"Yeah, That's a relief"
+2021-12-13,22:17:08,tell me the current time,Current time is 
+2021-12-13,22:17:11,tell me the current time,Current time is 
+2021-12-13,22:32:04,Entered,Entered
+2021-12-13,22:34:05,Entered,Entered
+2021-12-13,22:34:16,hello,"Hi there, how can I help?"
+2021-12-13,22:34:26,how is it going,"Just doing my stuff, what about you ?"
+2021-12-13,22:38:02,Entered,Entered
+2021-12-13,22:38:09,hello,Nice to meet you sir
+2021-12-13,22:45:43,Entered,Entered
+2021-12-13,22:45:49,hello,Hello Sir
+2021-12-13,22:46:04,how are you doing,"Fine sir, what about you ? "
+2021-12-13,22:46:12,good,That feels better
+2021-12-13,22:51:13,Entered,Entered
+2021-12-13,22:51:19,hello,Nice to meet you sir
+2021-12-13,22:51:28,how is it going on,"Surfing over the internet, what about you? "
+2021-12-13,22:51:40,nothing,wait
+2021-12-13,22:52:15,nothing,wait
+2021-12-13,22:52:51,bye,Bye
+2021-12-13,22:56:47,Entered,Entered
+2021-12-13,22:56:55,hello,Nice to meet you sir
+2021-12-13,22:57:03,how is it going on,"absolutely good, what about you? "
+2021-12-13,22:57:13,good here as well,"Yeah, That's a relief"
+2021-12-13,22:57:50,time is relative,time
+2021-12-13,23:02:15,Entered,Entered
+2021-12-13,23:02:21,hello,Welcome Sir
+2021-12-13,23:02:34,ok,cool..!
+2021-12-14,19:14:42,Entered,Entered
+2021-12-14,19:29:05,Entered,Entered
+2021-12-14,19:29:16,hello yes sir and you wake up covid-19,wait
+2021-12-14,19:37:15,Entered,Entered
+2021-12-14,19:37:29,news bulletin,news
+2021-12-14,19:39:07,Entered,Entered
+2021-12-14,19:39:18,talash detail mein news,news
+2021-12-14,19:51:04,Entered,Entered
+2021-12-14,19:51:17,gand mar,wolfram
+2021-12-14,19:54:32,Entered,Entered
+2021-12-14,20:49:15,Entered,Entered
+2021-12-14,21:23:39,Entered,Entered
+2021-12-14,21:28:24,Entered,Entered
+2021-12-14,21:30:39,Entered,Entered
+2021-12-14,21:30:58,,Something went wrong?
+2021-12-14,21:31:01,,Something went wrong?
+2021-12-14,21:31:17,,Is there anything I can help you with?
+2021-12-14,21:31:18,,Is there anything I can help you with?
+2021-12-14,21:32:50,Entered,Entered
+2021-12-14,21:33:01,,"Oops!, can I help?"
+2021-12-14,21:33:02,,"Oops!, can I help?"
+2021-12-15,23:46:02,Entered,Entered
+2021-12-15,23:46:07,hello,Hello Sir
+2021-12-15,23:46:16,google elon musk,google
+2021-12-15,23:46:24,,"Oops!, can I help?"
+2021-12-15,23:46:25,,"Oops!, can I help?"
+2021-12-15,23:46:35,stop,wait
+2021-12-15,23:46:42,,How can I amaze you?
+2021-12-15,23:46:44,,How can I amaze you?

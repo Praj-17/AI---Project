@@ -1,20 +1,8 @@
 word2number
 pandas
 datetime
-webbrowser
-pyjokes
-os
 requests
-json
-random
-speech recognition
-pyttsx3
-geocoder
 wolframalpha
-urllib
 ssl
-torch
-nltk
-numpy
-wikipedia
-pywhatkit
+pyjokes
+geocoder

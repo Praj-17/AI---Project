@@ -75,12 +75,7 @@ def read_prev_response():
     speak(prev_response)
     return prev_response
 
-def prev_response():
-    lis = list(csv.reader(open('data.csv')))
-    l = lis[-1]
-    prev_response = str(l[-1])
-    # speak(prev_response)
-    return prev_response
+
 
 def final_weather():
     weather()
