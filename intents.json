@@ -20,7 +20,7 @@
         {
             "tag":"day",
 
-            "patterns": [ "din","war","day", "de", "dee"],
+            "patterns": [ "din","day", "de", "dee"],
 
             "responses": [ "day" ]
         },

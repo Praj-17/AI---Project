@@ -6,16 +6,19 @@ from nltk.stem.porter import PorterStemmer
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
 from sklearn.feature_extraction.text import TfidfVectorizer
 from nltk.corpus import stopwords
+import re
+
+
 
 # import re
 lemmatizer = WordNetLemmatizer()
 cv = CountVectorizer()
-tf_idf = TfidfVectorizer()
+tf_idf = tfidf_vect= TfidfVectorizer( tokenizer=lambda x: x.split(',') ,use_idf=True, smooth_idf=True, sublinear_tf=False)
 # nltk.download('punkt')
 # nltk.download('wordnet')
 
 """
-Adding lemmitrizer will help improve the performance
+Adding lemmitizer will help improve the performance
 """
 # query = "hello", "Hellos", "hello?"
 # thi is how tokenization happens
@@ -67,6 +70,15 @@ def stem(word):
     """
     return PorterStemmer().stem(word.lower())
 
+#____________________________________________________________
+"""
+                  f1     f2       f3
+                boy    good    girl
+boy is good       1       1       0
+girl is good      0       1       1
+boy girl good     1       1       1
+
+"""
 
 def bag_of_words(tokenized_sentence, words):
     """
@@ -92,8 +104,8 @@ going for bag of words
 Some ways that i have written
 
 1. CountVectorizer - 
-2. TFIDF
-
+2. TFIDF  
+ 
 """
 
 def bag_of_words_2(tokenized_sentence):
@@ -105,7 +117,7 @@ def bag_of_words_2(tokenized_sentence):
     it assigns the same wietage to all the words
     to solve this problem we have another system called
     word2vec or TFIDF
-    (term frequency–inverse document frequency)
+    (term frequency – inverse document frequency)
     """
     sentence_word = [lemmatize(word) for word in tokenized_sentence if not word in set(ignore_words)]
     bag = cv.fit_transform(sentence_word).toarray()
@@ -120,21 +132,34 @@ __________________________
 #Finally = TF*IDF        |
 _________________________|
 """
-def Tf_Idf(tokenized_sentence, words):
+def Tf_Idf(tokenized_sentence):
     sentence_word = [lemmatize(word) for word in tokenized_sentence if not word in set(stopwords.words('english')) ]
-    bag = tf_idf.fit_transform([sentence_word]).toarray()
-    for index, w in enumerate (words):
-        if w in sentence_word:
-            bag[index] = 1
+    bag = tf_idf.fit_transform(sentence_word).toarray()
     return bag
-"""
-                  f1     f2       f3
-                boy    good    girl
-boy is good       1       1       0
-girl is good      0       1       1
-boy girl good     1       1       1
 
-"""
+def prediction_label(new_data):
+   ######################### Preprocessing for new_data ##########################e
+    #remove whitespaces
+    new_data = new_data.str.strip()
+    #convert to lower
+    new_data = new_data.apply(lambda x: " ".join(x.lower() for x in x.split()))
+    #line break removal
+    new_data = new_data.map(lambda x: re.sub(r"\r?\\n"," ", x)) 
+    #remove special characters
+    new_data = new_data.map(lambda x: re.sub(r'\W+', ' ', x))
+    #remove numbers
+    new_data = new_data.str.replace('\d+', '')
+    new_data = new_data.map(lambda x: re.sub(r'\b\d+\b', ' ', x))
+    new_data = new_data.apply(lambda x: " ".join(x for x in x.split() if x not in ignore_words))
+    #remove punctuation
+    new_data = new_data.str.replace('[^\w\s]','')
+    #remove underscore
+    new_data = new_data.str.replace('_', '')
+    #stemming documents(removing ing, ly, s)
+    st = PorterStemmer()
+    new_data = new_data.apply(lambda x: " ".join([st.stem(word) for word in x.split()]))
+    print('Done with stemming of documents...')
+
 
 # "trying out some examples"
 # list1 = ['kites', 'babies', 'dogs', 'flying', 'smiling',
@@ -149,4 +174,6 @@ boy girl good     1       1       1
 
 # re.sub('[^a-zA-Z]', ' ') it will remove all the punctuation marks
 # print(stopwords.words('english'))
-
+# stop = stopwords.words('english')
+# stop.remove('y')
+# print(stop)

@@ -3,7 +3,7 @@ import json
 import torch
 import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader
-from Neural_Network.text_preprocessing import ignore_words, tokenize, stem, bag_of_words
+from Neural_Network.text_preprocessing import tokenize, ignore_words,tf_idf, bag_of_words,stem
 from Neural_Network.brain import NeuralNet
 
 ## Unwrappping the Json file
@@ -13,13 +13,11 @@ try:
 except Exception as e:
     print(e)
 
-all_words = [] #it has all the words from the patterns section in the json file
-tags = [] #list of all tags present into json file
-tag_per_word = [] #All words and tags combine to make tag_per_word
+all_words = [] 
+tags = [] 
+tag_per_word = [] 
 trained_words = []
-
-#This for loop will append all tags,patterns from the json file to the tags list
-for intent in intents['intents']: #refering to the intents key which has an list of dictinonaries in it called as an intent
+for intent in intents['intents']: 
      tag = intent['tag']
      tags.append((tag))     
      for pattern in intent['patterns']:
@@ -27,6 +25,7 @@ for intent in intents['intents']: #refering to the intents key which has an list
          w = tokenize(pattern) #breaking all the patterns(in the json) into words and creating a list of words
          #_______________________words lematized instaed stem_____________
          w = [stem(w1) for w1 in w if w1 not in ignore_words ]
+        #  w = ''.join(w)
          all_words.extend(w) # adding that list of words to the all_words list
          # all_words = [lemmatize(w) for w in all_words if w not in ignore_words]
          tag_per_word.append((w,tag)) #Collecting all words and their respective tags at one place
@@ -41,13 +40,17 @@ y_train = []  # it will store their respective indices
 for(pattern_sentence, tag) in tag_per_word:
     if pattern_sentence != [] :
         trained_words.extend(pattern_sentence)
-        
+        bag_1 = Tf_Idf(str(trained_words))
         bag = bag_of_words(pattern_sentence, all_words)
+        print("______________________________bag_1______________________")      
+        print(bag_1.shape)
+        print("______________________________bag______________________")      
+        print(bag.shape)
         x_train.append(bag)
-        
+        print((x_train)[0])
         label = list(tags).index(tag) #training it on the index of the tag
         y_train.append(label)
-
+        
 
 if __name__ == '__main__':
     x_train = np.array(x_train)
@@ -56,6 +59,7 @@ if __name__ == '__main__':
     #Specifying the feautres
     num_epochs = 1000
     batch_size = 8
+    # batch_size =1
     learning_rate = 0.001
     input_size = len(x_train[0])
     hidden_size = 8
@@ -84,6 +88,7 @@ if __name__ == '__main__':
     optimizer = torch.optim.Adam(model.parameters(), lr = learning_rate)
 
     for epoch in range(num_epochs):
+      
         for(words, labels) in train_loader:
             words = words.to(device)
             labels = labels.to(dtype = torch.long).to(device)

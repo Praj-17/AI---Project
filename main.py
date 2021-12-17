@@ -15,6 +15,10 @@ from Features.speak import speak
 from task import InputExecution, NoninputExecution
 from Features.wolfram import wolfram_ssl
 import datetime
+try:
+    import pywhatkit
+except ImportError:
+    speak("Couldn't connect to the internet")
 from datetime import datetime 
 
 
@@ -84,8 +88,9 @@ if __name__ == "__main__":
                     print("Ask me anything now")
                     sentence =listen() 
                     result = str(sentence)
-                    if result == "":
+                    if result == " ":
                         status = False
+                        break
                    
                     
                 
@@ -95,6 +100,7 @@ if __name__ == "__main__":
                     
                     sentence = tokenize(sentence)
                     sentence = [stem(w) for w in sentence if w not in ignore_words]
+                    sentence = ''.join(sentence)
                     print(sentence)
                     bag_2 = np.zeros(len(trained_words), dtype = np.float32)
                     for index, w in enumerate (trained_words):
@@ -134,32 +140,32 @@ if __name__ == "__main__":
                     print(prob)   
                     print("________________prob.item_________")
                     print(prob.item())  
-                    if probability == 0:
-                            print("____________Entered 0 zone____________")
-                            try:
-                                wolfram_ssl(result) 
-                                append_data('data.csv',result,"wolfram")
-                            except Exception as e:
-                                print("Exception: ", e)
-                                InputExecution('google', result)
-                                append_data('data.csv',result, 'google')
-                                quick_reply()
-                            # f = False
-                            # print("____________changed f to false_______")
+                    # if probability == 0:
+                    #         print("____________Entered 0 zone____________")
+                    #         try:
+                    #             wolfram_ssl(result) 
+                    #             append_data('data.csv',result,"wolfram")
+                    #         except Exception as e:
+                    #             print("Exception: ", e)
+                    #             InputExecution('google', result)
+                    #             append_data('data.csv',result, 'google')
+                    #             quick_reply()
+                    #         # f = False
+                    #         # print("____________changed f to false_______")
                                     
-                    else:    
-                        if prob.item()>= 0.8:
-                            print("____________Entered 0.8 zone____________")
-                            for intent in intents ['intents']:
-                                if tag == "Bye" and intent["tag"] == "Bye":
+                     
+                    if prob.item()>= 0.75:
+                        print("____________Entered 0.8 zone____________")
+                        for intent in intents ['intents']:
+                            if tag == "Bye" and intent["tag"] == "Bye":
                                         reply = random.choice(intent["responses"])  
                                         speak(reply)
                                         append_data('data.csv',result, reply)
                                         exit(0)
-                                elif tag == "repeat" and intent["tag"] == "repeat":
+                            elif tag == "repeat" and intent["tag"] == "repeat":
                                         prev_response('response')
                                         append_data('data.csv',result,prev_response())
-                                elif tag == intent["tag"]:
+                            elif tag == intent["tag"]:
                                     reply = random.choice(intent["responses"])
                                     append_data('data.csv',result, reply)
                                     print("__________________Final_reply_______________")
@@ -245,7 +251,7 @@ if __name__ == "__main__":
                                     else: 
                                         speak(reply)
                                         #quick_reply()
-                        elif prob >=0.2 and prob<0.8:
+                    elif prob >=0.5 and prob<0.8:
                             print("____________Entered 0.2 zone____________")
                             for intent in intents ['intents']: 
                                 if tag == intent["tag"]:
@@ -286,22 +292,22 @@ if __name__ == "__main__":
                                     else:
                                         try:
                                             wolfram_ssl(result)
-                                            append_data('data.csv',result, reply)
+                                            # append_data('data.csv',result, reply)
                                         except Exception as e:
                                             print("Exception: ", e)
                                             InputExecution(reply, result)
-                                            append_data('data.csv',result, reply)
+                                            # append_data('data.csv',result, reply)
                                             #quick_reply()
                                         # f = False
                                         # print("____________changed f to false_______")
-                        else:
-                                try:
-                                        wolfram_ssl(result)
-                                        append_data('data.csv',result,"wolfram")
-                                except Exception as e:
-                                            print("Exception: ", e)
-                                            InputExecution(reply, result)
-                                            append_data('data.csv',result, reply)
+                    else:
+                            try:
+                                    wolfram_ssl(result)
+                                    append_data('data.csv',result,"wolfram")
+                            except Exception as e:
+                                        print("Exception: ", e)
+                                        pywhatkit.search(sentence)
+                                        append_data('data.csv',sentence, "finally_googled")
                     status = inactive()    
                         
                                          

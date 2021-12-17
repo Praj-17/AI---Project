@@ -40,10 +40,32 @@ def auto_correct(query):  #serpapi
       return search_information['spelling_fix']
     except:
         return query
+class countcalls(object):
+   "Decorator that keeps track of the number of times a function is called."
 
+   __instances = {}
 
+   def __init__(self, f):
+      self.__f = f
+      self.__numcalls = 0
+      countcalls.__instances[f] = self
+
+   def __call__(self, *args, **kwargs):
+      self.__numcalls += 1
+      return self.__f(*args, **kwargs)
+
+   def count(self):
+      "Return the number of times the function f was called."
+      return countcalls.__instances[self.__f].__numcalls
+
+   @staticmethod
+   def counts():
+      "Return a dict of {function: # of calls} for all registered functions."
+      return dict([(f.__name__, countcalls.__instances[f].__numcalls) for f in countcalls.__instances])
+  
+
+@countcalls
 def listen():
-    for _ in range(3):
         r = sr.Recognizer()
         with sr.Microphone() as source:
             print("Listening...")
@@ -58,9 +80,11 @@ def listen():
             query = r.recognize_google(audio, language= "en-in")
             print(f"U said: {query}")
         except:
+            if listen.count() >=3:
+                query = " "
+                return query
             speak("Couldn't understand, say that again please!")
-            # query = listen()
-            query =""
+            query = listen()
             
         try:
             return (auto_correct(query)).lower()
