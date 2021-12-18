@@ -1,14 +1,11 @@
-# import pyttsx3
-# engine = pyttsx3.init("sapi5") #google API
-# voices = engine.getProperty(('voices'))
-# engine.setProperty('voices', voices[0].id)
-# engine.setProperty('rate',170 )  # rate by default is 200
+
 import pyttsx3
 def speak(audio):
-    engine = pyttsx3.init("sapi5") #google API
-    voices = engine.getProperty(('voices'))
-    engine.setProperty('voices', voices[0].id)
-    engine.setProperty('rate',180 )  # rate by default is 200
+    engine = pyttsx3.init('sapi5') #google API
+    voices = engine.getProperty('voices')
+    
+    engine.setProperty('voice', voices[1].id)
+    engine.setProperty('rate', 200 )  # rate by default is 200
     print(f"A.I : {audio}")
     engine.say(text = audio)
     engine.runAndWait()
@@ -22,4 +19,3 @@ def speak(audio):
 #     engine = gTTS(audio)
 #     engine.save('Assis.mp3')
 #     playsound('Assis.mp3')
-# speak("Hello sir, aap kaise hai?")

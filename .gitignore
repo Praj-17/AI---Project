@@ -3,4 +3,10 @@ sample2.py
 config.py
 QA_Automation.py
 error
+<<<<<<< HEAD
 train_qa.py
+=======
+train_qa.py
+
+
+>>>>>>> master

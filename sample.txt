@@ -1,0 +1,997 @@
+0,11/27/2021,16:57,tell me current time,joke,
+0,11/27/2021,16:57,tell me current time,joke,
+0,11/27/2021,16:57,current time,time,
+0,11/27/2021,16:57,current time,time,
+0,11/27/2021,16:57,ok,That feels better,
+0,11/27/2021,17:00,current time,Current time is ,
+0,11/27/2021,17:00,current time,Current time is ,
+0,11/27/2021,17:00,current time,Current time is ,
+0,11/27/2021,17:00,current time,Current time is ,
+0,11/27/2021,17:00,tell me current time,Current time is ,
+0,11/27/2021,17:00,tell me current time,Current time is ,
+0,11/27/2021,17:00,you tell me current time,"Couldn't understand, say that again please!",
+0,11/27/2021,17:00,can you tell me current time,"Couldn't understand, say that again please!",
+0,11/27/2021,17:03,can you tell me current time,"Couldn't understand, say that again please!",
+0,11/27/2021,17:03,can you tell me the current time,wikipedia,
+0,11/27/2021,17:38,hello,Nice to meet you sir,
+0,11/27/2021,17:38,how are you,Just fueling up,
+0,11/27/2021,17:38,what are you doing,google,
+0,11/27/2021,17:38,what are you doing,google,
+0,11/27/2021,17:38,who are you,My name is jarvis,
+0,11/27/2021,17:38,play music,playmusic,
+0,11/27/2021,17:38,play music,playmusic,
+0,11/27/2021,17:38,tell me,"Couldn't understand, say that again please!",
+0,11/27/2021,17:38,tell me a joke,joke,
+0,11/27/2021,17:38,tell me a joke,joke,
+0,11/27/2021,17:38,not funny,Negative,
+0,11/27/2021,17:38,ok,That feels better,
+0,11/27/2021,17:38,what is photosynthesis,That feels better,
+0,11/27/2021,17:38,what is photosynthesis,That feels better,
+0,11/27/2021,17:50,hello,Welcome Sir,
+0,11/27/2021,17:50,how are you,"Absoloutely good, what about you? ",
+0,11/27/2021,17:50,fine,That feels better,
+0,11/27/2021,17:50,what is photosynthesis,"Couldn't understand, say that again please!",
+0,11/27/2021,17:50,what is photosynthesis,"Couldn't understand, say that again please!",
+0,11/27/2021,17:52,what is photosynthesis,"Couldn't understand, say that again please!",
+0,11/27/2021,17:52,hello,Hello Sir,
+0,11/27/2021,17:52,123,"Couldn't understand, say that again please!",
+0,11/27/2021,17:52,456,"Couldn't understand, say that again please!",
+0,11/27/2021,19:07,halo,"Couldn't understand, say that again please!",
+0,11/27/2021,19:07,hemlo,"Hi there, how can I help?",
+0,11/27/2021,19:07,what is photosynthesis,google,
+0,11/27/2021,19:07,what is photosynthesis,google,
+0,11/27/2021,19:24,hello,How are you sir,
+0,11/27/2021,19:24,fine,"Yeah, That's a relief",
+0,11/27/2021,19:24,how are you,"Just gathering some data, what about you ? ",
+0,11/27/2021,19:24,what are you doing,"Huh, just having a nap what about you ? ",
+0,11/27/2021,19:24,what are you doing,"Just gathering some data, what about you ? ",
+0,11/27/2021,19:26,hello,How are you sir,
+0,11/27/2021,19:26,fine,cool..!,
+0,11/27/2021,19:26,how do you do,Just fueling up,
+0,11/27/2021,19:26,can you play a music,"Hi there, how can I help?",
+0,11/27/2021,19:26,can you play a music,Welcome Sir,
+0,11/27/2021,19:32,hello,How are you sir,
+0,11/27/2021,19:32,fine,cool..!,
+0,11/27/2021,19:32,how do you do,"Just doing my stuff, what about you ? ",
+0,11/27/2021,19:32,waiting for you,joke,
+0,11/27/2021,19:32,waiting for you,joke,
+0,11/27/2021,19:32,tell me a joke,joke,
+0,11/27/2021,19:32,tell me a joke,joke,
+0,11/27/2021,19:32,play mere rashke kamar,playmusic,
+0,11/27/2021,19:32,play mere rashke kamar,playmusic,
+0,11/27/2021,19:32,wait wait wait,wait,
+0,11/27/2021,19:32,wait wait wait,wait,
+0,11/29/2021,19:11,hello,Here's your assistant,
+0,11/29/2021,19:11,play music happy birthday,playmusic,
+0,11/29/2021,19:11,play music happy birthday,playmusic,
+0,11/29/2021,19:11,ok,cool..!,
+0,11/29/2021,19:11,salman khan wikipedia,wikipedia,
+0,11/29/2021,19:12,tell me something about alone mask,wikipedia,
+0,11/29/2021,19:15,2 + 2,"Couldn't understand, say that again please!",
+0,11/29/2021,19:15,simanta prabhav latest point to 957 and now it should go to,Goodbye!,
+0,11/29/2021,19:17,2 + 2,"Couldn't understand, say that again please!",
+0,11/29/2021,19:22,plus two,"Couldn't understand, say that again please!",
+0,11/29/2021,19:22,contouring accept,"Couldn't understand, say that again please!",
+0,11/29/2021,19:23,plus two,"Couldn't understand, say that again please!",
+0,11/29/2021,19:23,module ssl,"Couldn't understand, say that again please!",
+0,11/29/2021,19:25,2 + 2,"Couldn't understand, say that again please!",
+0,11/29/2021,19:25,inter,"Couldn't understand, say that again please!",
+0,11/30/2021,18:37,hello,Welcome Sir,
+0,11/30/2021,18:37,who is elon musk,i'm jarvis!,
+0,11/30/2021,18:37,who is elon musk,"i'm jarvis!, you personal assistant",
+0,11/30/2021,18:39,play mere rashke kamar,playmusic,
+0,11/30/2021,18:39,play mere rashke kamar,playmusic,
+0,12/10/2021,18:57,hello,Hello Sir,
+0,12/10/2021,18:57,hello,Nice to meet you sir,
+0,12/10/2021,18:59,hello,How are you sir,
+0,12/10/2021,19:04,hello,Hello Sir,
+0,12/10/2021,19:05,hello,Good to see you again!,
+0,12/10/2021,19:05,hay hay,Good to see you again!,
+0,12/10/2021,19:05,what can you do for me," I dont know anyone named SIRI,BIKSY or GOOGLE ASSISTANT,Thats  it!!, Got your answer!!,Now go don't chat with me henceforth",
+0,12/10/2021,19:07,2 + 2,"Oops!, can I help?",
+0,12/10/2021,19:07,2 + 2,Something went wrong?,
+0,12/10/2021,19:07,2 + 2,Something went wrong?,
+0,12/10/2021,19:08,hello,Good to see you again!,
+0,12/10/2021,19:08,2 + 2,"Couldn't understand, say that again please!",
+0,12/10/2021,19:10,who is elon musk,"i'm jarvis!, you personal assistant",
+0,12/10/2021,19:16,2 + 2,How can I amaze you?,
+0,12/10/2021,19:16,2 + 2,"Couldn't understand, say that again please!",
+0,12/10/2021,19:18,hello,"Hi there, how can I help?",
+0,12/10/2021,19:18,what can you do for me,"Fantastic, what about you ? ",
+0,12/10/2021,19:18,2 + 2,"Couldn't understand, say that again please!",
+0,12/10/2021,19:18,hello,Good to see you again!,
+0,12/10/2021,19:18,what can i expect from you,"just, analyzing the data ,what about you ? ",
+0,12/10/2021,19:24,who is elon musk,wikipedia,
+0,12/10/2021,19:24,who is elon musk,wikipedia,
+0,12/10/2021,19:24,who is elon musk,wikipedia,
+0,12/10/2021,19:24,who is elon musk,wikipedia,
+0,12/10/2021,19:24,google elon musk,google,
+0,12/10/2021,19:24,google elon musk,google,
+0,12/10/2021,19:24,2 + 2,"Couldn't understand, say that again please!",
+0,12/10/2021,19:24,who are you,"Surfing over the internet ,what about you ?  ",
+0,12/10/2021,19:24,what are you,"Fine sir, what about you ? ",
+0,12/10/2021,19:24,how are you,"Just woke up, had a nice sleep, what about you?",
+0,12/10/2021,19:24,how are you,"Just woke up, had a nice sleep, what about you?",
+0,12/10/2021,19:32,how are you,"just, analyzing the data ,what about you ? ",
+0,12/10/2021,19:32,fine,That feels better,
+0,12/10/2021,20:02,hello,Hello Sir,
+0,12/10/2021,20:02,hello,Nice to meet you sir,
+0,12/10/2021,20:02,who are you,"absolutely fine ,what about you ? ",
+0,12/10/2021,20:02,how are you,"absolutely fine ,what about you ? ",
+0,12/10/2021,20:02,bye,Sad to see you go :(,
+0,12/10/2021,20:11,can you find me the latest song,wait,
+0,12/10/2021,20:11,can you find me the latest song,wait,
+0,12/10/2021,20:11,hello,Good to see you again!,
+0,12/10/2021,20:11,can you find me a the latest song,wait,
+0,12/10/2021,20:21,hello,Hello Sir,
+0,12/10/2021,20:21,who are you,"Surfing over the internet ,what about you ?  ",
+0,12/10/2021,20:21,how are you,"absolutely good, what about you? ",
+0,12/10/2021,20:21,good,"Oops!, can I help?",
+0,12/10/2021,20:23,good,"Oops!, can I help?",
+0,12/10/2021,20:25,good,"oh!, sorry to hear that. How can I help",
+0,12/10/2021,20:26,hello,Hello Sir,
+0,12/10/2021,20:26,good,cool..!,
+0,12/10/2021,20:26,how do you do,"absolutely good, what about you? ",
+0,12/10/2021,20:26,nothing much,Thanks for using me,
+0,12/10/2021,20:56,what can you do for me,"Just gathering some data, what about you ? ",
+0,12/10/2021,20:56,wait,wait,
+0,12/10/2021,20:56,wait,wait,
+0,12/10/2021,21:02,what can you do for me,"Fine sir, what about you ? ",
+0,12/10/2021,21:03,hello,"Hi there, how can I help?",
+0,12/10/2021,21:03,who are you,"absolutely good, what about you? ",
+0,12/10/2021,21:03,how do you do,"I dont know anyone named SIRI,BIKSY or GOOGLE ASSISTANT,Thats  it!!, Got your answer!!,Now go don't chat with me henceforth",
+0,12/10/2021,21:05,2 + 2,"Couldn't understand, say that again please!",
+0,12/10/2021,21:05,ok,"Yeah, That's a relief",
+0,12/10/2021,21:05,who is elon musk,wikipedia,
+0,12/10/2021,21:05,who is elon musk,wikipedia,
+0,12/10/2021,21:05,ok,"Yeah, That's a relief",
+0,12/10/2021,21:09,hello,Here's your assistant,
+0,12/10/2021,21:09,can you help me to find the latest song,"Watching a movie, what about you ? ",
+0,12/10/2021,21:09,find the latest song,repeat,
+0,12/10/2021,21:09,find the latest song,repeat,
+0,12/10/2021,21:10,find the latest,"Couldn't understand, say that again please!",
+0,12/10/2021,21:10,find the latest song,repeat,
+0,12/10/2021,21:10,play a song,playmusic,
+0,12/10/2021,21:10,play a song,playmusic,
+0,12/10/2021,21:18,latest song,playmusic,
+0,12/10/2021,21:18,latest song,playmusic,
+0,12/10/2021,21:18,stop,music is stopped,
+0,12/10/2021,21:18,hello,Nice to meet you sir,
+0,12/10/2021,21:18,what is your problem,"Couldn't understand, say that again please!",
+0,12/10/2021,21:18,ok,My pleasure sir,
+0,12/10/2021,21:18,who is elon musk,wikipedia,
+0,12/10/2021,21:18,who is elon musk,wikipedia,
+0,12/10/2021,21:18,who is elon musk,wikipedia,
+0,12/10/2021,21:21,elon musk,"Couldn't understand, say that again please!",
+0,12/10/2021,21:21,google elon musk,"Couldn't understand, say that again please!",
+0,12/10/2021,21:21,google elon musk,"Couldn't understand, say that again please!",
+0,12/10/2021,21:24,google on mars,"Couldn't understand, say that again please!",
+0,12/10/2021,21:24,google elon musk,"Couldn't understand, say that again please!",
+0,12/10/2021,21:25,google elon musk,"Couldn't understand, say that again please!",
+0,12/10/2021,21:25,2 + 2,"Couldn't understand, say that again please!",
+0,12/10/2021,21:26,2 + 2,"Couldn't understand, say that again please!",
+0,12/10/2021,21:26,who is elon musk,wikipedia,
+0,12/10/2021,21:26,who is elon musk,wikipedia,
+0,12/10/2021,22:21,who is elon musk,wikipedia,
+0,12/10/2021,22:21,google elon musk,"Couldn't understand, say that again please!",
+0,12/10/2021,22:21,google elon musk,"Couldn't understand, say that again please!",
+0,12/10/2021,22:21,what is photosynthesis,"Couldn't understand, say that again please!",
+0,12/10/2021,22:22,google elon musk,"Oops!, can I help?",
+0,12/10/2021,22:22,google elon musk,"Couldn't understand, say that again please!",
+0,12/10/2021,22:22,google elon musk,"oh!, sorry to hear that. How can I help",
+0,12/10/2021,22:22,google elon musk,"Couldn't understand, say that again please!",
+0,12/10/2021,22:22,what is photosynthesis,"Watching a movie, what about you ? ",
+0,12/10/2021,22:22,what is photosynthesis,"Couldn't understand, say that again please!",
+0,12/10/2021,22:25,google elon musk,How can I amaze you?,
+0,12/10/2021,22:25,google elon musk,"Couldn't understand, say that again please!",
+0,12/10/2021,22:26,anonymous,How can I amaze you?,
+0,12/10/2021,22:26,anonymous,"Couldn't understand, say that again please!",
+0,12/10/2021,22:26,google on mars,How can I amaze you?,
+0,12/10/2021,22:28,elon musk,"Oops!, can I help?",
+0,12/10/2021,22:28,elon musk,"Couldn't understand, say that again please!",
+0,12/10/2021,22:28,google elon musk,"Let me refresh your mood then, what can I do?",
+0,12/10/2021,22:28,google elon musk,"Couldn't understand, say that again please!",
+0,12/10/2021,22:31,google elon musk,Is there anything I can help you with?,
+0,12/10/2021,22:31,google elon musk,"Couldn't understand, say that again please!",
+0,12/10/2021,22:32,who is elon musk,"Couldn't understand, say that again please!",
+0,12/10/2021,22:35,google elon musk,How can I amaze you?,
+0,12/10/2021,22:35,google elon musk,"Couldn't understand, say that again please!",
+0,12/10/2021,22:35,google elon musk,Something went wrong?,
+0,12/10/2021,22:35,google elon musk,"Couldn't understand, say that again please!",
+0,12/10/2021,22:37,google on mars,How can I amaze you?,
+0,12/10/2021,22:37,google on mars,"Couldn't understand, say that again please!",
+0,12/10/2021,22:37,google elon musk,"Let me refresh your mood then, what can I do?",
+0,12/10/2021,22:37,google elon musk,"Couldn't understand, say that again please!",
+0,12/10/2021,22:39,google grand masti,Something went wrong?,
+0,12/10/2021,22:39,google grand masti,"Couldn't understand, say that again please!",
+0,12/10/2021,22:44,google elon musk,Something went wrong?,
+0,12/10/2021,22:44,google elon musk,"Couldn't understand, say that again please!",
+0,12/10/2021,22:45,google elon musk,"Oops!, can I help?",
+0,12/10/2021,22:45,google elon musk,"Couldn't understand, say that again please!",
+0,12/10/2021,22:47,google on,"Oops!, can I help?",
+0,12/10/2021,22:47,google on,"Couldn't understand, say that again please!",
+0,12/10/2021,22:47,google elon musk,"Oops!, can I help?",
+0,12/10/2021,22:47,google elon musk,"Couldn't understand, say that again please!",
+0,12/10/2021,22:53,google elon musk,google,
+0,12/10/2021,22:53,google elon musk,google,
+0,12/10/2021,22:53,wait,wait,
+0,12/10/2021,22:53,wait,wait,
+0,12/10/2021,22:53,what are you doing,"Surfing over the internet ,what about you ?  ",
+0,12/10/2021,22:53,nice,That feels better,
+0,12/10/2021,22:53,do you need my help,"absolutely fine ,what about you ? ",
+0,12/10/2021,22:53,ok,cool..!,
+0,12/10/2021,23:06,what is photosynthesis,google,
+0,12/10/2021,23:06,what is photosynthesis,google,
+0,12/11/2021,11:14,how are you,"Watching a movie, what about you ? ",
+0,12/11/2021,11:14,tell me news,news,
+0,12/11/2021,11:14,tell me news,news,
+0,12/11/2021,11:18,tell me about elon musk,"Oops!, can I help?",
+0,12/11/2021,11:18,tell me about elon musk,"Couldn't understand, say that again please!",
+0,12/11/2021,11:18,elon musk,Something went wrong?,
+0,12/11/2021,11:18,elon musk,"Couldn't understand, say that again please!",
+0,12/11/2021,11:18,my location,location,
+0,12/11/2021,11:18,my location,location,
+0,12/11/2021,11:18,stop,music is stopped,
+0,12/11/2021,11:18,stop,"Couldn't understand, say that again please!",
+0,12/11/2021,11:23,tell me about elon musk,Something went wrong?,
+0,12/11/2021,11:23,tell me about,"Oops!, can I help?",
+0,12/11/2021,11:23,tell me about elon musk,Something went wrong?,
+0,12/11/2021,11:23,stop it,stoping ....,
+0,12/11/2021,11:25,how are you,"Watching a movie, what about you ? ",
+0,12/11/2021,11:25,fine,"Yeah, That's a relief",
+0,12/11/2021,11:25,tell me a joke,joke,
+0,12/11/2021,11:25,tell me a joke,joke,
+0,12/11/2021,11:25,what's time now,Current time is ,
+0,12/11/2021,11:25,what's time now,Current time is ,
+0,12/11/2021,11:25,what is today's date,date,
+0,12/11/2021,11:25,what is today's date,date,
+0,12/11/2021,11:25,which day is today,day,
+0,12/11/2021,11:25,which day is today,day,
+0,12/11/2021,11:25,can you set an alarm,Here's your assistant,
+0,12/11/2021,11:25,can you tell me my weather,"just, analyzing the data ,what about you ? ",
+0,12/11/2021,11:25,what's weather of akot,weather,
+0,12/11/2021,11:25,what's weather of akot,weather,
+0,12/11/2021,11:30,tell me about my self,How can I amaze you?,
+0,12/11/2021,11:30,stop,music is stopped,
+0,12/11/2021,11:31,how are you,"Surfing over the internet, what about you ?  ",
+0,12/11/2021,11:31,just listening some music,Negative,
+0,12/11/2021,11:31,can you tell me about mahatma gandhi,"absolutely good, what about you? ",
+0,12/11/2021,11:31,mahatma gandhi,"Let me refresh your mood then, what can I do?",
+0,12/11/2021,11:31,information about mahatma gandhi,wikipedia,
+0,12/11/2021,11:31,information about mahatma gandhi,wikipedia,
+0,12/11/2021,11:31,weather of is it raining today,weather,
+0,12/11/2021,11:31,weather of is it raining today,weather,
+0,12/11/2021,11:31,tell me my location,location,
+0,12/11/2021,11:31,tell me my location,location,
+0,12/11/2021,11:31,can you send me my,"Just woke up, had a nice sleep, what about you?",
+0,12/11/2021,11:31,what about my location,location,
+0,12/11/2021,11:31,what about my location,location,
+0,12/11/2021,11:31,play some music,playmusic,
+0,12/11/2021,11:31,play some music,playmusic,
+0,12/11/2021,11:31,open flipkart,Is there anything I can help you with?,
+0,12/11/2021,11:31,top,How can I amaze you?,
+0,12/11/2021,11:31,what's my current location,location,
+0,12/11/2021,11:31,what's my current location,location,
+0,12/11/2021,11:31,location,location,
+0,12/11/2021,11:31,location,location,
+0,12/11/2021,11:31,beat,"Let me refresh your mood then, what can I do?",
+0,12/11/2021,11:31,wait,wait,
+0,12/11/2021,11:31,wait,wait,
+0,12/11/2021,11:31,set an alarm at 5 p.m.,alarm,
+0,12/11/2021,12:58,wait,wait,
+0,12/11/2021,12:58,wait,wait,
+0,12/11/2021,12:58,hello,Welcome Sir,
+0,12/11/2021,12:58,who is elon musk,wikipedia,
+0,12/11/2021,12:58,who is elon musk,wikipedia,
+0,12/11/2021,12:58,can you set an alarm,alarm,
+0,12/11/2021,13:01,hello,Hello Sir,
+0,12/11/2021,13:02,can you find me the latest song,playmusic,
+0,12/11/2021,13:02,can you find me the latest song,playmusic,
+0,12/11/2021,13:03,2 + 2,"Oops!, can I help?",
+0,12/11/2021,15:15,hello,Welcome Sir,
+0,12/11/2021,15:15,what is a bottle,Just fueling up,
+0,12/11/2021,15:15,what is photosynthesis,"absolutely good, what about you? ",
+0,12/11/2021,15:18,what is going on,"Fine sir, what about you ? ",
+0,12/11/2021,15:18,google bottle,google,
+0,12/11/2021,15:18,google bottle,google,
+0,12/11/2021,16:17,mukut kar dena yaar nothing,Thanks for using me,
+0,12/11/2021,16:20,karvane ka tha,"Let me refresh your mood then, what can I do?",
+0,12/11/2021,16:20,kuchh nahin samjha to,"Let me refresh your mood then, what can I do?",
+0,12/11/2021,16:21,time,Current time is ,
+0,12/11/2021,16:21,time,Current time is ,
+0,12/11/2021,16:22,time,Current time is ,
+0,12/11/2021,16:22,time,Current time is ,
+0,12/11/2021,16:25,pakistani nahin raha,"oh!, sorry to hear that. How can I help",
+0,12/11/2021,16:25,pakistani nahin raha,How can I amaze you?,
+0,12/11/2021,16:26,me a joke,joke,
+0,12/11/2021,16:26,me a joke,joke,
+0,12/11/2021,16:37,wait wait,wait,
+0,12/11/2021,16:38,wait wait,wait,
+0,12/11/2021,16:38,wait wait,wait,
+0,12/11/2021,16:38,ok sir,My pleasure sir,
+0,12/11/2021,16:45,hello,Welcome Sir,
+0,12/11/2021,16:45,good afternoon,"Yeah, That's a relief",
+0,12/11/2021,16:48,good afternoon sir,cool..!,
+0,12/11/2021,18:25,hello,How are you sir,
+0,12/11/2021,18:25,sign,Is there anything I can help you with?,
+0,12/11/2021,18:25,fine bola to sign,"Yeah, That's a relief",
+0,12/11/2021,18:25,wait wait,wait,
+0,12/11/2021,18:42,good evening,"Yeah, That's a relief",
+0,12/11/2021,18:41,nothing having a fun,Goodbye!,
+0,12/11/2021,18:41,babai,Something went wrong?,
+0,12/11/2021,18:41,stop,music is stopped,
+0,12/11/2021,18:41,bye,Talk to you later,
+0,12/11/2021,19:05,hanuman amin,Is there anything I can help you with?,
+0,12/11/2021,19:07,trending news,news,
+0,12/11/2021,19:11,s b i,Something went wrong?,
+0,12/11/2021,19:11,ok that make up what we can i do before,what's the plan now?,
+0,12/11/2021,19:11,hello,Here's your assistant,
+0,12/11/2021,19:11,weather in next 5 days,weather,
+0,12/11/2021,19:11,weather in next 5 days,weather,
+0,12/11/2021,19:15,ok ok,Nice to hear that sir,
+0,12/11/2021,19:16,share market,"oh!, sorry to hear that. How can I help",
+0,12/11/2021,19:16,trends today,wait,
+0,12/11/2021,19:16,stock market trends,Something went wrong?,
+0,12/11/2021,19:16,inventor of case from,"Let me refresh your mood then, what can I do?",
+0,12/11/2021,19:19,stock market trends,Is there anything I can help you with?,
+0,12/11/2021,19:23,distance between nagpur and pune,Is there anything I can help you with?,
+0,12/11/2021,19:23,it,Something went wrong?,
+0,12/11/2021,19:23,got it,"oh!, sorry to hear that. How can I help",
+0,12/11/2021,19:23,that is because that is,"oh!, sorry to hear that. How can I help",
+0,12/11/2021,19:26,latest song,playmusic,
+0,12/11/2021,19:26,latest song,playmusic,
+0,12/11/2021,22:25,photosynthesis,"oh!, sorry to hear that. How can I help",
+0,12/11/2021,22:25,photosynthesis,"oh!, sorry to hear that. How can I help",
+0,12/11/2021,22:25,what is photosynthesis,"absolutely good, what about you? ",
+0,12/11/2021,22:25,what is photosynthesis,"absolutely good, what about you? ",
+0,12/11/2021,22:26,good evening,Nice to hear that,
+0,12/11/2021,22:27,good evening,Nice to hear that,
+0,12/11/2021,22:27,good,That feels better,
+0,12/11/2021,22:27,2 + 2,How can I amaze you?,
+0,12/11/2021,22:27,2 + 2,How can I amaze you?,
+0,12/11/2021,22:27,2 + 2,"oh!, sorry to hear that. How can I help",
+0,12/11/2021,22:27,2 + 2,"oh!, sorry to hear that. How can I help",
+0,12/11/2021,22:28,2 + 2,Something went wrong?,
+0,12/11/2021,22:28,2 + 2,Something went wrong?,
+0,12/11/2021,22:29,2 + 2,Is there anything I can help you with?,
+0,12/11/2021,22:29,2 + 2,Is there anything I can help you with?,
+0,12/11/2021,22:31,2 + 2,Is there anything I can help you with?,
+0,12/11/2021,22:31,2 + 2,Is there anything I can help you with?,
+0,12/11/2021,22:31,hindi bp,"oh!, sorry to hear that. How can I help",
+0,12/11/2021,22:31,hindi bp,"oh!, sorry to hear that. How can I help",
+0,12/11/2021,22:32,play store,playmusic,
+0,12/11/2021,22:32,play store,playmusic,
+0,12/11/2021,22:32,wait,wait,
+0,12/11/2021,22:33,2 + 2,"Oops!, can I help?",
+0,12/11/2021,22:33,2 + 2,"Oops!, can I help?",
+0,12/11/2021,22:33,wait,wait,
+0,12/11/2021,22:38,2 + 2,"oh!, sorry to hear that. How can I help",
+0,12/11/2021,22:38,2 + 2,"oh!, sorry to hear that. How can I help",
+0,12/11/2021,22:41,2 + 2,Is there anything I can help you with?,
+0,12/11/2021,22:41,2 + 2,Is there anything I can help you with?,
+0,12/11/2021,22:41,wait,wait,
+0,12/11/2021,22:52,hello,"Hi there, how can I help?",
+0,12/11/2021,22:54,hi wait repeated until i say hi vate repeated until i say,stoping ....,
+0,12/11/2021,22:54,hi wait repeated until i say hi vate repeated until i say,stoping ....,
+0,12/11/2021,22:56,2 + 2,Something went wrong?,
+0,12/11/2021,22:56,2 + 2,Something went wrong?,
+0,12/11/2021,22:58,2 + 2,Is there anything I can help you with?,
+0,12/11/2021,22:58,2 + 2,Is there anything I can help you with?,
+0,12/11/2021,22:58,hello,Good to see you again!,
+0,12/11/2021,22:58,wait repeat until good ok hi hello hello,Nice to meet you sir,
+0,12/11/2021,23:02,can you find me the latest song,playmusic,
+0,12/11/2021,23:02,can you find me the latest song,playmusic,
+0,12/11/2021,23:05,can you find me the latest song,playmusic,
+0,12/11/2021,23:05,can you find me the latest song,playmusic,
+0,12/11/2021,23:05,wait,wait,
+0,12/11/2021,23:07,plus two,How can I amaze you?,
+0,12/11/2021,23:07,plus two,How can I amaze you?,
+0,12/11/2021,23:07,stock market,"Let me refresh your mood then, what can I do?",
+0,12/11/2021,23:07,stock market,"Let me refresh your mood then, what can I do?",
+0,12/11/2021,23:11,what is 2 + 2,google,
+0,12/11/2021,23:11,what is 2 + 2,google,
+0,12/11/2021,23:11,photosynthesis,How can I amaze you?,
+0,12/11/2021,23:11,photosynthesis,How can I amaze you?,
+0,12/11/2021,23:11,what is photosynthesis,google,
+0,12/11/2021,23:11,what is photosynthesis,google,
+0,12/11/2021,23:12,latest stock market trend,Welcome Sir,
+0,12/11/2021,23:12,latest stock market trend,Welcome Sir,
+0,12/11/2021,23:13,hey what is the capital of pakistan,Good to see you again!,
+0,12/11/2021,23:13,what is the capital of pakistan,google,
+0,12/11/2021,23:13,what is the capital of pakistan,google,
+0,12/11/2021,23:13,no,"Let me refresh your mood then, what can I do?",
+0,12/11/2021,23:13,no,"Let me refresh your mood then, what can I do?",
+0,12/11/2021,23:13,no,"oh!, sorry to hear that. How can I help",
+0,12/11/2021,23:13,no,"oh!, sorry to hear that. How can I help",
+0,12/11/2021,23:14,hello,Good to see you again!,
+0,12/11/2021,23:16,hello,Nice to meet you sir,
+0,12/11/2021,23:16,good evening,Nice to hear that,
+0,12/11/2021,23:16,no,"Oops!, can I help?",
+0,12/11/2021,23:16,no,"Oops!, can I help?",
+0,12/11/2021,23:16,ok,cool..!,
+0,12/11/2021,23:18,hello,Welcome Sir,
+0,12/11/2021,23:18,no,google,
+0,12/11/2021,23:18,no,Is there anything I can help you with?,
+0,12/11/2021,23:18,no,Is there anything I can help you with?,
+0,12/11/2021,23:23,what is 2 + 2,"absolutely fine ,what about you ? ",
+0,12/11/2021,23:23,what is 2 + 2,"absolutely fine ,what about you ? ",
+0,12/11/2021,23:26,what is the capital of pakistan,google,
+0,12/11/2021,23:26,what is the capital of pakistan,Something went wrong?,
+0,12/11/2021,23:26,what is the capital of pakistan,Something went wrong?,
+0,12/11/2021,23:26,nothing sir,Goodbye!,
+0,12/11/2021,23:27,stock market trends,google,
+0,12/11/2021,23:27,stock market trends,"oh!, sorry to hear that. How can I help",
+0,12/11/2021,23:27,stock market trends,"oh!, sorry to hear that. How can I help",
+0,12/11/2021,23:27,no,"Let me refresh your mood then, what can I do?",
+0,12/11/2021,23:27,no,"Let me refresh your mood then, what can I do?",
+0,12/11/2021,23:27,no,Something went wrong?,
+0,12/11/2021,23:27,no,Something went wrong?,
+0,12/11/2021,23:32,hello,Hello Sir,
+0,12/12/2021,0:09,hello,Hello Sir,
+0,12/12/2021,0:09,who is elon musk,google,
+0,12/12/2021,0:09,who is elon musk,google,
+0,12/12/2021,0:09,what is 2 + 2,google,
+0,12/12/2021,0:09,what is 2 + 2,Something went wrong?,
+0,12/12/2021,0:09,what is 2 + 2,Something went wrong?,
+0,12/12/2021,0:09,play music,playmusic,
+0,12/12/2021,0:09,play music,playmusic,
+0,12/12/2021,0:09,good job,My pleasure sir,
+0,12/12/2021,0:09,repeat,My pleasure sir,
+0,12/12/2021,0:09,capital of pakistan,google,
+0,12/12/2021,0:09,capital of pakistan,"Oops!, can I help?",
+0,12/12/2021,0:09,capital of pakistan,"Oops!, can I help?",
+0,12/12/2021,0:09,stock market trends,google,
+0,12/12/2021,0:09,stock market trends,Something went wrong?,
+0,12/12/2021,0:09,stock market trends,Something went wrong?,
+0,12/12/2021,0:09,latest song,playmusic,
+0,12/12/2021,0:09,latest song,playmusic,
+0,12/12/2021,0:09,wait,wait,
+0,12/12/2021,13:26,what is the current time,time,
+0,12/12/2021,13:26,what is the current time,time,
+0,12/12/2021,13:26,yes,Positive,
+2021-12-12,14: 08,hello,aaaeg1
+2021-12-12,14: 08,hello,aaaeg2
+2021-12-12,14: 08,hello,aaaeg3
+2021-12-12,14: 08,hello,aaaeg1
+2021-12-12,14: 08,hello,aaaeg2
+2021-12-12,14: 08,hello,aaaeg3
+2021-12-12,14: 10,hello,aaaeg1
+2021-12-12,14: 10,hello,aaaeg2
+2021-12-12,14: 10,hello,aaaeg3
+2021-12-12,14: 10,hello,How are you sir
+2021-12-12,14: 13,hello,aaaeg1
+2021-12-12,14: 13,hello,aaaeg2
+2021-12-12,14: 13,hello,aaaeg3
+2021-12-12,14: 13,hello,How are you sir
+2021-12-12,14: 13,alexa,google
+2021-12-12,14: 13,alexa,Something went wrong?
+2021-12-12,14: 13,alexa,Something went wrong?
+2021-12-12,14: 16,hello,aaaeg1
+2021-12-12,14: 16,hello,aaaeg2
+2021-12-12,14: 16,hello,aaaeg3
+2021-12-12,14: 17,hello,aaaeg1
+2021-12-12,14: 17,hello,aaaeg2
+2021-12-12,14: 17,hello,aaaeg3
+2021-12-12,14: 17,what is the capital of scotland,google
+2021-12-12,14: 17,what is the capital of scotland,"Oops!, can I help?"
+2021-12-12,14: 17,what is the capital of scotland,"Oops!, can I help?"
+2021-12-12,14: 17,no,Negative
+2021-12-12,14: 17,no,Negative
+2021-12-12,14: 17,nothing,google
+2021-12-12,14: 17,nothing,"oh!, sorry to hear that. How can I help"
+2021-12-12,14: 17,nothing,"oh!, sorry to hear that. How can I help"
+2021-12-12,14: 19,hello,aaaeg1
+2021-12-12,14: 19,hello,aaaeg2
+2021-12-12,14: 19,hello,aaaeg3
+2021-12-12,14: 19,tell me the current time,Current time is 
+2021-12-12,14: 19,tell me the current time,Current time is 
+2021-12-12,14: 21,hello,aaaeg1
+2021-12-12,14: 21,hello,aaaeg2
+2021-12-12,14: 21,hello,aaaeg3
+2021-12-12,14: 22,hello,aaaeg1
+2021-12-12,14: 22,hello,aaaeg2
+2021-12-12,14: 22,hello,aaaeg3
+2021-12-12,14: 27,hello,aaaeg1
+2021-12-12,14: 27,hello,aaaeg2
+2021-12-12,14: 27,hello,aaaeg3
+2021-12-12,14: 27,tell me the current time please,Current time is 
+2021-12-12,14: 27,tell me the current time please,Current time is 
+2021-12-12,14: 33,hello,aaaeg1
+2021-12-12,14: 33,hello,aaaeg2
+2021-12-12,14: 33,hello,aaaeg3
+2021-12-12,14: 33,please tell me the current time,Current time is 
+2021-12-12,14: 33,please tell me the current time,Current time is 
+2021-11-26, 20: 58, hello,aaaeg10,2021-11-27,16: 57,hello,Good to see you again!
+0,2021-11-27,16: 57,tell me current time,joke
+0,2021-11-27,16: 57,tell me current time,joke
+0,2021-11-27,16: 57,current time,time
+0,2021-11-27,16: 57,current time,time
+0,2021-11-27,16: 57,ok,That feels better
+0,2021-11-27,17: 00,current time,Current time is 
+0,2021-11-27,17: 00,current time,Current time is 
+0,2021-11-27,17: 00,current time,Current time is 
+0,2021-11-27,17: 00,current time,Current time is 
+0,2021-11-27,17: 00,tell me current time,Current time is 
+0,2021-11-27,17: 00,tell me current time,Current time is 
+0,2021-11-27,17: 00,you tell me current time,"Couldn't understand, say that again please!"
+0,2021-11-27,17: 00,can you tell me current time,"Couldn't understand, say that again please!"
+0,2021-11-27,17: 03,can you tell me current time,"Couldn't understand, say that again please!"
+0,2021-11-27,17: 03,can you tell me the current time,wikipedia
+0,2021-11-27,17: 38,hello,Nice to meet you sir
+0,2021-11-27,17: 38,how are you,Just fueling up
+0,2021-11-27,17: 38,what are you doing,google
+0,2021-11-27,17: 38,what are you doing,google
+0,2021-11-27,17: 38,who are you,My name is jarvis
+0,2021-11-27,17: 38,play music,playmusic
+0,2021-11-27,17: 38,play music,playmusic
+0,2021-11-27,17: 38,tell me,"Couldn't understand, say that again please!"
+0,2021-11-27,17: 38,tell me a joke,joke
+0,2021-11-27,17: 38,tell me a joke,joke
+0,2021-11-27,17: 38,not funny,Negative
+0,2021-11-27,17: 38,ok,That feels better
+0,2021-11-27,17: 38,what is photosynthesis,That feels better
+0,2021-11-27,17: 38,what is photosynthesis,That feels better
+0,2021-11-27,17: 50,hello,Welcome Sir
+0,2021-11-27,17: 50,how are you,"Absoloutely good, what about you? "
+0,2021-11-27,17: 50,fine,That feels better
+0,2021-11-27,17: 50,what is photosynthesis,"Couldn't understand, say that again please!"
+0,2021-11-27,17: 50,what is photosynthesis,"Couldn't understand, say that again please!"
+0,2021-11-27,17: 52,what is photosynthesis,"Couldn't understand, say that again please!"
+0,2021-11-27,17: 52,hello,Hello Sir
+0,2021-11-27,17: 52,123,"Couldn't understand, say that again please!"
+0,2021-11-27,17: 52,456,"Couldn't understand, say that again please!"
+0,2021-11-27,19: 07,halo,"Couldn't understand, say that again please!"
+0,2021-11-27,19: 07,hemlo,"Hi there, how can I help?"
+0,2021-11-27,19: 07,what is photosynthesis,google
+0,2021-11-27,19: 07,what is photosynthesis,google
+0,2021-11-27,19: 24,hello,How are you sir
+0,2021-11-27,19: 24,fine,"Yeah, That's a relief"
+0,2021-11-27,19: 24,how are you,"Just gathering some data, what about you ? "
+0,2021-11-27,19: 24,what are you doing,"Huh, just having a nap what about you ? "
+0,2021-11-27,19: 24,what are you doing,"Just gathering some data, what about you ? "
+0,2021-11-27,19: 26,hello,How are you sir
+0,2021-11-27,19: 26,fine,cool..!
+0,2021-11-27,19: 26,how do you do,Just fueling up
+0,2021-11-27,19: 26,can you play a music,"Hi there, how can I help?"
+0,2021-11-27,19: 26,can you play a music,Welcome Sir
+0,2021-11-27,19: 32,hello,How are you sir
+0,2021-11-27,19: 32,fine,cool..!
+0,2021-11-27,19: 32,how do you do,"Just doing my stuff, what about you ? "
+0,2021-11-27,19: 32,waiting for you,joke
+0,2021-11-27,19: 32,waiting for you,joke
+0,2021-11-27,19: 32,tell me a joke,joke
+0,2021-11-27,19: 32,tell me a joke,joke
+0,2021-11-27,19: 32,play mere rashke kamar,playmusic
+0,2021-11-27,19: 32,play mere rashke kamar,playmusic
+0,2021-11-27,19: 32,wait wait wait,wait
+0,2021-11-27,19: 32,wait wait wait,wait
+0,2021-11-29,19: 11,hello,Here's your assistant
+0,2021-11-29,19: 11,play music happy birthday,playmusic
+0,2021-11-29,19: 11,play music happy birthday,playmusic
+0,2021-11-29,19: 11,ok,cool..!
+0,2021-11-29,19: 11,salman khan wikipedia,wikipedia
+0,2021-11-29,19: 12,tell me something about alone mask,wikipedia
+0,2021-11-29,19: 15,2 + 2,"Couldn't understand, say that again please!"
+0,2021-11-29,19: 15,simanta prabhav latest point to 957 and now it should go to,Goodbye!
+0,2021-11-29,19: 17,2 + 2,"Couldn't understand, say that again please!"
+0,2021-11-29,19: 22,plus two,"Couldn't understand, say that again please!"
+0,2021-11-29,19: 22,contouring accept,"Couldn't understand, say that again please!"
+0,2021-11-29,19: 23,plus two,"Couldn't understand, say that again please!"
+0,2021-11-29,19: 23,module ssl,"Couldn't understand, say that again please!"
+0,2021-11-29,19: 25,2 + 2,"Couldn't understand, say that again please!"
+0,2021-11-29,19: 25,inter,"Couldn't understand, say that again please!"
+0,2021-11-30,18: 37,hello,Welcome Sir
+0,2021-11-30,18: 37,who is elon musk,i'm jarvis!
+0,2021-11-30,18: 37,who is elon musk,"i'm jarvis!, you personal assistant"
+0,2021-11-30,18: 39,play mere rashke kamar,playmusic
+0,2021-11-30,18: 39,play mere rashke kamar,playmusic
+0,2021-12-10,18: 57,hello,Hello Sir
+0,2021-12-10,18: 57,hello,Nice to meet you sir
+0,2021-12-10,18: 59,hello,How are you sir
+0,2021-12-10,19: 04,hello,Hello Sir
+0,2021-12-10,19: 05,hello,Good to see you again!
+0,2021-12-10,19: 05,hay hay,Good to see you again!
+0,2021-12-10,19: 05,what can you do for me," I dont know anyone named SIRI,BIKSY or GOOGLE ASSISTANT,Thats  it!!, Got your answer!!,Now go don't chat with me henceforth"
+0,2021-12-10,19: 07,2 + 2,"Oops!, can I help?"
+0,2021-12-10,19: 07,2 + 2,Something went wrong?
+0,2021-12-10,19: 07,2 + 2,Something went wrong?
+0,2021-12-10,19: 08,hello,Good to see you again!
+0,2021-12-10,19: 08,2 + 2,"Couldn't understand, say that again please!"
+0,2021-12-10,19: 10,who is elon musk,"i'm jarvis!, you personal assistant"
+0,2021-12-10,19: 16,2 + 2,How can I amaze you?
+0,2021-12-10,19: 16,2 + 2,"Couldn't understand, say that again please!"
+0,2021-12-10,19: 18,hello,"Hi there, how can I help?"
+0,2021-12-10,19: 18,what can you do for me,"Fantastic, what about you ? "
+0,2021-12-10,19: 18,2 + 2,"Couldn't understand, say that again please!"
+0,2021-12-10,19: 18,hello,Good to see you again!
+0,2021-12-10,19: 18,what can i expect from you,"just, analyzing the data ,what about you ? "
+0,2021-12-10,19: 24,who is elon musk,wikipedia
+0,2021-12-10,19: 24,who is elon musk,wikipedia
+0,2021-12-10,19: 24,who is elon musk,wikipedia
+0,2021-12-10,19: 24,who is elon musk,wikipedia
+0,2021-12-10,19: 24,google elon musk,google
+0,2021-12-10,19: 24,google elon musk,google
+0,2021-12-10,19: 24,2 + 2,"Couldn't understand, say that again please!"
+0,2021-12-10,19: 24,who are you,"Surfing over the internet ,what about you ?  "
+0,2021-12-10,19: 24,what are you,"Fine sir, what about you ? "
+0,2021-12-10,19: 24,how are you,"Just woke up, had a nice sleep, what about you?"
+0,2021-12-10,19: 24,how are you,"Just woke up, had a nice sleep, what about you?"
+0,2021-12-10,19: 32,how are you,"just, analyzing the data ,what about you ? "
+0,2021-12-10,19: 32,fine,That feels better
+0,2021-12-10,20: 02,hello,Hello Sir
+0,2021-12-10,20: 02,hello,Nice to meet you sir
+0,2021-12-10,20: 02,who are you,"absolutely fine ,what about you ? "
+0,2021-12-10,20: 02,how are you,"absolutely fine ,what about you ? "
+0,2021-12-10,20: 02,bye,Sad to see you go :(
+0,2021-12-10,20: 11,can you find me the latest song,wait
+0,2021-12-10,20: 11,can you find me the latest song,wait
+0,2021-12-10,20: 11,hello,Good to see you again!
+0,2021-12-10,20: 11,can you find me a the latest song,wait
+0,2021-12-10,20: 21,hello,Hello Sir
+0,2021-12-10,20: 21,who are you,"Surfing over the internet ,what about you ?  "
+0,2021-12-10,20: 21,how are you,"absolutely good, what about you? "
+0,2021-12-10,20: 21,good,"Oops!, can I help?"
+0,2021-12-10,20: 23,good,"Oops!, can I help?"
+0,2021-12-10,20: 25,good,"oh!, sorry to hear that. How can I help"
+0,2021-12-10,20: 26,hello,Hello Sir
+0,2021-12-10,20: 26,good,cool..!
+0,2021-12-10,20: 26,how do you do,"absolutely good, what about you? "
+0,2021-12-10,20: 26,nothing much,Thanks for using me
+0,2021-12-10,20: 56,what can you do for me,"Just gathering some data, what about you ? "
+0,2021-12-10,20: 56,wait,wait
+0,2021-12-10,20: 56,wait,wait
+0,2021-12-10,21: 02,what can you do for me,"Fine sir, what about you ? "
+0,2021-12-10,21: 03,hello,"Hi there, how can I help?"
+0,2021-12-10,21: 03,who are you,"absolutely good, what about you? "
+0,2021-12-10,21: 03,how do you do,"I dont know anyone named SIRI,BIKSY or GOOGLE ASSISTANT,Thats  it!!, Got your answer!!,Now go don't chat with me henceforth"
+0,2021-12-10,21: 05,2 + 2,"Couldn't understand, say that again please!"
+0,2021-12-10,21: 05,ok,"Yeah, That's a relief"
+0,2021-12-10,21: 05,who is elon musk,wikipedia
+0,2021-12-10,21: 05,who is elon musk,wikipedia
+0,2021-12-10,21: 05,ok,"Yeah, That's a relief"
+0,2021-12-10,21: 09,hello,Here's your assistant
+0,2021-12-10,21: 09,can you help me to find the latest song,"Watching a movie, what about you ? "
+0,2021-12-10,21: 09,find the latest song,repeat
+0,2021-12-10,21: 09,find the latest song,repeat
+0,2021-12-10,21: 10,find the latest,"Couldn't understand, say that again please!"
+0,2021-12-10,21: 10,find the latest song,repeat
+0,2021-12-10,21: 10,play a song,playmusic
+0,2021-12-10,21: 10,play a song,playmusic
+0,2021-12-10,21: 18,latest song,playmusic
+0,2021-12-10,21: 18,latest song,playmusic
+0,2021-12-10,21: 18,stop,music is stopped
+0,2021-12-10,21: 18,hello,Nice to meet you sir
+0,2021-12-10,21: 18,what is your problem,"Couldn't understand, say that again please!"
+0,2021-12-10,21: 18,ok,My pleasure sir
+0,2021-12-10,21: 18,who is elon musk,wikipedia
+0,2021-12-10,21: 18,who is elon musk,wikipedia
+0,2021-12-10,21: 18,who is elon musk,wikipedia
+0,2021-12-10,21: 21,elon musk,"Couldn't understand, say that again please!"
+0,2021-12-10,21: 21,google elon musk,"Couldn't understand, say that again please!"
+0,2021-12-10,21: 21,google elon musk,"Couldn't understand, say that again please!"
+0,2021-12-10,21: 24,google on mars,"Couldn't understand, say that again please!"
+0,2021-12-10,21: 24,google elon musk,"Couldn't understand, say that again please!"
+0,2021-12-10,21: 25,google elon musk,"Couldn't understand, say that again please!"
+0,2021-12-10,21: 25,2 + 2,"Couldn't understand, say that again please!"
+0,2021-12-10,21: 26,2 + 2,"Couldn't understand, say that again please!"
+0,2021-12-10,21: 26,who is elon musk,wikipedia
+0,2021-12-10,21: 26,who is elon musk,wikipedia
+0,2021-12-10,22: 21,who is elon musk,wikipedia
+0,2021-12-10,22: 21,google elon musk,"Couldn't understand, say that again please!"
+0,2021-12-10,22: 21,google elon musk,"Couldn't understand, say that again please!"
+0,2021-12-10,22: 21,what is photosynthesis,"Couldn't understand, say that again please!"
+0,2021-12-10,22: 22,google elon musk,"Oops!, can I help?"
+0,2021-12-10,22: 22,google elon musk,"Couldn't understand, say that again please!"
+0,2021-12-10,22: 22,google elon musk,"oh!, sorry to hear that. How can I help"
+0,2021-12-10,22: 22,google elon musk,"Couldn't understand, say that again please!"
+0,2021-12-10,22: 22,what is photosynthesis,"Watching a movie, what about you ? "
+0,2021-12-10,22: 22,what is photosynthesis,"Couldn't understand, say that again please!"
+0,2021-12-10,22: 25,google elon musk,How can I amaze you?
+0,2021-12-10,22: 25,google elon musk,"Couldn't understand, say that again please!"
+0,2021-12-10,22: 26,anonymous,How can I amaze you?
+0,2021-12-10,22: 26,anonymous,"Couldn't understand, say that again please!"
+0,2021-12-10,22: 26,google on mars,How can I amaze you?
+0,2021-12-10,22: 28,elon musk,"Oops!, can I help?"
+0,2021-12-10,22: 28,elon musk,"Couldn't understand, say that again please!"
+0,2021-12-10,22: 28,google elon musk,"Let me refresh your mood then, what can I do?"
+0,2021-12-10,22: 28,google elon musk,"Couldn't understand, say that again please!"
+0,2021-12-10,22: 31,google elon musk,Is there anything I can help you with?
+0,2021-12-10,22: 31,google elon musk,"Couldn't understand, say that again please!"
+0,2021-12-10,22: 32,who is elon musk,"Couldn't understand, say that again please!"
+0,2021-12-10,22: 35,google elon musk,How can I amaze you?
+0,2021-12-10,22: 35,google elon musk,"Couldn't understand, say that again please!"
+0,2021-12-10,22: 35,google elon musk,Something went wrong?
+0,2021-12-10,22: 35,google elon musk,"Couldn't understand, say that again please!"
+0,2021-12-10,22: 37,google on mars,How can I amaze you?
+0,2021-12-10,22: 37,google on mars,"Couldn't understand, say that again please!"
+0,2021-12-10,22: 37,google elon musk,"Let me refresh your mood then, what can I do?"
+0,2021-12-10,22: 37,google elon musk,"Couldn't understand, say that again please!"
+0,2021-12-10,22: 39,google grand masti,Something went wrong?
+0,2021-12-10,22: 39,google grand masti,"Couldn't understand, say that again please!"
+0,2021-12-10,22: 44,google elon musk,Something went wrong?
+0,2021-12-10,22: 44,google elon musk,"Couldn't understand, say that again please!"
+0,2021-12-10,22: 45,google elon musk,"Oops!, can I help?"
+0,2021-12-10,22: 45,google elon musk,"Couldn't understand, say that again please!"
+0,2021-12-10,22: 47,google on,"Oops!, can I help?"
+0,2021-12-10,22: 47,google on,"Couldn't understand, say that again please!"
+0,2021-12-10,22: 47,google elon musk,"Oops!, can I help?"
+0,2021-12-10,22: 47,google elon musk,"Couldn't understand, say that again please!"
+0,2021-12-10,22: 53,google elon musk,google
+0,2021-12-10,22: 53,google elon musk,google
+0,2021-12-10,22: 53,wait,wait
+0,2021-12-10,22: 53,wait,wait
+0,2021-12-10,22: 53,what are you doing,"Surfing over the internet ,what about you ?  "
+0,2021-12-10,22: 53,nice,That feels better
+0,2021-12-10,22: 53,do you need my help,"absolutely fine ,what about you ? "
+0,2021-12-10,22: 53,ok,cool..!
+0,2021-12-10,23: 06,what is photosynthesis,google
+0,2021-12-10,23: 06,what is photosynthesis,google
+0,2021-12-11,11: 14,how are you,"Watching a movie, what about you ? "
+0,2021-12-11,11: 14,tell me news,news
+0,2021-12-11,11: 14,tell me news,news
+0,2021-12-11,11: 18,tell me about elon musk,"Oops!, can I help?"
+0,2021-12-11,11: 18,tell me about elon musk,"Couldn't understand, say that again please!"
+0,2021-12-11,11: 18,elon musk,Something went wrong?
+0,2021-12-11,11: 18,elon musk,"Couldn't understand, say that again please!"
+0,2021-12-11,11: 18,my location,location
+0,2021-12-11,11: 18,my location,location
+0,2021-12-11,11: 18,stop,music is stopped
+0,2021-12-11,11: 18,stop,"Couldn't understand, say that again please!"
+0,2021-12-11,11: 23,tell me about elon musk,Something went wrong?
+0,2021-12-11,11: 23,tell me about,"Oops!, can I help?"
+0,2021-12-11,11: 23,tell me about elon musk,Something went wrong?
+0,2021-12-11,11: 23,stop it,stoping ....
+0,2021-12-11,11: 25,how are you,"Watching a movie, what about you ? "
+0,2021-12-11,11: 25,fine,"Yeah, That's a relief"
+0,2021-12-11,11: 25,tell me a joke,joke
+0,2021-12-11,11: 25,tell me a joke,joke
+0,2021-12-11,11: 25,what's time now,Current time is 
+0,2021-12-11,11: 25,what's time now,Current time is 
+0,2021-12-11,11: 25,what is today's date,date
+0,2021-12-11,11: 25,what is today's date,date
+0,2021-12-11,11: 25,which day is today,day
+0,2021-12-11,11: 25,which day is today,day
+0,2021-12-11,11: 25,can you set an alarm,Here's your assistant
+0,2021-12-11,11: 25,can you tell me my weather,"just, analyzing the data ,what about you ? "
+0,2021-12-11,11: 25,what's weather of akot,weather
+0,2021-12-11,11: 25,what's weather of akot,weather
+0,2021-12-11,11: 30,tell me about my self,How can I amaze you?
+0,2021-12-11,11: 30,stop,music is stopped
+0,2021-12-11,11: 31,how are you,"Surfing over the internet, what about you ?  "
+0,2021-12-11,11: 31,just listening some music,Negative
+0,2021-12-11,11: 31,can you tell me about mahatma gandhi,"absolutely good, what about you? "
+0,2021-12-11,11: 31,mahatma gandhi,"Let me refresh your mood then, what can I do?"
+0,2021-12-11,11: 31,information about mahatma gandhi,wikipedia
+0,2021-12-11,11: 31,information about mahatma gandhi,wikipedia
+0,2021-12-11,11: 31,weather of is it raining today,weather
+0,2021-12-11,11: 31,weather of is it raining today,weather
+0,2021-12-11,11: 31,tell me my location,location
+0,2021-12-11,11: 31,tell me my location,location
+0,2021-12-11,11: 31,can you send me my,"Just woke up, had a nice sleep, what about you?"
+0,2021-12-11,11: 31,what about my location,location
+0,2021-12-11,11: 31,what about my location,location
+0,2021-12-11,11: 31,play some music,playmusic
+0,2021-12-11,11: 31,play some music,playmusic
+0,2021-12-11,11: 31,open flipkart,Is there anything I can help you with?
+0,2021-12-11,11: 31,top,How can I amaze you?
+0,2021-12-11,11: 31,what's my current location,location
+0,2021-12-11,11: 31,what's my current location,location
+0,2021-12-11,11: 31,location,location
+0,2021-12-11,11: 31,location,location
+0,2021-12-11,11: 31,beat,"Let me refresh your mood then, what can I do?"
+0,2021-12-11,11: 31,wait,wait
+0,2021-12-11,11: 31,wait,wait
+0,2021-12-11,11: 31,set an alarm at 5 p.m.,alarm
+0,2021-12-11,13: 45,how are you,"Surfing over the internet, what about you ?  "
+0,2021-12-11,13: 45,just chilling out,Something went wrong?
+0,2021-12-11,13: 45,tell me about elon musk,Something went wrong?
+0,2021-12-11,14: 00,how are you,"Watching a movie, what about you ? "
+0,2021-12-11,14: 00,tell me something about news,news
+0,2021-12-11,14: 02,what's my location,location
+0,2021-12-11,14: 02,what's my location,location
+0,2021-12-11,14: 02,where i am,location
+0,2021-12-11,14: 02,where i am,location
+0,2021-12-11,14: 02,do some research,"oh!, sorry to hear that. How can I help"
+0,2021-12-11,14: 20,tell me joke,joke
+0,2021-12-11,14: 20,tell me joke,joke
+0,2021-12-11,14: 20,not so funny can you make some fun,google
+0,2021-12-11,14: 20,not so funny can you make some fun,google
+0,2021-12-11,14: 36,which day is today,day
+0,2021-12-11,14: 36,which day is today,day
+0,2021-12-11,14: 36,tell me time,Current time is 
+0,2021-12-11,14: 36,tell me time,Current time is 
+0,2021-12-11,14: 36,what's today date,date
+0,2021-12-11,14: 36,what's today date,date
+0,2021-12-11,14: 36,what's the weather of my city,weather
+0,2021-12-11,14: 39,tell me my location,location
+0,2021-12-11,14: 39,tell me my location,location
+0,2021-12-11,14: 39,what are you,"Just gathering some data, what about you ? "
+0,2021-12-11,14: 39,just hustling,Something went wrong?
+0,2021-12-11,14: 39,can you tell me a joke,joke
+0,2021-12-11,14: 39,can you tell me a joke,joke
+0,2021-12-11,14: 39,nice joke can you tell me my current weather update,wikipedia
+0,2021-12-11,14: 39,nice joke can you tell me my current weather update,wikipedia
+0,2021-12-11,14: 39,play some music,playmusic
+0,2021-12-11,14: 39,play some music,playmusic
+0,2021-12-11,14: 39,open weather,weather
+0,2021-12-11,14: 39,open weather,weather
+0,2021-12-11,12: 58,wait,wait
+0,2021-12-11,12: 58,wait,wait
+0,2021-12-11,12: 58,hello,Welcome Sir
+0,2021-12-11,12: 58,who is elon musk,wikipedia
+0,2021-12-11,12: 58,who is elon musk,wikipedia
+0,2021-12-11,12: 58,can you set an alarm,alarm
+0,2021-12-11,13: 01,hello,Hello Sir
+0,2021-12-11,13: 02,can you find me the latest song,playmusic
+0,2021-12-11,13: 02,can you find me the latest song,playmusic
+0,2021-12-11,13: 03,2 + 2,"Oops!, can I help?"
+0,2021-12-11,15: 15,hello,Welcome Sir
+0,2021-12-11,15: 15,what is a bottle,Just fueling up
+0,2021-12-11,15: 15,what is photosynthesis,"absolutely good, what about you? "
+0,2021-12-11,15: 18,what is going on,"Fine sir, what about you ? "
+0,2021-12-11,15: 18,google bottle,google
+0,2021-12-11,15: 18,google bottle,google
+0,2021-12-11,16: 17,mukut kar dena yaar nothing,Thanks for using me
+0,2021-12-11,16: 20,karvane ka tha,"Let me refresh your mood then, what can I do?"
+0,2021-12-11,16: 20,kuchh nahin samjha to,"Let me refresh your mood then, what can I do?"
+0,2021-12-11,16: 21,time,Current time is 
+0,2021-12-11,16: 21,time,Current time is 
+0,2021-12-11,16: 22,time,Current time is 
+0,2021-12-11,16: 22,time,Current time is 
+0,2021-12-11,16: 25,pakistani nahin raha,"oh!, sorry to hear that. How can I help"
+0,2021-12-11,16: 25,pakistani nahin raha,How can I amaze you?
+0,2021-12-11,16: 26,me a joke,joke
+0,2021-12-11,16: 26,me a joke,joke
+0,2021-12-11,16: 37,wait wait,wait
+0,2021-12-11,16: 38,wait wait,wait
+0,2021-12-11,16: 38,wait wait,wait
+0,2021-12-11,16: 38,ok sir,My pleasure sir
+0,2021-12-11,16: 45,hello,Welcome Sir
+0,2021-12-11,16: 45,good afternoon,"Yeah, That's a relief"
+0,2021-12-11,16: 48,good afternoon sir,cool..!
+0,2021-12-11,18: 25,hello,How are you sir
+0,2021-12-11,18: 25,sign,Is there anything I can help you with?
+0,2021-12-11,18: 25,fine bola to sign,"Yeah, That's a relief"
+0,2021-12-11,18: 25,wait wait,wait
+0,2021-12-11,18: 42,good evening,"Yeah, That's a relief"
+0,2021-12-11,18: 41,nothing having a fun,Goodbye!
+0,2021-12-11,18: 41,babai,Something went wrong?
+0,2021-12-11,18: 41,stop,music is stopped
+0,2021-12-11,18: 41,bye,Talk to you later
+0,2021-12-11,19: 05,hanuman amin,Is there anything I can help you with?
+0,2021-12-11,19: 07,trending news,news
+0,2021-12-11,19: 11,s b i,Something went wrong?
+0,2021-12-11,19: 11,ok that make up what we can i do before,what's the plan now?
+0,2021-12-11,19: 11,hello,Here's your assistant
+0,2021-12-11,19: 11,weather in next 5 days,weather
+0,2021-12-11,19: 11,weather in next 5 days,weather
+0,2021-12-11,19: 15,ok ok,Nice to hear that sir
+0,2021-12-11,19: 16,share market,"oh!, sorry to hear that. How can I help"
+0,2021-12-11,19: 16,trends today,wait
+0,2021-12-11,19: 16,stock market trends,Something went wrong?
+0,2021-12-11,19: 16,inventor of case from,"Let me refresh your mood then, what can I do?"
+0,2021-12-11,19: 19,stock market trends,Is there anything I can help you with?
+0,2021-12-11,19: 23,distance between nagpur and pune,Is there anything I can help you with?
+0,2021-12-11,19: 23,it,Something went wrong?
+0,2021-12-11,19: 23,got it,"oh!, sorry to hear that. How can I help"
+0,2021-12-11,19: 23,that is because that is,"oh!, sorry to hear that. How can I help"
+0,2021-12-11,19: 26,latest song,playmusic
+0,2021-12-11,19: 26,latest song,playmusic
+0,2021-12-11,22: 25,photosynthesis,"oh!, sorry to hear that. How can I help"
+0,2021-12-11,22: 25,photosynthesis,"oh!, sorry to hear that. How can I help"
+0,2021-12-11,22: 25,what is photosynthesis,"absolutely good, what about you? "
+0,2021-12-11,22: 25,what is photosynthesis,"absolutely good, what about you? "
+0,2021-12-11,22: 26,good evening,Nice to hear that
+0,2021-12-11,22: 27,good evening,Nice to hear that
+0,2021-12-11,22: 27,good,That feels better
+0,2021-12-11,22: 27,2 + 2,How can I amaze you?
+0,2021-12-11,22: 27,2 + 2,How can I amaze you?
+0,2021-12-11,22: 27,2 + 2,"oh!, sorry to hear that. How can I help"
+0,2021-12-11,22: 27,2 + 2,"oh!, sorry to hear that. How can I help"
+0,2021-12-11,22: 28,2 + 2,Something went wrong?
+0,2021-12-11,22: 28,2 + 2,Something went wrong?
+0,2021-12-11,22: 29,2 + 2,Is there anything I can help you with?
+0,2021-12-11,22: 29,2 + 2,Is there anything I can help you with?
+0,2021-12-11,22: 31,2 + 2,Is there anything I can help you with?
+0,2021-12-11,22: 31,2 + 2,Is there anything I can help you with?
+0,2021-12-11,22: 31,hindi bp,"oh!, sorry to hear that. How can I help"
+0,2021-12-11,22: 31,hindi bp,"oh!, sorry to hear that. How can I help"
+0,2021-12-11,22: 32,play store,playmusic
+0,2021-12-11,22: 32,play store,playmusic
+0,2021-12-11,22: 32,wait,wait
+0,2021-12-11,22: 33,2 + 2,"Oops!, can I help?"
+0,2021-12-11,22: 33,2 + 2,"Oops!, can I help?"
+0,2021-12-11,22: 33,wait,wait
+0,2021-12-11,22: 38,2 + 2,"oh!, sorry to hear that. How can I help"
+0,2021-12-11,22: 38,2 + 2,"oh!, sorry to hear that. How can I help"
+0,2021-12-11,22: 41,2 + 2,Is there anything I can help you with?
+0,2021-12-11,22: 41,2 + 2,Is there anything I can help you with?
+0,2021-12-11,22: 41,wait,wait
+0,2021-12-11,22: 52,hello,"Hi there, how can I help?"
+0,2021-12-11,22: 54,hi wait repeated until i say hi vate repeated until i say,stoping ....
+0,2021-12-11,22: 54,hi wait repeated until i say hi vate repeated until i say,stoping ....
+0,2021-12-11,22: 56,2 + 2,Something went wrong?
+0,2021-12-11,22: 56,2 + 2,Something went wrong?
+0,2021-12-11,22: 58,2 + 2,Is there anything I can help you with?
+0,2021-12-11,22: 58,2 + 2,Is there anything I can help you with?
+0,2021-12-11,22: 58,hello,Good to see you again!
+0,2021-12-11,22: 58,wait repeat until good ok hi hello hello,Nice to meet you sir
+0,2021-12-11,23: 02,can you find me the latest song,playmusic
+0,2021-12-11,23: 02,can you find me the latest song,playmusic
+0,2021-12-11,23: 05,can you find me the latest song,playmusic
+0,2021-12-11,23: 05,can you find me the latest song,playmusic
+0,2021-12-11,23: 05,wait,wait
+0,2021-12-11,23: 07,plus two,How can I amaze you?
+0,2021-12-11,23: 07,plus two,How can I amaze you?
+0,2021-12-11,23: 07,stock market,"Let me refresh your mood then, what can I do?"
+0,2021-12-11,23: 07,stock market,"Let me refresh your mood then, what can I do?"
+0,2021-12-11,23: 11,what is 2 + 2,google
+0,2021-12-11,23: 11,what is 2 + 2,google
+0,2021-12-11,23: 11,photosynthesis,How can I amaze you?
+0,2021-12-11,23: 11,photosynthesis,How can I amaze you?
+0,2021-12-11,23: 11,what is photosynthesis,google
+0,2021-12-11,23: 11,what is photosynthesis,google
+0,2021-12-11,23: 12,latest stock market trend,Welcome Sir
+0,2021-12-11,23: 12,latest stock market trend,Welcome Sir
+0,2021-12-11,23: 13,hey what is the capital of pakistan,Good to see you again!
+0,2021-12-11,23: 13,what is the capital of pakistan,google
+0,2021-12-11,23: 13,what is the capital of pakistan,google
+0,2021-12-11,23: 13,no,"Let me refresh your mood then, what can I do?"
+0,2021-12-11,23: 13,no,"Let me refresh your mood then, what can I do?"
+0,2021-12-11,23: 13,no,"oh!, sorry to hear that. How can I help"
+0,2021-12-11,23: 13,no,"oh!, sorry to hear that. How can I help"
+0,2021-12-11,23: 14,hello,Good to see you again!
+0,2021-12-11,23: 16,hello,Nice to meet you sir
+0,2021-12-11,23: 16,good evening,Nice to hear that
+0,2021-12-11,23: 16,no,"Oops!, can I help?"
+0,2021-12-11,23: 16,no,"Oops!, can I help?"
+0,2021-12-11,23: 16,ok,cool..!
+0,2021-12-11,23: 18,hello,Welcome Sir
+0,2021-12-11,23: 18,no,google
+0,2021-12-11,23: 18,no,Is there anything I can help you with?
+0,2021-12-11,23: 18,no,Is there anything I can help you with?
+0,2021-12-11,23: 23,what is 2 + 2,"absolutely fine ,what about you ? "
+0,2021-12-11,23: 23,what is 2 + 2,"absolutely fine ,what about you ? "
+0,2021-12-11,23: 26,what is the capital of pakistan,google
+0,2021-12-11,23: 26,what is the capital of pakistan,Something went wrong?
+0,2021-12-11,23: 26,what is the capital of pakistan,Something went wrong?
+0,2021-12-11,23: 26,nothing sir,Goodbye!
+0,2021-12-11,23: 27,stock market trends,google
+0,2021-12-11,23: 27,stock market trends,"oh!, sorry to hear that. How can I help"
+0,2021-12-11,23: 27,stock market trends,"oh!, sorry to hear that. How can I help"
+0,2021-12-11,23: 27,no,"Let me refresh your mood then, what can I do?"
+0,2021-12-11,23: 27,no,"Let me refresh your mood then, what can I do?"
+0,2021-12-11,23: 27,no,Something went wrong?
+0,2021-12-11,23: 27,no,Something went wrong?
+0,2021-12-11,23: 32,hello,Hello Sir
+0,2021-12-12,00: 09,hello,Hello Sir
+0,2021-12-12,00: 09,who is elon musk,google
+0,2021-12-12,00: 09,who is elon musk,google
+0,2021-12-12,00: 09,what is 2 + 2,google
+0,2021-12-12,00: 09,what is 2 + 2,Something went wrong?
+0,2021-12-12,00: 09,what is 2 + 2,Something went wrong?
+0,2021-12-12,00: 09,play music,playmusic
+0,2021-12-12,00: 09,play music,playmusic
+0,2021-12-12,00: 09,good job,My pleasure sir
+0,2021-12-12,00: 09,repeat,My pleasure sir
+0,2021-12-12,00: 09,capital of pakistan,google
+0,2021-12-12,00: 09,capital of pakistan,"Oops!, can I help?"
+0,2021-12-12,00: 09,capital of pakistan,"Oops!, can I help?"
+0,2021-12-12,00: 09,stock market trends,google
+0,2021-12-12,00: 09,stock market trends,Something went wrong?
+0,2021-12-12,00: 09,stock market trends,Something went wrong?
+0,2021-12-12,00: 09,latest song,playmusic
+0,2021-12-12,00: 09,latest song,playmusic
+0,2021-12-12,00: 09,wait,wait
+0,2021-12-12,13: 28,tell me about elon musk,google
+0,2021-12-12,13: 28,tell me about elon musk,Something went wrong?
+0,2021-12-12,13: 28,tell me about elon musk,Something went wrong?
+0,2021-12-12,13: 28,read a news,news
+0,2021-12-12,13: 28,read a news,news
+0,2021-12-12,13: 28,nahin,google
+0,2021-12-12,13: 28,nahin,"Let me refresh your mood then, what can I do?"
+0,2021-12-12,13: 28,nahin,"Let me refresh your mood then, what can I do?"
+0,2021-12-12,13: 28,chhoti bahu top bi,google
+0,2021-12-12,13: 28,chhoti bahu top bi,"Oops!, can I help?"
+0,2021-12-12,13: 28,chhoti bahu top bi,"Oops!, can I help?"
+0,2021-12-12,13: 28,bye,Going to sleep

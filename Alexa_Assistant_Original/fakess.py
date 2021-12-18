@@ -1,7 +1,6 @@
 import pyjokes
 import speech_recognition as sr
 import datetime
-import datefinder
 import pyttsx3
 import wikipedia
 import pywhatkit
@@ -13,7 +12,6 @@ import sys
 import smtplib
 import time
 import random
-from selenium import webdriver
 import wolframalpha
 import urllib.request     #urllib. request for opening and reading URLs
 import ssl
