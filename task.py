@@ -26,9 +26,7 @@ except Exception as e:       #it requires internet connection
 from Features import joke
 from Features.alarm import  set_alarm
 from Features.weather import  weather, weather_updates , Location
-import time
 import os
-
 import csv
 
 def Time():
@@ -41,32 +39,27 @@ def Day():
     day = datetime.datetime.now().strftime("%A")
     speak(day) 
 def NEWS():
-#    news_res = news.get_news()
-     responses = ["news","Headlines are ","Top 5 bulletins are ", 'Todays Headlines are..']
-#     
+     
 #    speak('Source: The Times Of India')
-     speak(random.choice(responses))
-#    for index, articles in enumerate(news_res):
-#        print(articles['title'])
-#        speak(articles['title'])
-#        if index == len(news_res)-2:
-#            break
-#    speak('These were the top headlines, Have a nice day Sir!!..')
-     #speak(f"I'm reading out the latest news headlines, sir")
-     speak(get_news())
-     speak("Do you want to listen more news ?")
-     ans = listen()
-     #for intent in intents ['intents']:
-     if ans == "yes" : #and intent["tag"] == "Positive:
-         news_res = more_news()
-         for index, articles in enumerate(news_res):
-             print(articles['title'])
-             speak(articles['title'])
-             if index == len(news_res)-2:
-                     break
-     speak('These were the top headlines, Have a nice day Sir!!..')
-     #speak("For your convenience, I am printing it on the screen sir.")
-     #print(*get_news(),end="\n")
+    try:
+        responses = ["news","Headlines are ","Top 5 bulletins are ", 'Todays Headlines are..']
+        speak(random.choice(responses))
+        speak(get_news())
+        speak("Do you want to listen more news ?")
+        ans = listen()
+        #for intent in intents ['intents']:
+        if ans == "yes" : #and intent["tag"] == "Positive:
+            news_res = more_news()
+            for index, articles in enumerate(news_res):
+                print(articles['title'])
+                speak(articles['title'])
+                if index == len(news_res)-2:
+                        break
+        speak('These were the top headlines, Have a nice day Sir!!..')
+        #speak("For your convenience, I am printing it on the screen sir.")
+        #print(*get_news(),end="\n")
+    except:
+        speak("Please connect to the internet")
     
 def read_prev_response():
     lis = list(csv.reader(open('data.csv')))
@@ -110,16 +103,32 @@ def InputExecution(tag, query):
         except Exception as e:
             print("Exception: ", e)
             query = str(query).replace("google", "").replace("search", "").replace("","").replace("what is","").replace("search about","").replace("search for","").replace("find","")
-            pywhatkit.search(query)
+            try:
+                pywhatkit.search(query)
+            except Exception as e:
+                print("Exception: ", e)
+                speak("Please connect to the internet")
     elif "google" in tag:
         query = str(query).replace("google", "").replace("search", "").replace("","").replace("what is","").replace("search about","").replace("search for","").replace("find","")
-        pywhatkit.search(query)
+        try:
+            pywhatkit.search(query)
+        except Exception as e:
+            print("Exception: ", e)
+            speak("Please connect to the internet")
     elif "weather" in tag :
-        final_weather()  
+        try:
+            final_weather()
+        except Exception as e:
+            print("Exception: ", e)
+            speak("Couldn't connect to the internet")
     elif 'play' in tag:
         song = query.replace('play', '')
         speak("ok,playing" + song)
-        pywhatkit.playonyt(song)  
+        try:
+            pywhatkit.playonyt(song)  
+        except Exception as e:
+            print("Exception: ", e)
+            speak("I'm having trouble understanding right now")
       
     
 def NoninputExecution(query):
@@ -132,7 +141,12 @@ def NoninputExecution(query):
     elif "day" in query:
         Day()
     elif "news" in query:
-        NEWS()
+        try:
+            NEWS()
+        except Exception as e:
+            print("Exception: ",e)
+            speak("Couldn't connect to the internet")
+            
     elif "joke" in query:
         joke.startJoke()
     elif "repeat" in query:
@@ -140,12 +154,21 @@ def NoninputExecution(query):
     elif "alarm" in query:
         set_alarm()
     elif "loaction" in query:
-        Location()
+        try:
+            Location()
+        except Exception as e:
+            print("Exception: ",e)
+            speak("Couldn't connect to the internet")
+            
     elif "bye" in query :
         speak
         exit(0)
     else:
-        wolfram_ssl()
+        try:
+            wolfram_ssl()
+        except Exception as e:
+            print("Exception: ",e)
+            speak("Please connect to the internet")
         
     
 

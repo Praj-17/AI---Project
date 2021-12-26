@@ -3,7 +3,7 @@ import json
 import torch
 import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader
-from Neural_Network.text_preprocessing import tokenize, ignore_words,tf_idf, bag_of_words,stem
+from Neural_Network.text_preprocessing import tokenize, ignore_words,Tf_Idf, bag_of_words,preprocessing
 from Neural_Network.brain import NeuralNet
 
 ## Unwrappping the Json file
@@ -13,45 +13,32 @@ try:
 except Exception as e:
     print(e)
 
-all_words = [] 
+all_patterns = [] 
 tags = [] 
-tag_per_word = [] 
+tag_per_sentnece = [] 
 trained_words = []
 for intent in intents['intents']: 
      tag = intent['tag']
      tags.append((tag))     
      for pattern in intent['patterns']:
-         # print(pattern)
-         w = tokenize(pattern) #breaking all the patterns(in the json) into words and creating a list of words
-         #_______________________words lematized instaed stem_____________
-         w = [stem(w1) for w1 in w if w1 not in ignore_words ]
-        #  w = ''.join(w)
-         all_words.extend(w) # adding that list of words to the all_words list
-         # all_words = [lemmatize(w) for w in all_words if w not in ignore_words]
-         tag_per_word.append((w,tag)) #Collecting all words and their respective tags at one place
-         
+        processed_patterns = preprocessing(pattern)
+        all_patterns.append((pattern))
+        tag_per_sentnece.append((pattern, tag))
      
-     
-all_words = sorted(set(all_words))
+all_patterns = sorted(set(all_patterns))
 tags = sorted(set(tags))
- #______________________converting lists to numpy arrays for speed
 x_train = []  #it will store the actual tags
 y_train = []  # it will store their respective indices
-for(pattern_sentence, tag) in tag_per_word:
+bag = Tf_Idf(all_patterns)
+x_train.append(bag)
+for(pattern_sentence, tag) in tag_per_sentnece:
     if pattern_sentence != [] :
         trained_words.extend(pattern_sentence)
-        bag_1 = Tf_Idf(str(trained_words))
-        bag = bag_of_words(pattern_sentence, all_words)
-        print("______________________________bag_1______________________")      
-        print(bag_1.shape)
-        print("______________________________bag______________________")      
-        print(bag.shape)
-        x_train.append(bag)
-        print((x_train)[0])
         label = list(tags).index(tag) #training it on the index of the tag
         y_train.append(label)
         
-
+x_train = np.array(x_train)
+y_train = np.array(y_train)
 if __name__ == '__main__':
     x_train = np.array(x_train)
     y_train = np.array(y_train)
@@ -107,7 +94,7 @@ if __name__ == '__main__':
         "input_size": input_size,
         "hidden_size": hidden_size,
         "output_size": output_size,
-        "all_words" : all_words,
+        "all_patterns" : all_patterns,
         "tags" : tags
     }
 

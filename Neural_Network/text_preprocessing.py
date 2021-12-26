@@ -7,12 +7,7 @@ from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
 from sklearn.feature_extraction.text import TfidfVectorizer
 from nltk.corpus import stopwords
 import re
-<<<<<<< HEAD
 import pandas as pd
-=======
-
-
->>>>>>> master
 
 # import re
 st = PorterStemmer()
@@ -56,13 +51,14 @@ def tokenize(sentence):
     return nltk.word_tokenize(sentence)
 
 
-def lemmatize(word):
+def lemmatize(sentence):
     """
     It will take the word and covert it to its meanigfull format
     finally  final finale finalized ---> 
     """
-    return lemmatizer.lemmatize(word)
-
+    sentence =  " ".join([lemmatizer.lemmatize(word)for word in sentence.split() if word not in ignore_words])
+    return sentence
+    
 def stem(sentence):
     """
     It will add some AIness to the code 
@@ -72,15 +68,9 @@ def stem(sentence):
     ["Final ", "Finalized", "Finally", "finale"]
     to [Final] because it is common in all the words, rest all is considered as the suffix and is exploited
     """
-<<<<<<< HEAD
     sentence =  " ".join([st.stem(word) for word in sentence.split() if word not in ignore_words])
 
     return sentence
-print(stem("Prajwal is finally having fun "))
-=======
-    return PorterStemmer().stem(word.lower())
-
->>>>>>> master
 #____________________________________________________________
 """
                   f1     f2       f3
@@ -148,7 +138,6 @@ def Tf_Idf(tokenized_sentence):
     bag = tf_idf.fit_transform(sentence_word).toarray()
     return bag
 
-<<<<<<< HEAD
 def preprocessing(sentence):
    ######################### Preprocessing for new_data ##########################e
     #line break removal
@@ -164,35 +153,9 @@ def preprocessing(sentence):
     sentence = sentence.replace('_', '')
     #stemming documents(removing ing, ly, s)
     #remove stop words and finally stem
-    sentence = stem(sentence)
+    sentence = lemmatize(sentence)
 
     return sentence
-=======
-def prediction_label(new_data):
-   ######################### Preprocessing for new_data ##########################e
-    #remove whitespaces
-    new_data = new_data.str.strip()
-    #convert to lower
-    new_data = new_data.apply(lambda x: " ".join(x.lower() for x in x.split()))
-    #line break removal
-    new_data = new_data.map(lambda x: re.sub(r"\r?\\n"," ", x)) 
-    #remove special characters
-    new_data = new_data.map(lambda x: re.sub(r'\W+', ' ', x))
-    #remove numbers
-    new_data = new_data.str.replace('\d+', '')
-    new_data = new_data.map(lambda x: re.sub(r'\b\d+\b', ' ', x))
-    new_data = new_data.apply(lambda x: " ".join(x for x in x.split() if x not in ignore_words))
-    #remove punctuation
-    new_data = new_data.str.replace('[^\w\s]','')
-    #remove underscore
-    new_data = new_data.str.replace('_', '')
-    #stemming documents(removing ing, ly, s)
-    st = PorterStemmer()
-    new_data = new_data.apply(lambda x: " ".join([st.stem(word) for word in x.split()]))
-    print('Done with stemming of documents...')
-
->>>>>>> master
-
 # "trying out some examples"
 # list1 = ['kites', 'babies', 'dogs', 'flying', 'smiling',
 #          'driving', 'died', 'tried', 'feet']

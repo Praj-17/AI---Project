@@ -6,8 +6,8 @@ def wishMe():
     if hour>=0 and hour<12:
         speak("Good Morning sir, I'm ready. You can call me anytime")
     elif hour>=12 and hour<18:
-        speak("Good Afternoon,   I'm ready. You can call me anytime")
+        speak("Good Afternoon, I'm ready. You can call me anytime")
     else:
-        speak("Good Evening sir,  I'm ready. You can call me anytime")
+        speak("Good Evening sir, I'm ready. You can call me anytime")
     
 

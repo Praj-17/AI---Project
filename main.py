@@ -1,8 +1,10 @@
 import random
 import json
+
+from sklearn import preprocessing
 from Neural_Network.brain import NeuralNet
 from Neural_Network.text_preprocessing import stem
-from Neural_Network.text_preprocessing import bag_of_words, tokenize,ignore_words
+from Neural_Network.text_preprocessing import bag_of_words, tokenize,ignore_words, preprocessing
 import torch
 from Features.csv_writer import append_data, prev_response, prev_time
 from Features.wishme import wishMe
@@ -15,17 +17,20 @@ from Features.speak import speak
 from task import InputExecution, NoninputExecution
 from Features.wolfram import wolfram_ssl
 import datetime
+from datetime import datetime 
+from tensorflow.keras.models import load_model
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.preprocessing import LabelEncoder
 try:
     import pywhatkit
 except ImportError:
     speak("Couldn't connect to the internet")
-from datetime import datetime 
+from Train_2 import data
 
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 with open("intents.json", 'r') as json_data:
     intents = json.load(json_data)
-
 
 FILE = 'TrainData.pth'
 if os.path.exists(FILE):

@@ -13,7 +13,7 @@
         {
             "tag":"date",
 
-            "patterns": [  "date",  "today" ],
+            "patterns": [  "date",  "today", "date" ],
 
             "responses": [ "date"]
         },
@@ -78,7 +78,7 @@
         {
            "tag":"weather",
            
-           "patterns": ["check weather"," sky","do i need to carry an umbrella", "temperature", "atmosphere","wind","air","rain","clouds","sun", "sunlight","snow","cold","hot","warm", "fog", "mist","smog",""],
+           "patterns": ["check weather"," sky","do i need to carry an umbrella", "temperature", "atmosphere","wind","air","rain","clouds","sun", "sunlight","snow","cold","hot","warm", "fog", "mist","smog","rainy", "sunny"],
            
            "responses": ["weather"
            ]
@@ -158,7 +158,7 @@
         {
          "tag":"greeting",
 
-         "patterns": [ "hello", "hii", "hey", "wake up",  "hola", "hemlo", "hay","excuse me"],
+         "patterns": [ "hello", "hii", "hey", "wake up",  "hola", "hemlo", "hay","excuse me", "hi", "alexa"],
 
          "responses": [ "Hello Sir",
              "How are you sir", "Welcome Sir", "Nice to meet you sir",
