@@ -172,3 +172,5 @@ def preprocessing(sentence):
 # stop = stopwords.words('english')
 # stop.remove('y')
 # print(stop)
+
+# print(preprocessing("How are you doing my boy"))

@@ -25,12 +25,12 @@ for intent in intents['intents']:
      tag = intent['tag']
      tags.append((tag))     
      for pattern in intent['patterns']:
-        processed_patterns = preprocessing(pattern)
-        similar_words = Get_Similarities(processed_patterns)
+        processed_pattern = preprocessing(pattern)
+        similar_words = Get_Similarities(processed_pattern)
         similar_words = similar_words.split()
         for i in similar_words:
             all_patterns.append((str(i).lower() ))
-            tag_per_sentence.append((pattern, tag))
+            tag_per_sentence.append((processed_pattern, tag))
 data = pd.DataFrame(tag_per_sentence,columns =['Patterns','tags'])
 data = data.dropna()
 # Here, ngram_range specifies how to transform the data, ngram_range of (1, 2) will have both monograms and bigrams in the Tf-Idf vectors. stop_words specifies the language from which the stop words to be removed.
